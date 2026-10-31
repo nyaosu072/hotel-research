@@ -45,6 +45,17 @@ try {
   if (bad.error?.message !== "homepage_required") {
     throw new Error("expected homepage_required, got " + (bad.error?.message ?? "success"));
   }
+  // 직접 쓰기 우회 차단
+  const expectBlocked = (label: string, e: { message: string } | null) => {
+    if (e?.message !== "homepage_required") throw new Error(label + ": expected homepage_required, got " + (e?.message ?? "success"));
+  };
+  expectBlocked("direct insert contacted", (await db.from("research").insert({ hotel_id: hotelId, status: "contacted" })).error);
+  const cand = await db.rpc("set_research_status", { p_hotel_id: hotelId, p_status: "candidate" });
+  if (cand.error) throw new Error("candidate failed: " + cand.error.message);
+  expectBlocked("direct update done", (await db.from("research").update({ status: "done" }).eq("hotel_id", hotelId!)).error);
+  const ws = await db.from("hotels").update({ homepage: "   " }).eq("id", hotelId!);
+  if (ws.error) throw new Error("whitespace homepage on candidate should be allowed: " + ws.error.message);
+  expectBlocked("whitespace homepage contacted", (await db.rpc("set_research_status", { p_hotel_id: hotelId, p_status: "contacted" })).error);
   const up = await db.from("hotels").update({ homepage: "https://example.com" }).eq("id", hotelId!);
   if (up.error) throw new Error("update: " + up.error.message);
   const good = await db.rpc("set_research_status", { p_hotel_id: hotelId, p_status: "contacted" });
@@ -56,6 +67,7 @@ try {
   if (good.data.status !== "contacted" || (got !== today && got !== localToday)) {
     throw new Error("last_contacted_at mismatch: " + got);
   }
+  expectBlocked("blank homepage on contacted hotel", (await db.from("hotels").update({ homepage: "" }).eq("id", hotelId!)).error);
   console.log("status rule OK");
   ok = true;
 } catch (e) {
