@@ -3,7 +3,8 @@
 import { load } from "@std/dotenv";
 
 const env = await load({ envPath: ".env" });
-const KEYS = [env.RAKUTEN_APP_ID, env.RAKUTEN_ACCESS_KEY, env.TOURAPI_KEY].filter(Boolean);
+const KEYS = [env.RAKUTEN_APP_ID, env.RAKUTEN_ACCESS_KEY, env.TOURAPI_KEY];
+if (KEYS.some((k) => !k)) throw new Error("missing RAKUTEN_APP_ID / RAKUTEN_ACCESS_KEY / TOURAPI_KEY in .env");
 const FX = "tests/fixtures/";
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -54,12 +55,14 @@ async function tour(path: string, q: Record<string, string> = {}) {
   for (const [k, v] of Object.entries({ _type: "json", MobileOS: "ETC", MobileApp: "HotelResearch", ...q })) u.searchParams.set(k, v);
   const r = await fetch(u);
   console.log(path, r.status, "ratelimit-remaining", r.headers.get("x-ratelimit-remaining"));
+  if (!r.ok) throw new Error(`tourapi ${path} ${r.status}`);
   return (await r.json()).response;
 }
 const seoul = { lDongRegnCd: "11", numOfRows: "5" }, jeju = { lDongRegnCd: "50", numOfRows: "5" };
 for (const [svc, file] of [["JpnService2", "tourapi_jpn_stay.json"], ["EngService2", "tourapi_eng_stay.json"], ["KorService2", "tourapi_kor_stay.json"]]) {
   const s = await tour(`${svc}/searchStay2`, seoul), j = await tour(`${svc}/searchStay2`, jeju);
-  const id = j.body.items.item[0].contentid; // detailCommon2 is the only place with `homepage`
+  const id = j.body.items?.item?.[0]?.contentid;
+  if (!id) throw new Error(`${svc}: no Jeju stay items`); // detailCommon2 is the only place with `homepage`
   const out: Record<string, unknown> = { "kr:11": s, "kr:50": j,
     [`detailCommon2:${id}`]: await tour(`${svc}/detailCommon2`, { contentId: id }) };
   await save(file, out);

@@ -31,17 +31,17 @@
 - **전국 숙박 건수**: Kor 2,956 / Jpn 274 / Eng 225. 일문·영문은 수가 매우 적음(서울 38, 제주 19 in Jpn). 호텔 후보 폭 확보에는 **KorService2가 사실상 필요**.
 - **응답 경로** `response.body.items.item[]` (결과 없으면 `items`가 빈 문자열일 수 있음), 총수 `body.totalCount`:
   - 이름 `title`, 주소 `addr1`/`addr2`, 우편번호 `zipcode`, 좌표 `mapx`(경도)/`mapy`(위도) WGS84 문자열, 사진 `firstimage`/`firstimage2`(없으면 빈 문자열), 전화 `tel`(대부분 빈 값), id `contentid`, 분류 `lclsSystm1~3`(관측: AC010100, AC020100, AC030200, AC030400, AC040100, AC060100/200), 지역 `lDongRegnCd`/`lDongSignguCd`(+구형 `areacode`/`sigungucode`), 수정일 `modifiedtime`.
-  - **홈페이지는 목록에 없음.** `detailCommon2?contentId=` 의 `homepage` 필드(HTML `<a href=…>…</a>` 문자열 — URL 파싱 필요, 비어 있는 경우 많음. JW 메리어트 제주는 빈 값). 전화는 `detailIntro2` 의 `infocenterlodging`가 더 잘 채워짐. → 홈페이지 확보에 호텔당 추가 1회 호출 필요.
+  - **홈페이지는 목록에 없음.** `detailCommon2?contentId=` 의 `homepage` 필드(**형식이 일정하지 않음**: 평문 URL `http://www.gnstayhill.com/`(fixture `tourapi_detail_homepage.json`)일 수도 있고, 실측 중 서울 한 곳에서는 HTML 앵커 `<a href="…" target="_blank" title="…">표시텍스트</a>`도 확인됨(앵커는 fixture 미보존). 빈 문자열도 흔함(JW 메리어트 제주). → 파서는 `href="…"` 우선 추출, 없으면 평문 URL, 둘 다 없으면 미등록 처리). 전화는 `detailIntro2` 의 `infocenterlodging`가 더 잘 채워짐. → 홈페이지 확보에 호텔당 추가 1회 호출 필요.
   - 등급(성급) 필드는 없음.
 - **지역 코드**: `ldongCode2`(시도 16개, `lDongRegnCd=<시도>`로 시군구 조회), 구형 `areaCode2`(17개). 제주 하위: `110` 제주시, `130` 서귀포시.
 - **일 호출 한도**: 응답 헤더 `x-ratelimit-limit: 1000` (일 1,000건, `x-ratelimit-remaining` 로 잔량 확인; 서비스별로 카운터가 따로 보임).
 
 ## 3. 한국 공식 4성 호텔
 
-- 한국관광협회중앙회 호텔업등급관리국 등급결정 호텔 현황(https://www.hotelrating.or.kr/hotel, JS 렌더링 페이지) 검색 요약 기준: 전체 855곳 = 1성 89 / 2성 333 / 3성 232 / **4성 128 / 5성 73**. 집계 기준일은 미확인(직접 페이지에서 재확인 필요).
+- 한국관광협회중앙회 호텔업등급관리국 등급결정 호텔 현황(https://www.hotelrating.or.kr/hotel, JS 렌더링 페이지) 검색 요약 기준: 전체 855곳 = 1성 89 / 2성 333 / 3성 232 / **4성 128 / 5성 73**. **[미검증]** 페이지가 JS 렌더링이라 직접 확인하지 못했고 검색 결과 요약에서 가져온 수치이며 집계 기준일도 불명. Task 5에서 data.go.kr 15118900 CSV로 실제 검증할 것.
 - **파일 제공: 있음.** 공공데이터포털 "문화체육관광부_전국호텔현황" https://www.data.go.kr/data/15118900/fileData.do — CSV, 무료·이용허락 제한 없음, 최종 수정 2026-09-21, 등급 인정처=한국관광협회중앙회. 컬럼: 연번, 등급 인정처, 호텔업 구분, 결정 등급, 등급 결정일, 지역, 호텔명, 객실수, 주소, 전화번호, **홈페이지**. (호텔 성급 + 홈페이지를 한 번에 얻을 수 있어 KR 쪽 핵심 소스 후보.)
 - 분기별 결과 공개(xlsx): 문체부 예 https://www.mcst.go.kr/site/s_policy/dept/deptView.jsp?pSeq=2113&pDataCD=0417000000&pType=05
-- 이 CSV를 직접 내려받아 4성 수를 센 것은 아님(Task 3/4에서 확인).
+- 이 CSV를 직접 내려받아 4성 수를 센 것은 아님(Task 5에서 CSV로 검증).
 
 ## 4. Wikidata (SPARQL, P856 홈페이지)
 
@@ -60,6 +60,6 @@
 3. **라쿠텐에 공식 홈페이지 필드 없음** → "홈페이지 미등록" 비율이 높아지는 정도가 아니라 일본 전 호텔이 라쿠텐만으로는 홈페이지 없음. 홈페이지는 Wikidata P856 또는 별도 소스 필요.
 4. **라쿠텐 `Origin` 헤더 필수**(Referer만으론 403). 좌표는 `datumType=1` 필요.
 5. **라쿠텐 HotelRanking genre=premium 데이터가 2014년에서 정지** → 고급 호텔 후보 소스로 불가.
-6. **TourAPI 홈페이지는 목록에 없고 detailCommon2(호텔당 1회)에서만, HTML 문자열.** 일문·영문 숙박은 274/225건뿐이라 한국 후보 폭은 KorService2(2,956건)에 의존해야 함.
+6. **TourAPI 홈페이지는 목록에 없고 detailCommon2(호텔당 1회)에서만, 평문 URL 또는 HTML 앵커 문자열(형식 불일정).** 일문·영문 숙박은 274/225건뿐이라 한국 후보 폭은 KorService2(2,956건)에 의존해야 함.
 7. **TourAPI 일 한도 1,000건**(서비스별 카운터로 보임) → 전국 홈페이지 수집은 며칠에 나눠야 함.
 8. **새 소스 발견**: 공공데이터 `전국호텔현황` CSV(성급·홈페이지·전화 포함) — 한국 4·5성 판정에 TourAPI보다 유리.

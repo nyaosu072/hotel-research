@@ -1,0 +1,48 @@
+{
+  "kr:region": "11",
+  "detailCommon2": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "contentid": "2574118",
+            "contenttypeid": "32",
+            "title": "강남스테이힐(Gangnam Stay Hill)",
+            "createdtime": "20181206010516",
+            "modifiedtime": "20250919163535",
+            "tel": "",
+            "telname": "",
+            "homepage": "http://www.gnstayhill.com/",
+            "firstimage": "http://tong.visitkorea.or.kr/cms/resource/28/2573328_image2_1.jpg",
+            "firstimage2": "http://tong.visitkorea.or.kr/cms/resource/28/2573328_image2_1.jpg",
+            "cpyrhtDivCd": "Type3",
+            "areacode": "1",
+            "sigungucode": "1",
+            "lDongRegnCd": "11",
+            "lDongSignguCd": "680",
+            "lclsSystm1": "AC",
+            "lclsSystm2": "AC06",
+            "lclsSystm3": "AC060200",
+            "cat1": "B02",
+            "cat2": "B0201",
+            "cat3": "B02011100",
+            "addr1": "서울특별시 강남구 테헤란로13길 65",
+            "addr2": "(역삼동)1, 2층",
+            "zipcode": "06127",
+            "mapx": "127.0301236613",
+            "mapy": "37.5034291706",
+            "mlevel": "",
+            "overview": "모든 객실은 편안하고 안락함을 선사해 준다. 많은 객실에서 편안함을 더하기 위해 무선 인터넷(무료), 에어컨, 난방, 선풍기, 유선 인터넷(무료) 등을 제공한다. 본 숙소 투숙 기간 다양한 여가 시설 등을 이용할 수 있다. 아주 좋은 위치에 있고 우수한 시설을 구비한 본 숙소(강남 스테이 힐 게스트하우스)는 서울에서의 잊을 수 없는 추억을 위한 완벽한 장소이다."
+          }
+        ]
+      },
+      "numOfRows": 1,
+      "pageNo": 1,
+      "totalCount": 1
+    }
+  }
+}
