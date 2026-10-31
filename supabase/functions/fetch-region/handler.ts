@@ -39,7 +39,7 @@ async function refreshJapan(code: string, d: Deps): Promise<number> {
     const s = must(await d.db.from("settings").select("value").eq("key", "discovery_min_charge_jpy").maybeSingle());
     min = Number(s?.value) || 50000;
   }
-  const { hotels } = await fetchRakutenRegion(code, d.env, d.fetchFn, d.sleep);
+  const { hotels } = await fetchRakutenRegion(code, d.env, d.fetchFn, d.sleep, min);
   const byId = new Map<string, Record<string, unknown>>();
   for (const h of hotels as any[]) {
     if (!isCandidate(h, { minChargeJpy: min })) continue;
@@ -78,7 +78,6 @@ async function refreshKorea(code: string, d: Deps): Promise<number> {
   ) as HotelRow[];
 
   const patches = new Map<string, Partial<HotelRow>>();
-  const cache = new Map<string, HotelRow>(existing.map((h) => [h.id, h]));
   let detailCalls = 0;
   for (const k of kor as any[]) {
     const itemCode = signgu ? code : k.lDongSignguCd ? `${code}:${k.lDongSignguCd}` : code;
@@ -107,7 +106,7 @@ async function refreshKorea(code: string, d: Deps): Promise<number> {
   }
   let n = 0;
   for (const [id, patch] of patches) {
-    if (!Object.keys(patch).length || !cache.has(id)) continue;
+    if (!Object.keys(patch).length) continue;
     must(await d.db.from("hotels").update(patch).eq("id", id));
     n++;
   }

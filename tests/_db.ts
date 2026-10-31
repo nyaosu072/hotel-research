@@ -8,8 +8,9 @@ export const hasEnv = Boolean(env.SUPABASE_URL && env.SUPABASE_SERVICE_ROLE_KEY)
 export const db: any = hasEnv ? createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY) : null;
 export const rand = () => crypto.randomUUID().slice(0, 8);
 
-// 테스트가 만든 hotels / region_cache 행 삭제 (지역 코드가 prefix로 시작하는 것 전부)
+// 테스트가 만든 행만 삭제: 테스트 지역 코드 + 테스트 external_id(`t-` 또는 9000000000대 hotelNo)
 export async function cleanup(prefix: string) {
-  await db.from("hotels").delete().like("region_code", `${prefix}%`);
+  if (!/^(jp|kr):test-/.test(prefix)) throw new Error("cleanup: not a test region code");
+  await db.from("hotels").delete().like("region_code", `${prefix}%`).or("external_id.like.t-%,external_id.like.90000000%");
   await db.from("region_cache").delete().like("region_code", `${prefix}%`);
 }

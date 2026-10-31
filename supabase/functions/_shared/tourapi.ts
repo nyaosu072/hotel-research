@@ -18,7 +18,9 @@ export async function tourCall(
   }
   const res = await fetchFn(u);
   if (!res.ok) throw new Error(`tourapi ${path} ${res.status}`);
-  return (await res.json()).response;
+  const r = (await res.json()).response;
+  if (r?.header?.resultCode !== "0000") throw new Error(`tourapi ${path} resultCode ${r?.header?.resultCode}`);
+  return r;
 }
 
 const items = (r: any): any[] => {

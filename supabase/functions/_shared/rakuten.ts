@@ -13,6 +13,7 @@ export async function fetchRakutenRegion(
   env: UpstreamEnv,
   fetchFn: typeof fetch = fetch,
   sleep: (ms: number) => Promise<void> = (ms) => new Promise((r) => setTimeout(r, ms)),
+  minChargeJpy?: number,
 ): Promise<{ hotels: unknown[] }> {
   const [, middle, small, detail] = code.split(":");
   const hotels: unknown[] = [];
@@ -29,6 +30,7 @@ export async function fetchRakutenRegion(
       datumType: "1",
       hits: "30",
       page: String(page),
+      sort: "-roomCharge", // 대략 가격 내림차순(엄밀하지 않음, docs/api-notes.md)
     };
     if (detail) q.detailClassCode = detail;
     for (const [k, v] of Object.entries(q)) u.searchParams.set(k, v);
@@ -36,11 +38,18 @@ export async function fetchRakutenRegion(
     if (res.status === 404) break; // 결과 없음 (라쿠텐 not_found)
     if (!res.ok) throw new Error(`rakuten ${res.status}`);
     const j: any = await res.json();
+    let top = -Infinity; // 이 페이지의 최고가
     for (const h of j.hotels ?? []) {
       const b = h?.hotel?.[0]?.hotelBasicInfo;
-      if (b) hotels.push(b);
+      if (!b) continue;
+      hotels.push(b);
+      top = Math.max(top, b.hotelMinCharge ?? -Infinity);
     }
-    if (page >= (j.pagingInfo?.pageCount ?? 1)) break;
+    const pageCount = j.pagingInfo?.pageCount ?? 1;
+    if (page >= pageCount) break;
+    // 대략 내림차순 정렬이므로 후보가 한 곳도 없는 페이지 이후는 건너뛴다
+    if (minChargeJpy !== undefined && top < minChargeJpy) break;
+    if (page === MAX_PAGES) console.warn(`rakuten ${code}: truncated at ${MAX_PAGES} of ${pageCount} pages`);
   }
   return { hotels };
 }

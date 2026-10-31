@@ -34,3 +34,13 @@ Deno.test({ name: "lock: expired lock can be re-acquired", ignore: !hasEnv }, as
     await cleanup(code);
   }
 });
+
+Deno.test({ name: "lock: concurrent tryAcquire -> exactly one wins", ignore: !hasEnv }, async () => {
+  const code = `jp:test-${rand()}:x`;
+  try {
+    const rs = await Promise.all([1, 2, 3, 4].map(() => tryAcquire(db, code, 120)));
+    assertEquals(rs.filter(Boolean).length, 1);
+  } finally {
+    await cleanup(code);
+  }
+});

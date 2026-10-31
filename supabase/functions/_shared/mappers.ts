@@ -28,6 +28,12 @@ export function rakutenToRow(h: unknown, regionCode: string): Partial<HotelRow> 
   };
 }
 
+// 빈 문자열/0/비숫자는 좌표 없음 (0으로 쓰지 않는다)
+const coord = (v: unknown): number | null => {
+  const n = typeof v === "string" && v.trim() === "" ? NaN : Number(v);
+  return Number.isFinite(n) && n !== 0 ? n : null;
+};
+
 // kor/jpn/eng = response.body.items.item[] 의 항목. Kor가 주 항목.
 export function tourapiToRow(
   kor: unknown,
@@ -42,8 +48,8 @@ export function tourapiToRow(
     source: "tourapi",
     external_id: String(k.contentid),
     name_ko: k.title,
-    lat: Number(k.mapy),
-    lng: Number(k.mapx),
+    lat: coord(k.mapy),
+    lng: coord(k.mapx),
     address: `${k.addr1 ?? ""} ${k.addr2 ?? ""}`.trim() || null,
     image_url: k.firstimage || null,
     currency: "KRW",
