@@ -38,10 +38,11 @@
 
 ## 3. 한국 공식 4성 호텔
 
-- 한국관광협회중앙회 호텔업등급관리국 등급결정 호텔 현황(https://www.hotelrating.or.kr/hotel, JS 렌더링 페이지) 검색 요약 기준: 전체 855곳 = 1성 89 / 2성 333 / 3성 232 / **4성 128 / 5성 73**. **[미검증]** 페이지가 JS 렌더링이라 직접 확인하지 못했고 검색 결과 요약에서 가져온 수치이며 집계 기준일도 불명. Task 5에서 data.go.kr 15118900 CSV로 실제 검증할 것.
+- **실측(2026-11-01)**: data.go.kr 15118900 CSV(`문화체육관광부_전국호텔현황_20260602.(최종)수정.csv`, 최종 수정 2026-09-21)를 내려받아 센 결과 전체 863곳 = 1성 96 / 2성 348 / 3성 226 / **4성 125 / 5성 68**. (이전 [미검증] 수치 4성 128 / 5성 73과, 스펙의 5성 89곳은 이 파일과 다름.) 홈페이지 칸이 "없음"인 곳은 4·5성 중 6곳.
+- 참고(미검증): 호텔업등급관리국 https://www.hotelrating.or.kr/hotel 는 JS 렌더링 페이지라 직접 확인하지 못함.
 - **파일 제공: 있음.** 공공데이터포털 "문화체육관광부_전국호텔현황" https://www.data.go.kr/data/15118900/fileData.do — CSV, 무료·이용허락 제한 없음, 최종 수정 2026-09-21, 등급 인정처=한국관광협회중앙회. 컬럼: 연번, 등급 인정처, 호텔업 구분, 결정 등급, 등급 결정일, 지역, 호텔명, 객실수, 주소, 전화번호, **홈페이지**. (호텔 성급 + 홈페이지를 한 번에 얻을 수 있어 KR 쪽 핵심 소스 후보.)
 - 분기별 결과 공개(xlsx): 문체부 예 https://www.mcst.go.kr/site/s_policy/dept/deptView.jsp?pSeq=2113&pDataCD=0417000000&pType=05
-- 이 CSV를 직접 내려받아 4성 수를 센 것은 아님(Task 5에서 CSV로 검증).
+- 다운로드 방법: 상세 페이지 JSON(`/tcs/dss/selectFileDataDownload.do?...publicDataPk=15118900...`)에서 `atchFileId`(FILE_000000003655134)를 얻고 `https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=...&fileDetailSn=1&insertDataPrcus=N` 로 내려받음. 인코딩 EUC-KR(CP949). 캡차 없이 일반 요청으로 받았음.
 
 ## 4. Wikidata (SPARQL, P856 홈페이지)
 
