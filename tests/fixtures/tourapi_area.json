@@ -1,0 +1,222 @@
+{
+  "ldongCode2_jpn": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "rnum": 1,
+            "code": "11",
+            "name": "ソウル特別市"
+          },
+          {
+            "rnum": 2,
+            "code": "12",
+            "name": "チョンナムグァンジュ(全南光州)統合特別市"
+          },
+          {
+            "rnum": 3,
+            "code": "26",
+            "name": "プサン(釜山)広域市"
+          },
+          {
+            "rnum": 4,
+            "code": "27",
+            "name": "テグ(大邱)広域市"
+          },
+          {
+            "rnum": 5,
+            "code": "28",
+            "name": "インチョン(仁川)広域市"
+          },
+          {
+            "rnum": 6,
+            "code": "30",
+            "name": "テジョン(大田)広域市"
+          },
+          {
+            "rnum": 7,
+            "code": "31",
+            "name": "ウルサン(蔚山)広域市"
+          },
+          {
+            "rnum": 8,
+            "code": "41",
+            "name": "キョンギ(京畿)道"
+          },
+          {
+            "rnum": 9,
+            "code": "43",
+            "name": "チュンチョンブク(忠清北)道"
+          },
+          {
+            "rnum": 10,
+            "code": "44",
+            "name": "チュンチョンナム(忠清南)道"
+          },
+          {
+            "rnum": 11,
+            "code": "47",
+            "name": "キョンサンブク(慶尚北)道"
+          },
+          {
+            "rnum": 12,
+            "code": "48",
+            "name": "キョンサンナム(慶尚南)道"
+          },
+          {
+            "rnum": 13,
+            "code": "50",
+            "name": "チェジュ(済州)特別自治道"
+          },
+          {
+            "rnum": 14,
+            "code": "51",
+            "name": "カンウォン(江原)特別自治道"
+          },
+          {
+            "rnum": 15,
+            "code": "52",
+            "name": "チョンブク(全北)特別自治道"
+          },
+          {
+            "rnum": 16,
+            "code": "36110",
+            "name": "セジョン(世宗)特別自治市"
+          }
+        ]
+      },
+      "numOfRows": 16,
+      "pageNo": 1,
+      "totalCount": 16
+    }
+  },
+  "ldongCode2_jpn_jeju_sigungu": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "rnum": 1,
+            "code": "110",
+            "name": "チェジュ(済州)市"
+          },
+          {
+            "rnum": 2,
+            "code": "130",
+            "name": "ソグィポ(西帰浦)市"
+          }
+        ]
+      },
+      "numOfRows": 2,
+      "pageNo": 1,
+      "totalCount": 2
+    }
+  },
+  "areaCode2_jpn": {
+    "header": {
+      "resultCode": "0000",
+      "resultMsg": "OK"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "rnum": 1,
+            "code": "1",
+            "name": "ソウル特別市"
+          },
+          {
+            "rnum": 2,
+            "code": "2",
+            "name": "仁川広域市"
+          },
+          {
+            "rnum": 3,
+            "code": "3",
+            "name": "大田広域市"
+          },
+          {
+            "rnum": 4,
+            "code": "4",
+            "name": "大邱広域市"
+          },
+          {
+            "rnum": 5,
+            "code": "5",
+            "name": "光州広域市"
+          },
+          {
+            "rnum": 6,
+            "code": "6",
+            "name": "釜山広域市"
+          },
+          {
+            "rnum": 7,
+            "code": "7",
+            "name": "蔚山広域市"
+          },
+          {
+            "rnum": 8,
+            "code": "8",
+            "name": "世宗特別自治市"
+          },
+          {
+            "rnum": 9,
+            "code": "31",
+            "name": "京畿道"
+          },
+          {
+            "rnum": 10,
+            "code": "32",
+            "name": "江原道"
+          },
+          {
+            "rnum": 11,
+            "code": "33",
+            "name": "忠清北道"
+          },
+          {
+            "rnum": 12,
+            "code": "34",
+            "name": "忠清南道"
+          },
+          {
+            "rnum": 13,
+            "code": "35",
+            "name": "慶尚北道"
+          },
+          {
+            "rnum": 14,
+            "code": "36",
+            "name": "慶尚南道"
+          },
+          {
+            "rnum": 15,
+            "code": "37",
+            "name": "チョンブク特別自治道"
+          },
+          {
+            "rnum": 16,
+            "code": "38",
+            "name": "全羅南道"
+          },
+          {
+            "rnum": 17,
+            "code": "39",
+            "name": "済州特別自治道"
+          }
+        ]
+      },
+      "numOfRows": 17,
+      "pageNo": 1,
+      "totalCount": 17
+    }
+  }
+}

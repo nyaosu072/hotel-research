@@ -1,0 +1,103 @@
+{
+  "Rankings": [
+    {
+      "Ranking": {
+        "genre": "premium",
+        "title": "【楽天トラベル】お客さま評価ランキング【高級ホテル、旅館】",
+        "lastBuildDate": "20141102163318",
+        "hotels": [
+          {
+            "hotel": {
+              "rank": 1,
+              "hotelNo": 129997,
+              "hotelName": "＆Ｈａｎａ　Ｓｔａｙ",
+              "middleClassName": "沖縄県",
+              "userReview": "豊かな自然に囲まれてゆったりと過ごすことができたことはもちろんですが、１番良かったと思うのは、２日目の鉄板焼きと２日目の朝食のパンでした。鉄板焼きのおいしさは今までの方が書かれている通りの絶品でした。…　2014-10-29 17:13:01投稿 <a href=\"https://web.travel.rakuten.co.jp/portal/my/toukou.iken?f_hotel_no=129997\" class=\"3click\">つづきはこちら</a>",
+              "reviewCount": 77,
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/yS4PR/?f_no=129997",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/WrBrg/?f_flg=PLAN&f_no=129997",
+              "checkAvailableUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/Ss6mg/?f_no=129997",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/vvC6h/?f_hotel_no=129997",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/129997/129997.jpg",
+              "hotelThumbnailUrl": null,
+              "reviewAverage": 5,
+              "carrier": 0
+            }
+          },
+          {
+            "hotel": {
+              "rank": 2,
+              "hotelNo": 10893,
+              "hotelName": "塩原温泉　割烹旅館　湯の花荘",
+              "middleClassName": "栃木県",
+              "userReview": "10月7日に宿泊しました。サービスがとても良く、お料理も事前に電話があり選ばせていただけたので好き嫌いが多い主人も大満足でした。お部屋も温泉も凄く素敵だし景色も最高でした。皆さん親切で帰りにお土産…　2014-10-09 19:54:00投稿 <a href=\"https://web.travel.rakuten.co.jp/portal/my/toukou.iken?f_hotel_no=10893\" class=\"3click\">つづきはこちら</a>",
+              "reviewCount": 94,
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/yS4PR/?f_no=10893",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/WrBrg/?f_flg=PLAN&f_no=10893",
+              "checkAvailableUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/Ss6mg/?f_no=10893",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/vvC6h/?f_hotel_no=10893",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/10893/10893.jpg",
+              "hotelThumbnailUrl": null,
+              "reviewAverage": 4.94,
+              "carrier": 0
+            }
+          },
+          {
+            "hotel": {
+              "rank": 3,
+              "hotelNo": 138004,
+              "hotelName": "カーサ　ドゥマイ　ビーチホテルオキナワ",
+              "middleClassName": "沖縄県",
+              "userReview": "8月22日から2日間宿泊しました。「素晴らしい！！」の一言です。窓から見える景色はそれは素晴らしく、お庭も緑豊かで綺麗に手入れされています。食事は朝食だけですが、大変美味しく大満足でした。周りが一般の…　2014-08-29 16:39:26投稿 <a href=\"https://web.travel.rakuten.co.jp/portal/my/toukou.iken?f_hotel_no=138004\" class=\"3click\">つづきはこちら</a>",
+              "reviewCount": 66,
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/yS4PR/?f_no=138004",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/WrBrg/?f_flg=PLAN&f_no=138004",
+              "checkAvailableUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/Ss6mg/?f_no=138004",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/vvC6h/?f_hotel_no=138004",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/138004/138004.jpg",
+              "hotelThumbnailUrl": null,
+              "reviewAverage": 4.94,
+              "carrier": 0
+            }
+          },
+          {
+            "hotel": {
+              "rank": 4,
+              "hotelNo": 141114,
+              "hotelName": "伊豆高原　全室露天風呂付客室１日２組の宿　花彩亭（はないろてい）",
+              "middleClassName": "静岡県",
+              "userReview": "改装後初めて利用させて頂きました。途中道がわからなくなってしまいお電話させて頂きましたら、親切丁寧に教えて頂きありがとうございました。お部屋はコンセプトごとに壁紙など統一されていてとてもステキ…　2014-10-30 20:12:48投稿 <a href=\"https://web.travel.rakuten.co.jp/portal/my/toukou.iken?f_hotel_no=141114\" class=\"3click\">つづきはこちら</a>",
+              "reviewCount": 28,
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/yS4PR/?f_no=141114",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/WrBrg/?f_flg=PLAN&f_no=141114",
+              "checkAvailableUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/Ss6mg/?f_no=141114",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/vvC6h/?f_hotel_no=141114",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/141114/141114.jpg",
+              "hotelThumbnailUrl": null,
+              "reviewAverage": 4.94,
+              "carrier": 0
+            }
+          },
+          {
+            "hotel": {
+              "rank": 5,
+              "hotelNo": 51737,
+              "hotelName": "霧島温泉郷　鳥遊ぶ森の宿　ふたり静",
+              "middleClassName": "鹿児島県",
+              "userReview": "食事も美味しく、器も凝っていて、従業員の方も、感じよく対応してくださいました。　2014-10-20 21:59:30投稿",
+              "reviewCount": 107,
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/yS4PR/?f_no=51737",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/WrBrg/?f_flg=PLAN&f_no=51737",
+              "checkAvailableUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/Ss6mg/?f_no=51737",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/ra/vvC6h/?f_hotel_no=51737",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/51737/51737.jpg",
+              "hotelThumbnailUrl": null,
+              "reviewAverage": 4.93,
+              "carrier": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

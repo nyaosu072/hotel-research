@@ -1,0 +1,194 @@
+{
+  "areaClasses": {
+    "largeClasses": [
+      {
+        "largeClass": {
+          "largeClassCode": "japan",
+          "largeClassName": "日本",
+          "middleClasses": [
+            {
+              "middleClass": {
+                "middleClassCode": "tokyo",
+                "middleClassName": "東京都",
+                "smallClasses": [
+                  {
+                    "smallClass": {
+                      "smallClassCode": "tokyo",
+                      "smallClassName": "東京２３区内",
+                      "detailClasses": [
+                        {
+                          "detailClass": {
+                            "detailClassCode": "A",
+                            "detailClassName": "東京駅・銀座・秋葉原・東陽町・葛西"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "B",
+                            "detailClassName": "新橋・汐留・浜松町・お台場"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "C",
+                            "detailClassName": "赤坂・六本木・霞ヶ関・永田町"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "D",
+                            "detailClassName": "渋谷・恵比寿・目黒・二子玉川"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "E",
+                            "detailClassName": "品川・大井町・蒲田・羽田空港"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "F",
+                            "detailClassName": "新宿・中野・荻窪・四谷"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "G",
+                            "detailClassName": "池袋・赤羽・巣鴨・大塚"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "H",
+                            "detailClassName": "東京ドーム・飯田橋・御茶ノ水"
+                          }
+                        },
+                        {
+                          "detailClass": {
+                            "detailClassCode": "I",
+                            "detailClassName": "上野・浅草・錦糸町・新小岩・北千住"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "nishi",
+                      "smallClassName": "立川・八王子・町田・府中・吉祥寺"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "okutama",
+                      "smallClassName": "奥多摩・青梅・羽村"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "ritou",
+                      "smallClassName": "八丈島"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "oshima",
+                      "smallClassName": "大島"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "kouzu",
+                      "smallClassName": "神津島・新島・式根島"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "miyake",
+                      "smallClassName": "三宅島"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "Ogasawara",
+                      "smallClassName": "小笠原諸島"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "middleClass": {
+                "middleClassCode": "kanagawa",
+                "middleClassName": "神奈川県",
+                "smallClasses": [
+                  {
+                    "smallClass": {
+                      "smallClassCode": "yokohama",
+                      "smallClassName": "横浜"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "kawasaki",
+                      "smallClassName": "川崎"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "hakone",
+                      "smallClassName": "箱根"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "odawara",
+                      "smallClassName": "小田原"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "yugawara",
+                      "smallClassName": "湯河原・真鶴"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "sagamiko",
+                      "smallClassName": "相模湖・丹沢"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "sagamihara",
+                      "smallClassName": "大和・相模原・町田西部"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "ebina",
+                      "smallClassName": "厚木・海老名・伊勢原"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "shonan",
+                      "smallClassName": "湘南・鎌倉・江ノ島・藤沢・平塚"
+                    }
+                  },
+                  {
+                    "smallClass": {
+                      "smallClassCode": "miura",
+                      "smallClassName": "横須賀・三浦"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

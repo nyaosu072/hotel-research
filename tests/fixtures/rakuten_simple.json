@@ -1,0 +1,474 @@
+{
+  "jp:tokyo:tokyo:A": {
+    "pagingInfo": {
+      "recordCount": 361,
+      "pageCount": 73,
+      "page": 1,
+      "first": 1,
+      "last": 5
+    },
+    "hotels": [
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 141356,
+              "hotelName": "高濃度炭酸泉　八重桜の湯　スーパーホテルＰｒｅｍｉｅｒ東京駅八重洲中央口",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=141356",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=141356&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=141356",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=141356",
+              "hotelKanaName": "やえざくらのゆ　すーぱーほてるぷれみあとうきょうえきやえすちゅうおうぐち",
+              "hotelSpecial": "おもてなし規格 紫認証ホテル（経済産業省）　東京駅から徒歩3分！男女別の大浴場は健康イオン水と炭酸泉",
+              "hotelMinCharge": 10330,
+              "latitude": 35.67922715,
+              "longitude": 139.7698432,
+              "postalCode": "104-0028",
+              "address1": "東京都",
+              "address2": "中央区八重洲2-2-7　 ",
+              "telephoneNo": "03-3241-9000",
+              "faxNo": "03-3241-9003",
+              "access": "東京駅より徒歩３分（八重洲中央口より）、羽田空港よりリムジンバスで30分、成田空港よりJRエクスプレスで60分。",
+              "parkingInformation": "事前予約制立体駐車場/1泊3000円 /入庫時間・車高制限有",
+              "nearestStation": "東京",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/141356/141356.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/141356.jpg",
+              "roomImageUrl": null,
+              "roomThumbnailUrl": null,
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/141356/141356map.gif",
+              "reviewCount": 4384,
+              "reviewAverage": 4.44,
+              "userReview": "立地は良いが部屋が狭くリピートはなし部屋がとにかく狭くてびっくりでした。東京駅前という立地の良さで選んだのですがリピートはしないと思います。チェックイン時やウェルカムバーのスタッフの方々はとても親…　2026-10-23 20:34:30投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=141356\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.54,
+              "locationAverage": 4.49,
+              "roomAverage": 4.39,
+              "equipmentAverage": 4.41,
+              "bathAverage": 4.43,
+              "mealAverage": 4.44
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 74637,
+              "hotelName": "アパホテル＆リゾート〈東京ベイ潮見〉",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=74637",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=74637&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=74637",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=74637",
+              "hotelKanaName": "あぱほてるあんどりぞーと　とうきょうべいしおみ",
+              "hotelSpecial": "舞浜駅、東京駅から電車で10分以内！プール・大浴殿を完備！！",
+              "hotelMinCharge": 6210,
+              "latitude": 35.65790168,
+              "longitude": 139.8188291,
+              "postalCode": "135-0052",
+              "address1": "東京都",
+              "address2": "江東区潮見2-8-6",
+              "telephoneNo": "0570-056-111",
+              "faxNo": "03-5653-8112",
+              "access": "JR京葉線「潮見駅」東口から右手正面（「舞浜駅」まで9分、「東京駅」まで最短7分）",
+              "parkingInformation": "敷地内47台　駐車後24時間1,500円先着順予約不可　駐車台数に限りがある為、ご了承くださいませ。",
+              "nearestStation": "潮見",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/74637/74637.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/74637.jpg",
+              "roomImageUrl": null,
+              "roomThumbnailUrl": null,
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/74637/74637map.gif",
+              "reviewCount": 17942,
+              "reviewAverage": 4.27,
+              "userReview": "接客や衛生面に不安があり、館内も迷路のよう接客がひどすぎる。あれで給料もらってるなんて信じられない。館内は、お化けが出そうなくらい汚くて怖い。迷路になってるからどこにいるかわからない。火事が起きた…　2026-10-24 19:25:01投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=74637\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.26,
+              "locationAverage": 4.26,
+              "roomAverage": 4.22,
+              "equipmentAverage": 4.23,
+              "bathAverage": 4.25,
+              "mealAverage": 4.38
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 153347,
+              "hotelName": "京急ＥＸイン　東銀座",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=153347",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=153347&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=153347",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=153347",
+              "hotelKanaName": "けいきゅういーえっくすいんひがしぎんざ",
+              "hotelSpecial": "【日本初出店】パニーニ専門店『PONTE NUOVO CAFE』オープン！チェックアウト11時☆",
+              "hotelMinCharge": 8160,
+              "latitude": 35.66717586280237,
+              "longitude": 139.77031389510645,
+              "postalCode": "104-0045",
+              "address1": "東京都",
+              "address2": "中央区築地2丁目１５－１５",
+              "telephoneNo": "03-5565-3910",
+              "faxNo": "03-6264-7730",
+              "access": "日比谷線築地駅2番出口から徒歩約2分　浅草線・日比谷線東銀座駅5番(階段)3番(エスカレーター)出口から徒歩約4分　",
+              "parkingInformation": "提携している駐車場のご用意はございません。当館1階コインパーキングの空車状況ご案内や予約はできません",
+              "nearestStation": "東銀座",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/153347/153347.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/153347.jpg",
+              "roomImageUrl": null,
+              "roomThumbnailUrl": null,
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/153347/153347map.gif",
+              "reviewCount": 2201,
+              "reviewAverage": 4.28,
+              "userReview": "銀座で泊まるならここ、妻も大満足の定宿リピートで3回目の宿泊、決してラグジャリーではないですけど銀座での宿泊はここにしたいと思わせるホテルです。トータルで嫌な思いを一度もしたことがないです。今回は…　2026-10-25 00:53:46投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=153347\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.2,
+              "locationAverage": 4.28,
+              "roomAverage": 4.29,
+              "equipmentAverage": 4.21,
+              "bathAverage": 4.14,
+              "mealAverage": 4.34
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 4822,
+              "hotelName": "ホテルイースト２１東京（オークラホテルズ＆リゾーツ）",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=4822",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=4822&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=4822",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=4822",
+              "hotelKanaName": "いーすと　にじゅういち　とうきょう",
+              "hotelSpecial": "東京駅から電車で約30分！東陽町駅から徒歩7分！19世紀のヨーロッパの雰囲気漂うホテル",
+              "hotelMinCharge": 7200,
+              "latitude": 35.67500241,
+              "longitude": 139.8140788,
+              "postalCode": "135-0016",
+              "address1": "東京都",
+              "address2": "江東区東陽6-3-3",
+              "telephoneNo": "03-5683-5683",
+              "faxNo": "03-5683-5775",
+              "access": "東京メトロ東西線「東陽町駅」1番出口より徒歩約７分、JR錦糸町駅から都営バスで約15分",
+              "parkingInformation": "有（地下駐車場 車高2.1Ｍまで)1泊1台1,500円",
+              "nearestStation": "東陽町",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/4822/4822.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/4822.jpg",
+              "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/4822/4822_heya.jpg",
+              "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/4822.jpg",
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/4822/4822map.gif",
+              "reviewCount": 5221,
+              "reviewAverage": 4.41,
+              "userReview": "スカイツリーを望む最高の眺望と静かな環境お部屋からスカイツリーが大きく真正面に見えてサイコーのロケーション、大満足でした。隣からの音や声は聞こえず、静かに過ごせました。朝食バイキングはもう…　2026-10-25 00:40:17投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=4822\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.43,
+              "locationAverage": 4.34,
+              "roomAverage": 4.42,
+              "equipmentAverage": 4.34,
+              "bathAverage": 4.28,
+              "mealAverage": 4.48
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 165175,
+              "hotelName": "ホテルインターゲート東京京橋",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=165175",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=165175&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=165175",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=165175",
+              "hotelKanaName": "いんたーげーととうきょうきょうばし",
+              "hotelSpecial": "東京メトロ銀座線　京橋駅／都営地下鉄浅草線　宝町駅より徒歩約１分。充実の無料ラウンジサービス！",
+              "hotelMinCharge": 12200,
+              "latitude": 35.6755515288483,
+              "longitude": 139.77084773313518,
+              "postalCode": "104-0031",
+              "address1": "東京都",
+              "address2": "中央区京橋3-7-8",
+              "telephoneNo": "03-5524-2929",
+              "faxNo": "03-5524-2928",
+              "access": "東京メトロ銀座線　京橋駅／都営地下鉄浅草線　宝町駅より徒歩約１分。JR東京駅八重洲南口より徒歩10分",
+              "parkingInformation": "有り　機械式立体駐車場　１８台　２，０００円（税込み／泊）　先着順　車高制限155cm",
+              "nearestStation": "京橋（東京）",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/165175/165175.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/165175.jpg",
+              "roomImageUrl": null,
+              "roomThumbnailUrl": null,
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/165175/165175map.gif",
+              "reviewCount": 1061,
+              "reviewAverage": 4.37,
+              "userReview": "落ち着いたラウンジ立地も東京駅から近いし、ウェルカムドリンクや、時間帯に合わせた無料のおもてなし、朝のバイキングも種類が豊富で、野菜も新鮮!全部美味しかったです。また、早朝、落ち着いたラウンジ…　2026-10-24 00:22:43投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=165175\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.33,
+              "locationAverage": 4.37,
+              "roomAverage": 4.34,
+              "equipmentAverage": 4.27,
+              "bathAverage": 4.21,
+              "mealAverage": 4.57
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "jp:kanagawa:hakone": {
+    "pagingInfo": {
+      "recordCount": 367,
+      "pageCount": 74,
+      "page": 1,
+      "first": 1,
+      "last": 5
+    },
+    "hotels": [
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 19684,
+              "hotelName": "箱根湯本温泉　ホテル　おかだ",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=19684",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=19684&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=19684",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=19684",
+              "hotelKanaName": "はこねゆもとおんせん　おかだ",
+              "hotelSpecial": "５本の源泉持ち、豊富な湯量、良質の温泉が楽しめる宿。展望大浴場、足湯、湯の里（特別優待）と種類も豊富",
+              "hotelMinCharge": 16400,
+              "latitude": 35.22668083,
+              "longitude": 139.0922494,
+              "postalCode": "250-0312",
+              "address1": "神奈川県",
+              "address2": "足柄下郡箱根町湯本茶屋191",
+              "telephoneNo": "0460-85-6000",
+              "faxNo": "0460-85-5774",
+              "access": "箱根湯本駅～徒歩２０分（温泉郷共同バス有料（詳細は公式ＨＰをご参照下さい）／小田原厚木道路・箱根口～国道１号線経由１５分",
+              "parkingInformation": "有り　50台　無料　※チェックイン前は12時以降、翌日は12時迄利用可能（滞在時間外は、事前連絡要）",
+              "nearestStation": "箱根湯本",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19684/19684.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/19684.jpg",
+              "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19684/19684_r.jpg",
+              "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/19684.jpg",
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19684/19684map.gif",
+              "reviewCount": 1853,
+              "reviewAverage": 4.42,
+              "userReview": "バイキングの食事も温泉も良かったです足の悪い家族と一緒だったため内風呂温泉付きのお部屋にしました。露天風呂と違って寒さ(温度差)を感じずに入れたのでとても快適でした。角部屋で緑の木々や川がすぐ…　2026-10-24 00:00:48投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=19684\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.43,
+              "locationAverage": 4.22,
+              "roomAverage": 4.38,
+              "equipmentAverage": 4.29,
+              "bathAverage": 4.38,
+              "mealAverage": 4.47
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 30888,
+              "hotelName": "箱根湯本温泉　ホテル南風荘",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=30888",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=30888&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=30888",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=30888",
+              "hotelKanaName": "なんぷうそう",
+              "hotelSpecial": "花崗や青石をふんだんに用いた大浴場や露天風呂で箱根の自然を満喫　旬の味覚を揃えたお料理をご堪能下さい",
+              "hotelMinCharge": 13200,
+              "latitude": 35.22548651,
+              "longitude": 139.0920273,
+              "postalCode": "250-0312",
+              "address1": "神奈川県",
+              "address2": "足柄下郡箱根町湯本茶屋179番地",
+              "telephoneNo": "0460-85-5505",
+              "faxNo": "0460-85-5944",
+              "access": "箱根湯本駅より有料旅館共同バス７分片道大人２００円小学生１００円",
+              "parkingInformation": "有　100台　無料　先着順",
+              "nearestStation": "箱根湯本",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/30888/30888.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/30888.jpg",
+              "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/30888/30888_w.jpg",
+              "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/30888.jpg",
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/30888/30888map.gif",
+              "reviewCount": 1855,
+              "reviewAverage": 4.44,
+              "userReview": "客室露天風呂と個室での食事、充実のアメニティに大満足母娘3人で宿泊しました。お部屋は広く、きれいに整えられており、快適に過ごすことができました。食事はスタンダードなプランでしたが、夕食は種…　2026-10-23 14:24:51投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=30888\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.49,
+              "locationAverage": 4.27,
+              "roomAverage": 4.39,
+              "equipmentAverage": 4.38,
+              "bathAverage": 4.52,
+              "mealAverage": 4.55
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 84721,
+              "hotelName": "箱根湯本温泉　天成園",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=84721",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=84721&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=84721",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=84721",
+              "hotelKanaName": "はこねゆもとおんせん　てんせいえん",
+              "hotelSpecial": "瀧の流れる庭園と、大自然に抱かれた天空大露天風呂が魅力な箱根湯本温泉の人気宿。",
+              "hotelMinCharge": 12947,
+              "latitude": 35.22861679,
+              "longitude": 139.0946575,
+              "postalCode": "250-0311",
+              "address1": "神奈川県",
+              "address2": "足柄下郡箱根町湯本682",
+              "telephoneNo": "0460-83-8511",
+              "faxNo": "0460-83-8512",
+              "access": "箱根湯本駅から徒歩で15分。または旅館協同組合の送迎バス（有料200円）Aコース『滝通り行き』にて5分。",
+              "parkingInformation": "有り（170台/予約不要）",
+              "nearestStation": "箱根湯本",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/84721/84721.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/84721.jpg",
+              "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/84721/84721_k.jpg",
+              "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/84721.jpg",
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/84721/84721map.gif",
+              "reviewCount": 4703,
+              "reviewAverage": 4.25,
+              "userReview": "部屋が綺麗で選べる浴衣とライブキッチンが最高部屋のガキが二つあって部屋がきれいで作務衣と浴衣選べてよかった。ライブキッチンも出来たてが食べられて良かった。また機会があれば行きたいです。クチコミ…　2026-10-24 22:24:21投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=84721\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.18,
+              "locationAverage": 4.31,
+              "roomAverage": 4.26,
+              "equipmentAverage": 4.24,
+              "bathAverage": 4.5,
+              "mealAverage": 4.33
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 1727,
+              "hotelName": "富士屋ホテル",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=1727",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=1727&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=1727",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=1727",
+              "hotelKanaName": "ふじやほてる",
+              "hotelSpecial": "◇おかげさまで創業148周年◇明治11年創業の箱根のクラシックホテル",
+              "hotelMinCharge": 27775,
+              "latitude": 35.24445019,
+              "longitude": 139.058946,
+              "postalCode": "250-0404",
+              "address1": "神奈川県",
+              "address2": "足柄下郡箱根町宮ノ下359",
+              "telephoneNo": "0460-82-2211",
+              "faxNo": "0460-82-2210",
+              "access": "箱根登山鉄道「宮ノ下駅」より 徒歩７分 / 小田原厚木道路「箱根口IC」より国道1号線経由20分 （11㎞）",
+              "parkingInformation": "有り(無料)",
+              "nearestStation": "宮ノ下",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/1727/1727.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/1727.jpg",
+              "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/1727/1727_r.jpg",
+              "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/1727.jpg",
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/1727/1727map.gif",
+              "reviewCount": 2305,
+              "reviewAverage": 4.74,
+              "userReview": "美術館のような空間と充実した食事に感動設えもサービスも素晴らしかった。美術館に泊まっているようだった。食事はヴィーガン対応の食事など幅広い選択ができるメニューが用意されていて、誰と来ても満…　2026-10-24 09:58:50投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=1727\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.75,
+              "locationAverage": 4.74,
+              "roomAverage": 4.76,
+              "equipmentAverage": 4.76,
+              "bathAverage": 4.68,
+              "mealAverage": 4.78
+            }
+          }
+        ]
+      },
+      {
+        "hotel": [
+          {
+            "hotelBasicInfo": {
+              "hotelNo": 19786,
+              "hotelName": "箱根湯本温泉　女性に優しい癒しの宿　ホテルマイユクール祥月",
+              "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=19786",
+              "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/cHNRi/?f_no=19786&f_flg=PLAN",
+              "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/TDZXm/?noTomariHotel=19786",
+              "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=19786",
+              "hotelKanaName": "はこねゆもとおんせん　じょせいにやさしいいやしのやど　ほてるまいゆくーるしょうげつ",
+              "hotelSpecial": "◆全室禁煙、女性に優しい美肌の湯が自慢の縁結びの宿",
+              "hotelMinCharge": 14000,
+              "latitude": 35.2298224,
+              "longitude": 139.1019846,
+              "postalCode": "250-0311",
+              "address1": "神奈川県",
+              "address2": "足柄下郡箱根町湯本468-1",
+              "telephoneNo": "0460-85-5748",
+              "faxNo": "0460-85-8245",
+              "access": "箱根湯本駅下車徒歩１２分／小田原厚木道路箱根口ＩＣから2ｋｍ　箱根神社約40分／箱根ターンパイク約10分",
+              "parkingInformation": "有り　２０台　先着順",
+              "nearestStation": "箱根湯本",
+              "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19786/19786.jpg",
+              "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/19786.jpg",
+              "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19786/19786_ky.jpg",
+              "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/19786.jpg",
+              "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19786/19786map.gif",
+              "reviewCount": 6729,
+              "reviewAverage": 4.55,
+              "userReview": "多種多様な前菜の数々に感動!夕食の前菜が銀杏とあわび茸とろろ蒸し、チリビーンズクロケット、ほうれん草のビシソワーズトマトコンソメゼリー、ミートソースパイ、ペコロスと鴨のパストラミのピンチョス、鰻の…　2026-10-24 22:27:35投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/hs/RmfmX/?f_hotel_no=19786\" class=\"3click\">つづきはこちら</a>"
+            }
+          },
+          {
+            "hotelRatingInfo": {
+              "serviceAverage": 4.6,
+              "locationAverage": 4.24,
+              "roomAverage": 4.46,
+              "equipmentAverage": 4.41,
+              "bathAverage": 4.52,
+              "mealAverage": 4.71
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

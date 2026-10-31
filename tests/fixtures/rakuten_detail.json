@@ -1,0 +1,49 @@
+{
+  "hotels": [
+    {
+      "hotel": [
+        {
+          "hotelBasicInfo": {
+            "hotelNo": 19684,
+            "hotelName": "箱根湯本温泉　ホテル　おかだ",
+            "hotelInformationUrl": "https://img.travel.rakuten.co.jp/image/tr/api/if/uPw0Q/?f_no=19684",
+            "planListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/if/ZwI4Q/?f_no=19684&f_flg=PLAN",
+            "dpPlanListUrl": "https://img.travel.rakuten.co.jp/image/tr/api/if/G02wZ/?noTomariHotel=19684",
+            "reviewUrl": "https://img.travel.rakuten.co.jp/image/tr/api/if/50xNk/?f_hotel_no=19684",
+            "hotelKanaName": "はこねゆもとおんせん　おかだ",
+            "hotelSpecial": "５本の源泉持ち、豊富な湯量、良質の温泉が楽しめる宿。展望大浴場、足湯、湯の里（特別優待）と種類も豊富",
+            "hotelMinCharge": 16400,
+            "latitude": 35.22668083,
+            "longitude": 139.0922494,
+            "postalCode": "250-0312",
+            "address1": "神奈川県",
+            "address2": "足柄下郡箱根町湯本茶屋191",
+            "telephoneNo": "0460-85-6000",
+            "faxNo": "0460-85-5774",
+            "access": "箱根湯本駅～徒歩２０分（温泉郷共同バス有料（詳細は公式ＨＰをご参照下さい）／小田原厚木道路・箱根口～国道１号線経由１５分",
+            "parkingInformation": "有り　50台　無料　※チェックイン前は12時以降、翌日は12時迄利用可能（滞在時間外は、事前連絡要）",
+            "nearestStation": "箱根湯本",
+            "hotelImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19684/19684.jpg",
+            "hotelThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/90/19684.jpg",
+            "roomImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19684/19684_r.jpg",
+            "roomThumbnailUrl": "https://img.travel.rakuten.co.jp/HIMG/INTERIOR/19684.jpg",
+            "hotelMapImageUrl": "https://img.travel.rakuten.co.jp/share/HOTEL/19684/19684map.gif",
+            "reviewCount": 1853,
+            "reviewAverage": 4.42,
+            "userReview": "バイキングの食事も温泉も良かったです足の悪い家族と一緒だったため内風呂温泉付きのお部屋にしました。露天風呂と違って寒さ(温度差)を感じずに入れたのでとても快適でした。角部屋で緑の木々や川がすぐ…　2026-10-24 00:00:48投稿 <a href=\"https://img.travel.rakuten.co.jp/image/tr/api/if/50xNk/?f_hotel_no=19684\" class=\"3click\">つづきはこちら</a>"
+          }
+        },
+        {
+          "hotelRatingInfo": {
+            "serviceAverage": 4.43,
+            "locationAverage": 4.22,
+            "roomAverage": 4.38,
+            "equipmentAverage": 4.29,
+            "bathAverage": 4.38,
+            "mealAverage": 4.47
+          }
+        }
+      ]
+    }
+  ]
+}
