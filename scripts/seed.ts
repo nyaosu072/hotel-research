@@ -3,6 +3,7 @@ import { load } from "@std/dotenv";
 import { createClient } from "@supabase/supabase-js";
 import { fillEmpty } from "../supabase/functions/_shared/merge.ts";
 import { matchHotel, normalizeName } from "../supabase/functions/_shared/match.ts";
+import { matchWithRegion } from "../supabase/functions/_shared/seedmatch.ts";
 import { regionFromAddress } from "../supabase/functions/_shared/region.ts";
 import type { HotelRow } from "../supabase/functions/_shared/types.ts";
 
@@ -24,7 +25,9 @@ function parse(text: string): Record<string, string>[] {
   }
   if (f || row.length) { row.push(f); rows.push(row); }
   const [head, ...body] = rows;
-  return body.filter((r) => r.length === head.length).map((r) => Object.fromEntries(head.map((h, i) => [h, r[i].trim()])));
+  const bad = body.filter((r) => r.length !== head.length).length;
+  if (bad) throw new Error(`CSV: ${bad} rows with column count != header`);
+  return body.map((r) => Object.fromEntries(head.map((h, i) => [h, r[i].trim()])));
 }
 const csv = (f: string) => parse(Deno.readTextFileSync(`data/${f}`));
 const nn = (s: string) => (s === "" ? null : s);
@@ -56,6 +59,11 @@ for (const r of csv("awards_jp.csv").concat(csv("awards_kr.csv"))) {
     };
     groups.set(key, g);
   }
+  // 같은 그룹의 뒤 행으로 빈 필드 보충
+  for (const k of ["name_ja", "name_en", "name_ko", "type", "homepage", "address"] as const) {
+    if (!g.fields[k] && nn(r[k])) (g.fields as Record<string, unknown>)[k] = r[k];
+  }
+  g.fields.region_code ??= r.address ? regionFromAddress(country, r.address) : null;
   const a = { kind: r.award, grade: nn(r.grade), year: r.year ? Number(r.year) : null };
   g.awards.set(`${a.kind}|${a.grade}|${a.year}`, a);
 }
@@ -78,7 +86,7 @@ const ambiguousList: string[] = [];
 for (const g of groups.values()) {
   const prior = byExt.get(g.ext);
   if (prior) { g.hotel = prior; g.mode = "existing-award"; continue; }
-  const m = matchHotel(g.fields, cands[g.country]);
+  const m = matchWithRegion(g.fields, cands[g.country]);
   if (m.match) { g.hotel = m.match; g.mode = "matched"; }
   else if (m.ambiguous) { g.mode = "ambiguous"; ambiguousList.push(`${g.key} (${g.fields.name_en ?? g.fields.name_ja ?? g.fields.name_ko})`); }
 }
@@ -135,7 +143,11 @@ for (let i = 0; i < hotelIds.length; i += 100) {
     if (error) throw error;
   }
 }
-const awardRows = [...groups.values()].flatMap((g) => [...g.awards.values()].map((a) => ({ hotel_id: ids.get(g.key), ...a })));
+const awardMap = new Map<string, Record<string, unknown>>(); // 두 그룹이 같은 기존 호텔에 붙어도 중복 방지
+for (const g of groups.values()) {
+  for (const a of g.awards.values()) awardMap.set(`${ids.get(g.key)}|${a.kind}|${a.grade}|${a.year}`, { hotel_id: ids.get(g.key), ...a });
+}
+const awardRows = [...awardMap.values()];
 const mediaRows = media.map(({ key, ...m }) => ({ hotel_id: ids.get(key), ...m }));
 for (const [t, rows] of [["awards", awardRows], ["media_mentions", mediaRows]] as const) {
   for (let i = 0; i < rows.length; i += 200) {
