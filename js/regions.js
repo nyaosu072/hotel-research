@@ -52,6 +52,17 @@ export function isFetchable(code, tree) {
   return parts.length >= 3;
 }
 
+// 현(県)처럼 바로 검색할 수 없는 상위 지역 → 그 아래 검색 가능한 세부 지역 코드 전부 (일본만; 한국 갱신은 보강 전용)
+export function leafCodes(code, tree) {
+  if (!code.startsWith("jp:")) return [];
+  const p = tree && findPath(tree, code);
+  if (!p) return [];
+  const out = [];
+  const walk = (r) => (r.children?.length ? r.children.forEach(walk) : isFetchable(r.code, tree) && out.push(r.code));
+  walk(p.at(-1));
+  return out;
+}
+
 // best-effort prefecture/시도 from an address (manual add)
 export function guessRegion(tree, address) {
   const a = (address ?? "").normalize("NFKC").trim();

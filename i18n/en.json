@@ -46,6 +46,7 @@
   "empty.region": "No candidates in this region yet.",
   "empty.filtered": "No hotels match the filters.",
   "banner.refreshing": "Fetching the latest data…",
+  "banner.refreshing_n": "Searching areas in this prefecture… {done}/{total}",
   "banner.in_progress": "Someone else is refreshing. This list reloads shortly.",
   "banner.stale": "Not up to date (last updated: {at})",
   "banner.never": "never",

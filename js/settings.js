@@ -25,6 +25,8 @@ export async function mount(view, _slot, session) {
       const { error: err } = await sb.from("settings").upsert({ key: KEY, value: Number(raw) }, { onConflict: "key" });
       save.disabled = false;
       if (err) { msg.className = "msg err"; msg.textContent = t("err.save"); save.textContent = t("action.retry"); return; }
+      // 기준가가 바뀌었으니 일본 지역 캐시를 비워, 다음에 지역을 열 때 새 기준으로 다시 검색되게 한다
+      await sb.from("region_cache").update({ refreshed_at: null }).eq("country", "JP");
       msg.textContent = ""; save.textContent = t("action.save");
       toast(t("saved"));
     },

@@ -46,6 +46,7 @@
   "empty.region": "この地域にはまだ候補がありません",
   "empty.filtered": "条件に合う施設がありません。",
   "banner.refreshing": "最新の情報を取得しています…",
+  "banner.refreshing_n": "県内の地域を検索しています… {done}/{total}",
   "banner.in_progress": "他のメンバーが更新中です。しばらくして自動で再読み込みします",
   "banner.stale": "最新ではありません (最終更新: {at})",
   "banner.never": "未更新",

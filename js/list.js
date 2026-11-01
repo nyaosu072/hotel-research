@@ -5,7 +5,7 @@ import { fill, clear, copyText, ext, fmtMD, h, hostOf, icon, safeUrl, toast } fr
 import { badges, formatPrice, mapsQuery, names } from "./hotel.js";
 import { defaultFilters, filterHotels, loadFilters, saveFilters, sortHotels, statusOf } from "./filters.js";
 import { STATUSES } from "./status.js";
-import { findPath, isFetchable, loadRegions, regionFilter, rname } from "./regions.js";
+import { findPath, isFetchable, leafCodes, loadRegions, regionFilter, rname } from "./regions.js";
 import { createMap } from "./map.js";
 import { openDetail } from "./detail.js";
 import { route } from "./app.js";
@@ -95,6 +95,29 @@ export async function mount(view, slot, session) {
     return data;
   }
 
+  // 현 단위 선택: 아래 세부 지역을 2개씩 차례로 갱신(최신인 곳은 서버가 바로 "fresh"로 답함), 끝나면 목록 다시 읽기
+  async function refreshMany(codes, code, my, force) {
+    let done = 0, added = 0;
+    S.busy = true; S.banner = { k: "refreshing_n", done, total: codes.length };
+    renderBanner(); renderBarLeft();
+    const queue = [...codes];
+    await Promise.all([0, 1].map(async () => {
+      for (let c = queue.shift(); c; c = queue.shift()) {
+        if (!me.alive || my !== S.req) return;
+        const { data } = await callFn("fetch-region", { region_code: c, force: !!force });
+        if (data?.status === "refreshed") added += data.count ?? 0;
+        done++;
+        if (my === S.req) { S.banner = { k: "refreshing_n", done, total: codes.length }; renderBanner(); }
+      }
+    }));
+    if (!me.alive || my !== S.req) return;
+    S.busy = false; S.banner = null;
+    S.hotels = await queryDb(code);
+    if (!me.alive || my !== S.req) return;
+    renderAll(); rebindDrawer();
+    if (added) toast(t("banner.refreshed", { n: added }));
+  }
+
   async function load(code, force) {
     const my = ++S.req;
     Object.assign(S, { hotels: [], banner: null, loading: true, busy: false });
@@ -104,7 +127,12 @@ export async function mount(view, slot, session) {
     Object.assign(S, { hotels: rows, loading: false, loadedFor: code });
     renderAll();
     if (S.openId) { const id = S.openId; S.openId = null; openHotel(id); }
-    if (!isFetchable(code, S.tree)) { S.refreshedAt = null; renderBarLeft(); return; }
+    if (!isFetchable(code, S.tree)) {
+      S.refreshedAt = null; renderBarLeft();
+      const leaves = leafCodes(code, S.tree);
+      if (leaves.length) await refreshMany(leaves, code, my, force);
+      return;
+    }
 
     S.busy = true; S.banner = { k: "refreshing" };
     renderBanner(); renderBarLeft();
@@ -160,7 +188,7 @@ export async function mount(view, slot, session) {
       if (!cur) break;
       level = cur.children;
     }
-    const canRefresh = S.region && isFetchable(S.region, S.tree);
+    const canRefresh = S.region && (isFetchable(S.region, S.tree) || leafCodes(S.region, S.tree).length > 0);
     fill(barLeft, 
       h("div", { class: "seg", role: "group", "aria-label": t("bar.country") },
         ...[["JP", "bar.jp"], ["KR", "bar.kr"]].map(([c, k]) => h("button", {
@@ -183,6 +211,7 @@ export async function mount(view, slot, session) {
     const b = S.banner;
     if (!b) return;
     const text = b.k === "refreshing" ? t("banner.refreshing")
+      : b.k === "refreshing_n" ? t("banner.refreshing_n", { done: b.done, total: b.total })
       : b.k === "in_progress" ? t("banner.in_progress")
       : b.k === "stale" ? t("banner.stale", { at: b.at ? fmtMD(b.at) : t("banner.never") })
       : t("banner.error");
