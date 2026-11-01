@@ -19,5 +19,10 @@ Deno.test("isSafeUrl", () => {
   assertEquals(isSafeUrl("http://192.168.1.1/"), false);
   assertEquals(isSafeUrl("http://169.254.169.254/latest"), false);
   assertEquals(isSafeUrl("http://[::1]/"), false);
+  assertEquals(isSafeUrl("http://[::ffff:127.0.0.1]/"), false);
+  assertEquals(isSafeUrl("http://[::ffff:10.0.0.1]/"), false);
+  assertEquals(isSafeUrl("http://100.64.0.1/"), false);
+  assertEquals(isSafeUrl("http://100.127.255.255/"), false);
+  assertEquals(isSafeUrl("http://100.128.0.1/"), true);
   assertEquals(isSafeUrl("not a url"), false);
 });

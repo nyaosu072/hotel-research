@@ -30,11 +30,11 @@ export function isSafeUrl(raw: string): boolean {
   try { u = new URL(raw); } catch { return false; }
   if (u.protocol !== "http:" && u.protocol !== "https:") return false;
   const h = u.hostname.replace(/^\[|\]$/g, "").toLowerCase();
-  if (h === "localhost" || h.endsWith(".localhost") || h === "::1" || h.startsWith("fc") || h.startsWith("fd") || h.startsWith("fe80")) return false;
+  if (h === "localhost" || h.endsWith(".localhost") || h === "::1" || h.startsWith("fc") || h.startsWith("fd") || h.startsWith("fe80") || h.startsWith("::ffff:")) return false;
   const v4 = h.match(/^(\d+)\.(\d+)\.(\d+)\.(\d+)$/);
   if (v4) {
     const [a, b] = [Number(v4[1]), Number(v4[2])];
-    if (a === 10 || a === 127 || a === 0 || (a === 169 && b === 254) || (a === 172 && b >= 16 && b <= 31) || (a === 192 && b === 168)) return false;
+    if (a === 10 || a === 127 || a === 0 || (a === 169 && b === 254) || (a === 100 && b >= 64 && b <= 127) || (a === 172 && b >= 16 && b <= 31) || (a === 192 && b === 168)) return false;
   }
   // ponytail: 호스트명 기준 검사만 함. DNS가 사설 IP로 풀리는 도메인은 못 막음 — Supabase Edge 런타임은 내부망 접근이 없어서 위험이 낮음.
   return true;

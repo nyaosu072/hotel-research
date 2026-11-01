@@ -52,8 +52,18 @@ Deno.serve(async (req) => {
     if (!homepage || !isSafeUrl(homepage)) return reply(400, { error: "no_homepage" });
 
     try {
-      const res = await fetch(homepage, { signal: AbortSignal.timeout(10_000), redirect: "follow" });
-      if (!res.ok || !isSafeUrl(res.url || homepage)) return reply(200, { emails: [] });
+      // 리다이렉트는 직접 따라가며 매 hop의 Location을 검사한다 (최대 3회)
+      const signal = AbortSignal.timeout(10_000);
+      let res: Response, next = homepage;
+      for (let hop = 0;; hop++) {
+        res = await fetch(next, { signal, redirect: "manual" });
+        const loc = res.headers.get("location");
+        if (res.status < 300 || res.status >= 400 || !loc) break;
+        await res.body?.cancel().catch(() => {});
+        next = new URL(loc, next).href;
+        if (hop >= 3 || !isSafeUrl(next)) return reply(200, { emails: [] });
+      }
+      if (!res.ok) return reply(200, { emails: [] });
       return reply(200, { emails: extractEmails(await readCapped(res)) });
     } catch {
       return reply(200, { emails: [] });
