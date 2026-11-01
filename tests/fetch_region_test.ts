@@ -188,3 +188,21 @@ Deno.test({ name: "fetch-region: concurrent calls -> one refreshes, one gets 202
     await cleanup(code);
   }
 });
+
+Deno.test({ name: "fetch-region: award twin is promoted to rakuten, not duplicated", ignore: !hasEnv }, async () => {
+  const pref = `jp:test-${rand()}`, code = `${pref}:x`, f = fake();
+  try {
+    const name = rakuten.hotels[0].hotel[0].hotelBasicInfo.hotelName;
+    const { data: aw } = await db.from("hotels").insert({
+      country: "JP", region_code: pref, source: "award", external_id: `t-${rand()}`, name_ja: name, homepage: "https://award.test/",
+    }).select("id").single();
+    await db.from("awards").insert({ hotel_id: aw.id, kind: "michelin", grade: "2", year: 2024 });
+    await db.from("region_cache").insert({ country: "JP", region_code: code, refreshed_at: hoursAgo(25) });
+    await handle({ region_code: code }, mkDeps(f));
+    const { data: rows } = await db.from("hotels").select("id, source, homepage, awards(kind)").or(`region_code.eq.${pref},region_code.like.${code}%`).eq("name_ja", name);
+    assertEquals(rows.length, 1);
+    assertEquals([rows[0].id, rows[0].source, rows[0].homepage, rows[0].awards.length], [aw.id, "rakuten", "https://award.test/", 1]);
+  } finally {
+    await cleanup(pref);
+  }
+});

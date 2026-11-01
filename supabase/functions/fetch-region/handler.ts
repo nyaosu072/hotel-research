@@ -37,7 +37,8 @@ async function refreshJapan(code: string, d: Deps): Promise<number> {
   let min = d.minChargeJpy;
   if (min === undefined) {
     const s = must(await d.db.from("settings").select("value").eq("key", "discovery_min_charge_jpy").maybeSingle());
-    min = Number(s?.value) || 50000;
+    const n = s?.value == null ? NaN : Number(s.value);
+    min = Number.isFinite(n) ? n : 50000;
   }
   const { hotels } = await fetchRakutenRegion(code, d.env, d.fetchFn, d.sleep, min);
   const byId = new Map<string, Record<string, unknown>>();
@@ -52,9 +53,30 @@ async function refreshJapan(code: string, d: Deps): Promise<number> {
     const rows = must(await d.db.from("hotels").select("*").eq("source", "rakuten").in("external_id", ids.slice(i, i + 100)));
     for (const r of rows as HotelRow[]) existing.set(r.external_id!, r);
   }
+  // 같은 호텔이 award/manual 행으로 이미 있으면(지역 코드가 같거나 상·하위) 새로 만들지 않고 그 행을 라쿠텐 행으로 승격한다.
+  const fresh = [...byId.keys()].filter((id) => !existing.has(id));
+  let twins: HotelRow[] = [];
+  if (fresh.length) {
+    const parts = code.split(":");
+    const conds = [`region_code.eq.${code}`, `region_code.like.${code}:*`];
+    for (let i = 2; i < parts.length; i++) conds.push(`region_code.eq.${parts.slice(0, i).join(":")}`);
+    twins = must(await d.db.from("hotels").select("*").eq("country", "JP").in("source", ["award", "manual"]).or(conds.join(","))) as HotelRow[];
+  }
+  const claimed = new Set<string>();
   const bulk: unknown[] = [], locked: { id: string; patch: unknown }[] = [];
   for (const [id, row] of byId) {
     const ex = existing.get(id) ?? null;
+    if (!ex && twins.length) {
+      const { match, ambiguous } = matchHotel(row as Partial<HotelRow>, twins.filter((t) => !claimed.has(t.id)));
+      if (match && !ambiguous) {
+        claimed.add(match.id);
+        const patch = Object.fromEntries(
+          Object.entries(mergeHotel(match, row as Partial<HotelRow>)).filter(([k, v]) => v != null && !(k === "type" && match.type)),
+        );
+        locked.push({ id: match.id, patch: { ...patch, source: "rakuten", external_id: id } });
+        continue;
+      }
+    }
     const patch = mergeHotel(ex, row as Partial<HotelRow>);
     if (ex && ex.manual_fields?.length) locked.push({ id: ex.id, patch }); // 열 구성이 달라 개별 update
     else bulk.push(patch);
