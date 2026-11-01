@@ -44,15 +44,12 @@ export function regionFilter(sel) {
   return conds.join(",");
 }
 
-// fetch-region needs a small area (JP) / 시군구 (KR); a KR 시도 without children is itself fetchable (Sejong).
+// fetch-region needs a leaf area: JP 3+ part code without children, KR 시군구 or a childless 시도 (Sejong).
 export function isFetchable(code, tree) {
   const parts = code.split(":");
-  if (parts.length >= 3) return true;
-  if (code.startsWith("kr:") && parts.length === 2) {
-    const p = tree && findPath(tree, code);
-    return !!p && !(p[0].children?.length);
-  }
-  return false;
+  const p = tree && findPath(tree, code);
+  if (p) return !p.at(-1).children?.length && (parts.length >= 3 || code.startsWith("kr:"));
+  return parts.length >= 3;
 }
 
 // best-effort prefecture/시도 from an address (manual add)

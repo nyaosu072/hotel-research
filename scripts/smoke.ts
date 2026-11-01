@@ -63,6 +63,11 @@ try {
   const as = await sb.from("research").upsert({ hotel_id: h.id, status: "contacted", assignee: "smoke" }, { onConflict: "hotel_id" }).select("*").single();
   check("assignee upsert keeps status", !as.error && as.data.status === "contacted" && as.data.assignee === "smoke");
 
+  // I1: assignee save must not touch status (a teammate's newer status survives)
+  await sb.rpc("set_research_status", { p_hotel_id: h.id, p_status: "confirmed" });
+  const only = await sb.from("research").upsert({ hotel_id: h.id, assignee: "smoke2" }, { onConflict: "hotel_id" }).select("*").single();
+  check("assignee-only upsert keeps confirmed status", !only.error && only.data.status === "confirmed" && only.data.assignee === "smoke2");
+
   const ci = await sb.from("contacts").insert({ hotel_id: h.id, name: "T", email: "t@example.com" }).select("id").single();
   const cu = await sb.from("contacts").update({ phone: "1" }).eq("id", ci.data!.id);
   const cd = await sb.from("contacts").delete().eq("id", ci.data!.id);

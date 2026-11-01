@@ -71,3 +71,13 @@ Deno.test("R15 region filter + fetchable", () => {
   }
   assertEquals(threw, true);
 });
+
+Deno.test("isFetchable: only leaf areas", () => {
+  const jp = JSON.parse(Deno.readTextFileSync("data/regions_jp.json")), kr = JSON.parse(Deno.readTextFileSync("data/regions_kr.json"));
+  assertEquals(isFetchable("jp:tokyo:tokyo", jp), false); // has detail children
+  assertEquals(isFetchable("jp:tokyo:tokyo:A", jp), true);
+  assertEquals(isFetchable("jp:kanagawa:hakone", jp), true);
+  assertEquals(isFetchable("jp:kanagawa", jp), false);
+  assertEquals(isFetchable("kr:11", kr), false);
+  assertEquals(isFetchable("kr:11:110", kr), true);
+});

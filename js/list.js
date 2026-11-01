@@ -114,13 +114,28 @@ export async function mount(view, slot, session) {
     const st = data?.status;
     if (st === "refreshed") { S.banner = null; const rows2 = await queryDb(code); if (!me.alive || my !== S.req) return; S.hotels = rows2; toast(t("banner.refreshed", { n: data.count })); }
     else if (st === "fresh") S.banner = null;
-    else if (st === "in_progress") { S.banner = { k: "in_progress" }; setTimeout(async () => { if (me.alive && my === S.req) { S.hotels = await queryDb(code); S.banner = null; renderAll(); } }, 8000); }
+    else if (st === "in_progress") {
+      S.banner = { k: "in_progress" };
+      (async () => { // another client is refreshing: ask again (cheap once fresh) up to 3 times, then reload
+        for (let i = 0; i < 3; i++) {
+          await new Promise((r) => setTimeout(r, 8000));
+          if (!me.alive || my !== S.req) return;
+          const { data: d2 } = await callFn("fetch-region", { region_code: code, force: false });
+          if (!me.alive || my !== S.req) return;
+          if (d2?.status !== "in_progress") break;
+        }
+        const rows3 = await queryDb(code);
+        if (!me.alive || my !== S.req) return;
+        S.hotels = rows3; S.banner = null; renderAll(); rebindDrawer();
+      })();
+    }
     else if (st === "upstream_failed") S.banner = { k: "stale", at: data.refreshed_at };
     else S.banner = { k: "error" };
     const { data: rc } = await sb.from("region_cache").select("refreshed_at").eq("country", S.country).eq("region_code", code).maybeSingle();
     if (!me.alive || my !== S.req) return;
     S.refreshedAt = rc?.refreshed_at ?? null;
     renderAll();
+    if (st === "refreshed") rebindDrawer();
   }
 
   function selectRegion(code) {
@@ -294,6 +309,11 @@ export async function mount(view, slot, session) {
     });
     rowsEl.querySelectorAll(".row").forEach((r) => r.setAttribute("aria-selected", String(r.dataset.id === id)));
     map.focus(id);
+  }
+  // list reloaded while the drawer is open: point it at the new hotel object, or close it if the row is gone
+  function rebindDrawer() {
+    if (!S.openId || drawer.hidden) return;
+    if (S.hotels.some((r) => r.id === S.openId)) openHotel(S.openId); else closeDrawer();
   }
   function closeDrawer() {
     S.openId = null;

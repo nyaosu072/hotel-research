@@ -73,13 +73,14 @@ function editable(hotel, ctx, { label, col, view, missing, extra }) {
       const r = spec.parse(input.value);
       if (r.err) { msg.textContent = r.err; return; }
       save.disabled = true; msg.textContent = "";
-      const { data, error } = await saveHotel(hotel, patchFor(hotel, col, r.value), [col]);
+      const patch = patchFor(hotel, col, r.value);
+      const { data, error } = await saveHotel(hotel, patch, Object.keys(patch));
       save.disabled = false;
       if (error) { msg.textContent = errMsg(error); save.textContent = t("action.retry"); return; }
       Object.assign(hotel, data);
       ctx.onChange(hotel);
       toast(t("saved"));
-      show();
+      if (col === "homepage") ctx.rerender(); else show(); // homepage gates status buttons and find-email
     };
     save.onclick = run;
     input.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); run(); } });
@@ -127,7 +128,7 @@ function statusSection(hotel, ctx) {
     const aSave = h("button", { class: "btn small" }, t("action.save"));
     aSave.onclick = async () => {
       aSave.disabled = true; aMsg.textContent = "";
-      const { data, error } = await sb.from("research").upsert({ hotel_id: hotel.id, status: cur, assignee: assignee.value.trim() || null }, { onConflict: "hotel_id" }).select("*").single();
+      const { data, error } = await sb.from("research").upsert({ hotel_id: hotel.id, assignee: assignee.value.trim() || null }, { onConflict: "hotel_id" }).select("*").single();
       aSave.disabled = false;
       if (error) { aMsg.textContent = errMsg(error); aSave.textContent = t("action.retry"); return; }
       hotel.research = data; ctx.onChange(hotel); toast(t("saved"));
@@ -156,6 +157,7 @@ function statusSection(hotel, ctx) {
 }
 
 export function openDetail(drawer, hotel, ctx) {
+  ctx = { ...ctx, rerender: () => { const y = drawer.scrollTop; openDetail(drawer, hotel, ctx); drawer.scrollTop = y; } };
   const lang = getLang();
   const nm = names(hotel, lang);
   const img = safeUrl(hotel.image_url);
