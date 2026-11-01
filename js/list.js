@@ -308,7 +308,9 @@ export async function mount(view, slot, session) {
       onChange: () => { renderHead(); renderRows(); map.recolor(); },
     });
     rowsEl.querySelectorAll(".row").forEach((r) => r.setAttribute("aria-selected", String(r.dataset.id === id)));
-    map.focus(id);
+    // 패널이 지도를 전부 덮는 좁은 화면(모바일)에서는 보정하지 않음
+    const cover = drawer.offsetWidth < mapDiv.offsetWidth ? drawer.offsetWidth : 0;
+    map.focus(id, cover);
   }
   // list reloaded while the drawer is open: point it at the new hotel object, or close it if the row is gone
   function rebindDrawer() {

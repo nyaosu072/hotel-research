@@ -39,9 +39,16 @@ export function createMap(el, country, onPick) {
     },
     recolor() { for (const [id, p] of pins) style(id, p); },
     highlight(id) { hot = id; for (const [i, p] of pins) p.marker.setRadius(i === id ? 11 : 7); },
-    focus(id) {
+    // 핀으로 확대 이동. coverPx = 오른쪽을 덮는 상세 패널 폭 → 그만큼 왼쪽 빈 영역 가운데에 오게 한다.
+    focus(id, coverPx = 0) {
       const p = pins.get(id);
-      if (p) { map.panTo(p.marker.getLatLng()); this.highlight(id); }
+      if (!p) return;
+      const zoom = Math.max(map.getZoom(), 15);
+      const pt = map.project(p.marker.getLatLng(), zoom).add([coverPx / 2, 0]);
+      const animate = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+      map.flyTo(map.unproject(pt, zoom), zoom, { animate, duration: 0.6 });
+      this.highlight(id);
+      p.marker.openTooltip();
     },
     invalidate() { map.invalidateSize(); fit(); },
     destroy() { map.remove(); },
