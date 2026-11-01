@@ -14,7 +14,7 @@ JP,パーク ハイアット 京都,Park Hyatt Kyoto,,hotel,brand,Park Hyatt,202
 JP,パーク ハイアット ニセコ HANAZONO,Park Hyatt Niseko Hanazono,,resort,brand,Park Hyatt,2026,https://www.hyatt.com/park-hyatt/en-US/ukbph-park-hyatt-niseko-hanazono,北海道虻田郡倶知安町
 JP,パーク ハイアット 東京,Park Hyatt Tokyo,,hotel,brand,Park Hyatt,2026,https://www.hyatt.com/park-hyatt/en-US/tyoph-park-hyatt-tokyo,東京都新宿区
 JP,マンダリン オリエンタル 東京,Mandarin Oriental Tokyo,,hotel,brand,Mandarin Oriental,2026,https://www.mandarinoriental.com/en/tokyo/nihonbashi,東京都中央区
-JP,ANAインターコンチネンタル安比高原リゾート,ANA InterContinental Appi Kogen Resort,,resort,brand,InterContinental,2026,,岩手県八幡平市
+JP,ANAインターコンチネンタル安比高原リゾート,ANA InterContinental Appi Kogen Resort,,resort,brand,InterContinental,2026,https://www.appi.co.jp/stays/ana-intercontinental-appi-kogen-resort/,岩手県八幡平市
 JP,ANAインターコンチネンタル別府リゾート&スパ,ANA InterContinental Beppu Resort & Spa,,resort,brand,InterContinental,2026,https://www.anaicbeppu.com/,大分県別府市
 JP,ANAインターコンチネンタルホテル東京,ANA InterContinental Tokyo,,hotel,brand,InterContinental,2026,https://anaintercontinental-tokyo.jp/,東京都港区
 JP,インターコンチネンタルホテル大阪,InterContinental Osaka,,hotel,brand,InterContinental,2026,,大阪府大阪市
@@ -57,7 +57,7 @@ JP,ホテル ザ 三井 京都,HOTEL THE MITSUI KYOTO,,hotel,forbes,5,2026,https
 JP,マンダリン オリエンタル 東京,Mandarin Oriental Tokyo,,hotel,forbes,5,2026,https://www.mandarinoriental.com/en/tokyo/nihonbashi,東京都中央区
 JP,パレスホテル東京,Palace Hotel Tokyo,,hotel,forbes,5,2026,https://www.palacehoteltokyo.com/,東京都千代田区
 JP,"ROKU KYOTO, LXR Hotels & Resorts","ROKU KYOTO, LXR Hotels & Resorts",,resort,forbes,5,2026,https://www.rokukyoto.com/,京都府京都市
-JP,高輪花香路,Takanawa Hanakohro,,hotel,forbes,5,2026,,東京都港区
+JP,高輪 花香路,Takanawa Hanakohro,,hotel,forbes,5,2026,https://www.princehotels.co.jp/hanakohro/,東京都港区
 JP,ザ・キャピトルホテル 東急,The Capitol Hotel Tokyu,,hotel,forbes,5,2026,https://www.capitolhoteltokyu.com/,東京都千代田区
 JP,ホテルオークラ東京,The Okura Tokyo,,hotel,forbes,5,2026,https://theokuratokyo.jp/,東京都港区
 JP,ザ・ペニンシュラ東京,The Peninsula Tokyo,,hotel,forbes,5,2026,https://www.peninsula.com/en/tokyo/5-star-luxury-hotel-ginza,東京都千代田区
@@ -102,10 +102,10 @@ JP,ホテルオークラ東京,The Okura Tokyo,,hotel,membership,The Leading Hot
 JP,シャレーアイビー定山渓,Chalet Ivy Jozankei,,resort,membership,Small Luxury Hotels of the World,2026,https://chaletivy.com/,北海道札幌市
 JP,CUVEE J2 Hotel Osaka,CUVEE J2 Hotel Osaka by Onko Chishin,,hotel,membership,Small Luxury Hotels of the World,2026,,大阪府大阪市
 JP,フォション ホテル 京都,FAUCHON L'Hotel Kyoto,,hotel,membership,Small Luxury Hotels of the World,2026,,京都府京都市
-JP,ファイブスプリング リゾート ザ・シラハマ,"Five Spring Resort, The Shirahama",,resort,membership,Small Luxury Hotels of the World,2026,,和歌山県西牟婁郡白浜町
+JP,ファイブスプリング リゾート ザ・シラハマ,"Five Spring Resort, The Shirahama",,resort,membership,Small Luxury Hotels of the World,2026,https://www.hilton.com/ja/hotels/shmfslx-five-spring-resort-the-shirahama/,和歌山県西牟婁郡白浜町
 JP,ホテル長楽館,Hotel Chourakukan,,hotel,membership,Small Luxury Hotels of the World,2026,https://www.chourakukan.co.jp/,京都府京都市
 JP,ホテル雅叙園東京,Hotel Gajoen Tokyo,,hotel,membership,Small Luxury Hotels of the World,2026,https://www.hotelgajoen-tokyo.com/,東京都目黒区
-JP,ホテルグランバッハ熱海クレッシェンド,Hotel GrandBach Atami Crescendo,,hotel,membership,Small Luxury Hotels of the World,2026,,静岡県熱海市
+JP,ホテルグランバッハ熱海クレッシェンド,Hotel GrandBach Atami Crescendo,,hotel,membership,Small Luxury Hotels of the World,2026,https://www.grandbach.co.jp/atami/,静岡県熱海市
 JP,ホテル ラ・スイート神戸ハーバーランド,Hotel La Suite Kobe Harborland,,hotel,membership,Small Luxury Hotels of the World,2026,,兵庫県神戸市
 JP,ホテルシギラ ミラージュ,Hotel Shigira Mirage,,resort,membership,Small Luxury Hotels of the World,2026,https://www.shigira.com/,沖縄県宮古島市
 JP,川奈ホテル,Kawana Hotel Golf Course,,resort,membership,Small Luxury Hotels of the World,2026,,静岡県伊東市
@@ -114,8 +114,8 @@ JP,ソワカ,Sowaka,,hotel,membership,Small Luxury Hotels of the World,2026,http
 JP,ザ・タワーホテルナゴヤ,The Tower Hotel Nagoya,,hotel,membership,Small Luxury Hotels of the World,2026,https://thetowerhotel.jp/,愛知県名古屋市
 JP,あさば,Asaba,,ryokan,membership,Relais & Châteaux,2026,https://www.asaba-ryokan.com/,静岡県伊豆市
 JP,べにや無何有,Beniya Mukayu,,ryokan,membership,Relais & Châteaux,2026,https://www.mukayu.com/,石川県加賀市
-JP,別邸 仙寿庵,Bettei Senjuan,,ryokan,membership,Relais & Châteaux,2026,,群馬県利根郡みなかみ町
-JP,ENOWA 由布院,ENOWA Yufu,,ryokan,membership,Relais & Châteaux,2026,,大分県由布市
+JP,別邸 仙寿庵,Bettei Senjuan,,ryokan,membership,Relais & Châteaux,2026,https://www.senjyuan.jp/,群馬県利根郡みなかみ町
+JP,ENOWA 由布院,ENOWA Yufu,,ryokan,membership,Relais & Châteaux,2026,https://enowa-yufuin.jp/,大分県由布市
 JP,強羅花壇,Gora Kadan,,ryokan,membership,Relais & Châteaux,2026,https://www.gorakadan.com/,神奈川県足柄下郡箱根町
 JP,強羅花壇 富士,Gora Kadan Fuji,,ryokan,membership,Relais & Châteaux,2026,https://www.gorakadan.com/fuji/,静岡県駿東郡小山町
 JP,柊家旅館,Hiiragiya,,ryokan,membership,Relais & Châteaux,2026,https://www.hiiragiya.co.jp/,京都府京都市
@@ -125,7 +125,7 @@ JP,西村屋本館,Nishimuraya Honkan,,ryokan,membership,Relais & Châteaux,2026
 JP,登大路ホテル奈良,Noborioji Hotel Nara,,hotel,membership,Relais & Châteaux,2026,,奈良県奈良市
 JP,天空の森,Tenku no Mori,,resort,membership,Relais & Châteaux,2026,https://www.tenku-no-mori.com/,鹿児島県霧島市
 JP,ザ・キタノホテル東京,The Kitano Hotel Tokyo,,hotel,membership,Relais & Châteaux,2026,,東京都千代田区
-JP,ジ・ウザテラス ビーチクラブヴィラズ,The Uza Terrace Beach Club Villas,,resort,membership,Relais & Châteaux,2026,,沖縄県国頭郡読谷村
+JP,ジ・ウザテラス ビーチクラブヴィラズ,The Uza Terrace Beach Club Villas,,resort,membership,Relais & Châteaux,2026,https://www.terrace.co.jp/en/uza/,沖縄県国頭郡読谷村
 JP,扉温泉 明神館,Tobira Onsen Myojinkan,,ryokan,membership,Relais & Châteaux,2026,,長野県松本市
 JP,アマネム,Amanemu,,resort,michelin,3,2026,https://www.aman.com/resorts/amanemu,三重県志摩市
 JP,あさば,Asaba,,ryokan,michelin,3,2026,https://www.asaba-ryokan.com/,静岡県伊豆市
@@ -138,7 +138,7 @@ JP,アマン京都,Aman Kyoto,,resort,michelin,2,2026,https://www.aman.com/resor
 JP,アマン東京,Aman Tokyo,,hotel,michelin,2,2026,https://www.aman.com/resorts/aman-tokyo,東京都千代田区
 JP,ベネッセハウス,Benesse House,,hotel,michelin,2,2026,https://benesse-artsite.jp/stay/benessehouse/,香川県香川郡直島町
 JP,カペラ京都,Capella Kyoto,,hotel,michelin,2,2026,https://www.capellahotels.com/en/capella-kyoto,京都府京都市
-JP,ENOWA 由布院,ENOWA Yufu,,ryokan,michelin,2,2026,,大分県由布市
+JP,ENOWA 由布院,ENOWA Yufu,,ryokan,michelin,2,2026,https://enowa-yufuin.jp/,大分県由布市
 JP,ふふ 河口湖,FUFU Kawaguchiko,,resort,michelin,2,2026,https://www.fufukawaguchiko.jp/,山梨県南都留郡富士河口湖町
 JP,ふふ 日光,FUFU Nikko,,resort,michelin,2,2026,https://www.fufunikko.jp/,栃木県日光市
 JP,雅叙苑,GAJOEN,,ryokan,michelin,2,2026,https://www.gajoen.jp/,鹿児島県霧島市
@@ -146,35 +146,35 @@ JP,強羅花壇 富士,Gora Kadan Fuji,,ryokan,michelin,2,2026,https://www.gorak
 JP,ハレクラニ沖縄,Halekulani Okinawa,,resort,michelin,2,2026,https://www.okinawa.halekulani.com/,沖縄県国頭郡恩納村
 JP,ジャヌ東京,JANU Tokyo,,hotel,michelin,2,2026,https://www.janu.com/janu-tokyo/,東京都港区
 JP,ジュサンディ,Jusandi,,resort,michelin,2,2026,,沖縄県石垣市
-JP,亀の井別荘,Kamenoi Besso,,ryokan,michelin,2,2026,,大分県由布市
+JP,亀の井別荘,Kamenoi Besso,,ryokan,michelin,2,2026,https://www.kamenoi-bessou.jp/,大分県由布市
 JP,要庵 西富家,Kanamean Nishitomiya,,ryokan,michelin,2,2026,,京都府京都市
 JP,西村屋本館,Nishimuraya Honkan,,ryokan,michelin,2,2026,https://www.nishimuraya.ne.jp/honkan/,兵庫県豊岡市
 JP,御宿 竹林亭,Onyado Chikurintei,,ryokan,michelin,2,2026,https://www.chikurintei.jp/,佐賀県武雄市
 JP,ローズウッド宮古島,Rosewood Miyakojima,,resort,michelin,2,2026,https://www.rosewoodhotels.com/en/miyakojima,沖縄県宮古島市
 JP,石亭,Sekitei,,ryokan,michelin,2,2026,,広島県廿日市市
 JP,ザ・キャピトルホテル 東急,The Capitol Hotel Tokyu,,hotel,michelin,2,2026,https://www.capitolhoteltokyu.com/,東京都千代田区
-JP,THE HIRAMATSU 軽井沢 御代田,The Hiramatsu Karuizawa Miyota,,resort,michelin,2,2026,,長野県北佐久郡御代田町
+JP,THE HIRAMATSU 軽井沢 御代田,The Hiramatsu Karuizawa Miyota,,resort,michelin,2,2026,https://www.hiramatsuhotels.com/miyota/,長野県北佐久郡御代田町
 JP,ザ・リッツ・カールトン日光,"The Ritz-Carlton, Nikko",,resort,michelin,2,2026,https://www.ritzcarlton.com/en/hotels/tyonz-the-ritz-carlton-nikko/overview/,栃木県日光市
 JP,ザ・新門前,The Shinmonzen,,hotel,michelin,2,2026,,京都府京都市
 JP,坐忘林,Zaborin,,ryokan,michelin,2,2026,https://zaborin.com/,北海道虻田郡倶知安町
 JP,1 Hotel 東京,1 Hotel Tokyo,,hotel,michelin,1,2026,https://www.1hotels.com/tokyo,東京都港区
 JP,エースホテル京都,Ace Hotel Kyoto,,hotel,michelin,1,2026,https://acehotel.com/kyoto/,京都府京都市
-JP,ANAインターコンチネンタル安比高原リゾート,ANA InterContinental Appi Kogen Resort,,resort,michelin,1,2026,,岩手県八幡平市
+JP,ANAインターコンチネンタル安比高原リゾート,ANA InterContinental Appi Kogen Resort,,resort,michelin,1,2026,https://www.appi.co.jp/stays/ana-intercontinental-appi-kogen-resort/,岩手県八幡平市
 JP,ANAインターコンチネンタル別府リゾート&スパ,ANA InterContinental Beppu Resort & Spa,,resort,michelin,1,2026,https://www.anaicbeppu.com/,大分県別府市
 JP,アンダーズ 東京,Andaz Tokyo,,hotel,michelin,1,2026,https://www.hyatt.com/andaz/en-US/tyoaz-andaz-tokyo-toranomon-hills,東京都港区
 JP,あらや滔々庵,Araya Totoan,,ryokan,michelin,1,2026,,石川県加賀市
-JP,アルカナ イズ,Arcana Izu,,resort,michelin,1,2026,,静岡県伊豆市
-JP,熱海伊豆山 華楽,Atami Izusan Karaku,,ryokan,michelin,1,2026,,静岡県熱海市
-JP,オーベルジュ 土岐都,Auberge TOKITO,,hotel,michelin,1,2026,,東京都立川市
-JP,AZUMA FARM 小岩井,AZUMA FARM Koiwai,,resort,michelin,1,2026,,岩手県滝沢市
+JP,アルカナ イズ,Arcana Izu,,resort,michelin,1,2026,https://www.arcanaresorts.com/,静岡県伊豆市
+JP,熱海・伊豆山 佳ら久,Atami Izusan Karaku,,ryokan,michelin,1,2026,https://izusan-karaku.orixhotelsandresorts.com/,静岡県熱海市
+JP,オーベルジュ ときと,Auberge TOKITO,,hotel,michelin,1,2026,https://www.aubergetokito.com/,東京都立川市
+JP,AZUMA FARM 小岩井,AZUMA FARM Koiwai,,resort,michelin,1,2026,,岩手県岩手郡雫石町
 JP,アズミ・セトダ,Azumi Setoda,,ryokan,michelin,1,2026,,広島県尾道市
 JP,バンヤンツリー・東山 京都,Banyan Tree Higashiyama Kyoto,,hotel,michelin,1,2026,https://www.banyantree.com/japan/higashiyama-kyoto,京都府京都市
-JP,ベラスター トーキョー パンパシフィック ホテル,"Bellustar Tokyo, A Pan Pacific Hotel",,hotel,michelin,1,2026,,東京都新宿区
+JP,ベラスター トーキョー パンパシフィック ホテル,"Bellustar Tokyo, A Pan Pacific Hotel",,hotel,michelin,1,2026,https://www.panpacific.com/en/hotels-and-resorts/bellustar-tokyo.html,東京都新宿区
 JP,べにや 紅葉殿,Beniya Kofuyuden,,ryokan,michelin,1,2026,,福井県あわら市
 JP,べにや無何有,Beniya Mukayu,,ryokan,michelin,1,2026,https://www.mukayu.com/,石川県加賀市
-JP,別邸 音信,Bettei Otozure,,ryokan,michelin,1,2026,,山口県長門市
-JP,別邸 仙寿庵,Bettei Senjuan,,ryokan,michelin,1,2026,,群馬県利根郡みなかみ町
-JP,BYAKU Narai,BYAKU Narai,,ryokan,michelin,1,2026,,長野県塩尻市
+JP,別邸 音信,Bettei Otozure,,ryokan,michelin,1,2026,https://www.otozure.jp/,山口県長門市
+JP,別邸 仙寿庵,Bettei Senjuan,,ryokan,michelin,1,2026,https://www.senjyuan.jp/,群馬県利根郡みなかみ町
+JP,BYAKU Narai,BYAKU Narai,,ryokan,michelin,1,2026,https://byaku.site/,長野県塩尻市
 JP,カーサ キャバン 葉山,Casa CABaN HAYAMA,,hotel,michelin,1,2026,,神奈川県三浦郡葉山町
 JP,コンラッド大阪,Conrad Osaka,,hotel,michelin,1,2026,https://www.hilton.com/en/hotels/osacici-conrad-osaka/,大阪府大阪市
 JP,ドゥシタニ京都,Dusit Thani Kyoto,,hotel,michelin,1,2026,https://www.dusit.com/dusitthani/kyoto/,京都府京都市
@@ -189,12 +189,12 @@ JP,ふふ 京都,FUFU Kyoto,,resort,michelin,1,2026,https://www.fufukyoto.jp/,�
 JP,ふふ 旧軽井沢 静養の森,FUFU Kyu-Karuizawa Restful Forest,,resort,michelin,1,2026,https://www.fufukaruizawa.jp/,長野県北佐久郡軽井沢町
 JP,ふふ 奈良,FUFU Nara,,resort,michelin,1,2026,https://www.fufunara.jp/,奈良県奈良市
 JP,ふふ 東京銀座,FUFU Tokyo Ginza,,hotel,michelin,1,2026,,東京都中央区
-JP,富岳群青,Fugaku Gunjo,,ryokan,michelin,1,2026,,静岡県伊豆の国市
-JP,富士スピードウェイホテル,Fuji Speedway Hotel,,hotel,michelin,1,2026,,静岡県駿東郡小山町
+JP,富岳群青,Fugaku Gunjo,,ryokan,michelin,1,2026,,静岡県伊豆市
+JP,富士スピードウェイホテル,Fuji Speedway Hotel,,hotel,michelin,1,2026,https://www.hyatt.com/en-US/hotel/japan/fuji-speedway-hotel/fswub,静岡県駿東郡小山町
 JP,ギャリア・二条城 京都,Garrya Nijo Castle Kyoto,,hotel,michelin,1,2026,,京都府京都市
 JP,源氏 京都,Genji Kyoto,,hotel,michelin,1,2026,https://genjikyoto.com/,京都府京都市
-JP,GOTO RETREAT 五島リトリート ray,GOTO RETREAT by Onko Chishin,,resort,michelin,1,2026,,長崎県五島市
-JP,ハシエンダ ビジョン ホテル,Hacienda Vision Hotel,,hotel,michelin,1,2026,,三重県多気郡多気町
+JP,GOTO RETREAT 五島リトリート ray,GOTO RETREAT by Onko Chishin,,resort,michelin,1,2026,https://goto.by-onko-chishin.com/,長崎県五島市
+JP,ハシェンダ ヴィソン ホテル,Hacienda Vision Hotel,,hotel,michelin,1,2026,https://hacienda-vison.jp/,三重県多気郡多気町
 JP,箱根強羅 花扇,Hakone Gora Karaku,,ryokan,michelin,1,2026,,神奈川県足柄下郡箱根町
 JP,ヒガシヤマ ニセコ ビレッジ ザ・リッツ・カールトン・リザーブ,"Higashiyama Niseko Village, a Ritz-Carlton Reserve",,resort,michelin,1,2026,https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/,北海道虻田郡ニセコ町
 JP,柊家旅館,Hiiragiya,,ryokan,michelin,1,2026,https://www.hiiragiya.co.jp/,京都府京都市
@@ -210,21 +210,21 @@ JP,帝国ホテル 京都,Imperial Hotel Kyoto,,hotel,michelin,1,2026,https://ww
 JP,インターコンチネンタルホテル大阪,InterContinental Osaka,,hotel,michelin,1,2026,,大阪府大阪市
 JP,インターコンチネンタル横浜Pier 8,InterContinental Yokohama Pier 8,,hotel,michelin,1,2026,,神奈川県横浜市
 JP,出雲ホテル ザ・クリフ,Izumo Hotel The Cliff,,hotel,michelin,1,2026,,島根県出雲市
-JP,ジヴァナ宮古島,Jivana Miyakojima,,resort,michelin,1,2026,,沖縄県宮古島市
+JP,ジヴァナ宮古島,Jivana Miyakojima,,resort,michelin,1,2026,https://www.jivana-miyako.com/,沖縄県宮古島市
 JP,JWマリオット・ホテル奈良,JW Marriott Hotel Nara,,hotel,michelin,1,2026,https://www.marriott.com/en-us/hotels/ukbjw-jw-marriott-hotel-nara/overview/,奈良県奈良市
 JP,JWマリオット・ホテル東京,JW Marriott Hotel Tokyo,,hotel,michelin,1,2026,https://www.marriott.com/en-us/hotels/tyojw-jw-marriott-hotel-tokyo/overview/,東京都港区
 JP,K5,K5,,hotel,michelin,1,2026,https://k5-tokyo.jp/,東京都中央区
-JP,貴船 右源太,Kifune Ugenta,,ryokan,michelin,1,2026,,京都府京都市
+JP,貴船 右源太,Kifune Ugenta,,ryokan,michelin,1,2026,https://www.ugenta.co.jp/,京都府京都市
 JP,鬼怒川渓翠,Kinugawa Keisui,,ryokan,michelin,1,2026,,栃木県日光市
 JP,マンダリン オリエンタル 東京,Mandarin Oriental Tokyo,,hotel,michelin,1,2026,https://www.mandarinoriental.com/en/tokyo/nihonbashi,東京都中央区
 JP,ムワ ニセコ,Muwa Niseko,,resort,michelin,1,2026,https://www.muwaniseko.com/,北海道虻田郡ニセコ町
 JP,妙見石原荘,Myoken Ishiharaso,,ryokan,michelin,1,2026,,鹿児島県霧島市
-JP,直島旅館 ろ霞,Naoshima Ryokan Roka,,ryokan,michelin,1,2026,,香川県香川郡直島町
+JP,直島旅館 ろ霞,Naoshima Ryokan Roka,,ryokan,michelin,1,2026,https://roka.voyage/,香川県香川郡直島町
 JP,沼津倶楽部,Numazu Club,,ryokan,michelin,1,2026,,静岡県沼津市
 JP,落合楼村上,Ochiairo,,ryokan,michelin,1,2026,https://www.ochiairo.co.jp/,静岡県伊豆市
 JP,ONE SUITE THE GRAND,One Suite THE GRAND,,resort,michelin,1,2026,https://www.onesuite.jp/,沖縄県国頭郡今帰仁村
 JP,オステリア シンチェリータ,Osteria Sincerita,,ryokan,michelin,1,2026,,山形県南陽市
-JP,御宿 The Earth,Oyado The Earth,,resort,michelin,1,2026,,三重県志摩市
+JP,御宿 The Earth,Oyado The Earth,,resort,michelin,1,2026,,三重県鳥羽市
 JP,パーク ハイアット 京都,Park Hyatt Kyoto,,hotel,michelin,1,2026,https://www.hyatt.com/park-hyatt/en-US/kyoph-park-hyatt-kyoto,京都府京都市
 JP,パーク ハイアット ニセコ HANAZONO,Park Hyatt Niseko Hanazono,,resort,michelin,1,2026,https://www.hyatt.com/park-hyatt/en-US/ukbph-park-hyatt-niseko-hanazono,北海道虻田郡倶知安町
 JP,パーク ハイアット 東京,Park Hyatt Tokyo,,hotel,michelin,1,2026,https://www.hyatt.com/park-hyatt/en-US/tyoph-park-hyatt-tokyo,東京都新宿区
@@ -232,13 +232,13 @@ JP,パティーナ大阪,Patina Osaka,,hotel,michelin,1,2026,https://www.patinah
 JP,"ROKU KYOTO, LXR Hotels & Resorts","ROKU KYOTO, LXR Hotels & Resorts",,resort,michelin,1,2026,https://www.rokukyoto.com/,京都府京都市
 JP,旅館 尾道西山,Ryokan Onomichi Nishiyama,,ryokan,michelin,1,2026,,広島県尾道市
 JP,料亭旅館 半水盧,RYOTEI HANZUIRYO,,ryokan,michelin,1,2026,,長崎県雲仙市
-JP,サンカラ ホテル&スパ 屋久島,Sankara Hotel & Spa Yakushima,,resort,michelin,1,2026,,鹿児島県熊毛郡屋久島町
+JP,サンカラ ホテル&スパ 屋久島,Sankara Hotel & Spa Yakushima,,resort,michelin,1,2026,https://www.sankarahotel-spa.com/,鹿児島県熊毛郡屋久島町
 JP,ニセコ 山粋,Sansui Niseko,,resort,michelin,1,2026,https://www.sansuiniseko.com/,北海道虻田郡倶知安町
 JP,里山十帖,Satoyama-Jujo,,ryokan,michelin,1,2026,https://www.satoyama-jujo.com/,新潟県南魚沼市
 JP,瀬戸内リトリート 青凪,SETOUCHI RETREAT by Onko Chishin,,resort,michelin,1,2026,,愛媛県松山市
 JP,セツ ニセコ,Setsu Niseko,,resort,michelin,1,2026,https://www.setsuniseko.com/,北海道虻田郡倶知安町
 JP,シャングリ・ラ 東京,Shangri-La Tokyo,,hotel,michelin,1,2026,https://www.shangri-la.com/en/tokyo/shangrila/,東京都千代田区
-JP,シグチ,SHIGUCHI,,resort,michelin,1,2026,,北海道虻田郡倶知安町
+JP,シグチ,SHIGUCHI,,resort,michelin,1,2026,https://shiguchi.com/,北海道虻田郡倶知安町
 JP,獅子岩ハウス 軽井沢,SHISHI-IWA-HOUSE Karuizawa,,resort,michelin,1,2026,,長野県北佐久郡軽井沢町
 JP,志ら玉 ラグジュアリーコレクションホテル 奈良,"Shisui, a Luxury Collection Hotel, Nara",,hotel,michelin,1,2026,https://www.marriott.com/en-us/hotels/ukbls-shisui-a-luxury-collection-hotel-nara/overview/,奈良県奈良市
 JP,松籟荘,Shoraiso,,ryokan,michelin,1,2026,https://www.shoraiso.com/,長野県下高井郡山ノ内町
