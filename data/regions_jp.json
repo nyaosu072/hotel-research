@@ -1,0 +1,2021 @@
+[
+ {
+  "code": "jp:hokkaido",
+  "name_ja": "北海道",
+  "name_en": "Hokkaido",
+  "children": [
+   {
+    "code": "jp:hokkaido:sapporo",
+    "name_ja": "札幌",
+    "name_en": "Sapporo",
+    "children": [
+     {
+      "code": "jp:hokkaido:sapporo:A",
+      "name_ja": "札幌・新札幌・琴似",
+      "name_en": "Sapporo A"
+     },
+     {
+      "code": "jp:hokkaido:sapporo:B",
+      "name_ja": "大通公園・時計台・狸小路",
+      "name_en": "Sapporo B"
+     },
+     {
+      "code": "jp:hokkaido:sapporo:C",
+      "name_ja": "すすきの・中島公園",
+      "name_en": "Sapporo C"
+     }
+    ]
+   },
+   {
+    "code": "jp:hokkaido:jozankei",
+    "name_ja": "定山渓",
+    "name_en": "Jozankei"
+   },
+   {
+    "code": "jp:hokkaido:wakkanai",
+    "name_ja": "稚内・留萌・利尻・礼文",
+    "name_en": "Wakkanai"
+   },
+   {
+    "code": "jp:hokkaido:abashiri",
+    "name_ja": "網走・紋別・北見・知床",
+    "name_en": "Abashiri"
+   },
+   {
+    "code": "jp:hokkaido:kushiro",
+    "name_ja": "釧路・阿寒・川湯・根室",
+    "name_en": "Kushiro"
+   },
+   {
+    "code": "jp:hokkaido:obihiro",
+    "name_ja": "帯広・十勝",
+    "name_en": "Obihiro"
+   },
+   {
+    "code": "jp:hokkaido:hidaka",
+    "name_ja": "日高・えりも",
+    "name_en": "Hidaka"
+   },
+   {
+    "code": "jp:hokkaido:furano",
+    "name_ja": "富良野・美瑛・トマム",
+    "name_en": "Furano"
+   },
+   {
+    "code": "jp:hokkaido:asahikawa",
+    "name_ja": "旭川・層雲峡・旭岳",
+    "name_en": "Asahikawa"
+   },
+   {
+    "code": "jp:hokkaido:chitose",
+    "name_ja": "千歳・支笏・苫小牧・滝川・夕張・空知",
+    "name_en": "Chitose"
+   },
+   {
+    "code": "jp:hokkaido:otaru",
+    "name_ja": "小樽・キロロ・積丹・余市",
+    "name_en": "Otaru"
+   },
+   {
+    "code": "jp:hokkaido:niseko",
+    "name_ja": "ルスツ・ニセコ・倶知安",
+    "name_en": "Niseko"
+   },
+   {
+    "code": "jp:hokkaido:hakodate",
+    "name_ja": "函館・湯の川・大沼・奥尻",
+    "name_en": "Hakodate"
+   },
+   {
+    "code": "jp:hokkaido:noboribetsu",
+    "name_ja": "洞爺・室蘭・登別",
+    "name_en": "Noboribetsu"
+   }
+  ]
+ },
+ {
+  "code": "jp:aomori",
+  "name_ja": "青森県",
+  "name_en": "Aomori",
+  "children": [
+   {
+    "code": "jp:aomori:aomori",
+    "name_ja": "青森・浅虫温泉",
+    "name_en": "Aomori"
+   },
+   {
+    "code": "jp:aomori:tsugaru",
+    "name_ja": "津軽半島・五所川原",
+    "name_en": "Tsugaru"
+   },
+   {
+    "code": "jp:aomori:ntsugaru",
+    "name_ja": "白神山地・西津軽",
+    "name_en": "Ntsugaru"
+   },
+   {
+    "code": "jp:aomori:hirosaki",
+    "name_ja": "弘前・黒石",
+    "name_en": "Hirosaki"
+   },
+   {
+    "code": "jp:aomori:towadako",
+    "name_ja": "八甲田・十和田湖・奥入瀬",
+    "name_en": "Towadako"
+   },
+   {
+    "code": "jp:aomori:hachinohe",
+    "name_ja": "八戸・三沢・七戸十和田",
+    "name_en": "Hachinohe"
+   },
+   {
+    "code": "jp:aomori:shimokita",
+    "name_ja": "下北・大間・むつ",
+    "name_en": "Shimokita"
+   }
+  ]
+ },
+ {
+  "code": "jp:iwate",
+  "name_ja": "岩手県",
+  "name_en": "Iwate",
+  "children": [
+   {
+    "code": "jp:iwate:morioka",
+    "name_ja": "盛岡",
+    "name_en": "Morioka"
+   },
+   {
+    "code": "jp:iwate:shizukuishi",
+    "name_ja": "雫石",
+    "name_en": "Shizukuishi"
+   },
+   {
+    "code": "jp:iwate:appi",
+    "name_ja": "安比高原・八幡平・二戸",
+    "name_en": "Appi"
+   },
+   {
+    "code": "jp:iwate:kuji",
+    "name_ja": "宮古・久慈・岩泉",
+    "name_en": "Kuji"
+   },
+   {
+    "code": "jp:iwate:ofunato",
+    "name_ja": "釜石・大船渡・陸前高田",
+    "name_en": "Ofunato"
+   },
+   {
+    "code": "jp:iwate:kitakami",
+    "name_ja": "北上・花巻・遠野",
+    "name_en": "Kitakami"
+   },
+   {
+    "code": "jp:iwate:ichinoseki",
+    "name_ja": "奥州・平泉・一関",
+    "name_en": "Ichinoseki"
+   }
+  ]
+ },
+ {
+  "code": "jp:miyagi",
+  "name_ja": "宮城県",
+  "name_en": "Miyagi",
+  "children": [
+   {
+    "code": "jp:miyagi:sendai",
+    "name_ja": "仙台・多賀城・名取",
+    "name_en": "Sendai"
+   },
+   {
+    "code": "jp:miyagi:akiu",
+    "name_ja": "秋保・作並",
+    "name_en": "Akiu"
+   },
+   {
+    "code": "jp:miyagi:naruko",
+    "name_ja": "鳴子・古川・くりこま高原",
+    "name_en": "Naruko"
+   },
+   {
+    "code": "jp:miyagi:matsushima",
+    "name_ja": "松島・塩釜・石巻・南三陸・気仙沼",
+    "name_en": "Matsushima"
+   },
+   {
+    "code": "jp:miyagi:shiroishi",
+    "name_ja": "白石・宮城蔵王",
+    "name_en": "Shiroishi"
+   }
+  ]
+ },
+ {
+  "code": "jp:akita",
+  "name_ja": "秋田県",
+  "name_en": "Akita",
+  "children": [
+   {
+    "code": "jp:akita:akita",
+    "name_ja": "秋田",
+    "name_en": "Akita"
+   },
+   {
+    "code": "jp:akita:noshiro",
+    "name_ja": "能代・男鹿・白神",
+    "name_en": "Noshiro"
+   },
+   {
+    "code": "jp:akita:odate",
+    "name_ja": "大館・鹿角・十和田大湯・八幡平",
+    "name_en": "Odate"
+   },
+   {
+    "code": "jp:akita:tazawa",
+    "name_ja": "角館・大曲・田沢湖",
+    "name_en": "Tazawa"
+   },
+   {
+    "code": "jp:akita:yuzawa",
+    "name_ja": "湯沢・横手",
+    "name_en": "Yuzawa"
+   },
+   {
+    "code": "jp:akita:honjo",
+    "name_ja": "由利本荘・鳥海山",
+    "name_en": "Honjo"
+   }
+  ]
+ },
+ {
+  "code": "jp:yamagata",
+  "name_ja": "山形県",
+  "name_en": "Yamagata",
+  "children": [
+   {
+    "code": "jp:yamagata:yamagata",
+    "name_ja": "山形・蔵王・天童・上山",
+    "name_en": "Yamagata"
+   },
+   {
+    "code": "jp:yamagata:yonezawa",
+    "name_ja": "米沢・赤湯・高畠・長井",
+    "name_en": "Yonezawa"
+   },
+   {
+    "code": "jp:yamagata:sagae",
+    "name_ja": "寒河江・月山",
+    "name_en": "Sagae"
+   },
+   {
+    "code": "jp:yamagata:mogami",
+    "name_ja": "尾花沢・新庄・村山",
+    "name_en": "Mogami"
+   },
+   {
+    "code": "jp:yamagata:shonai",
+    "name_ja": "酒田・鶴岡・湯野浜・温海",
+    "name_en": "Shonai"
+   }
+  ]
+ },
+ {
+  "code": "jp:hukushima",
+  "name_ja": "福島県",
+  "name_en": "Hukushima",
+  "children": [
+   {
+    "code": "jp:hukushima:fukushima",
+    "name_ja": "福島・二本松",
+    "name_en": "Fukushima"
+   },
+   {
+    "code": "jp:hukushima:aizu",
+    "name_ja": "会津若松・喜多方",
+    "name_en": "Aizu"
+   },
+   {
+    "code": "jp:hukushima:bandai",
+    "name_ja": "猪苗代・表磐梯",
+    "name_en": "Bandai"
+   },
+   {
+    "code": "jp:hukushima:urabandai",
+    "name_ja": "磐梯高原・裏磐梯",
+    "name_en": "Urabandai"
+   },
+   {
+    "code": "jp:hukushima:koriyama",
+    "name_ja": "郡山・磐梯熱海",
+    "name_en": "Koriyama"
+   },
+   {
+    "code": "jp:hukushima:minami",
+    "name_ja": "南会津・下郷・只見・檜枝岐",
+    "name_en": "Minami"
+   },
+   {
+    "code": "jp:hukushima:nakadori",
+    "name_ja": "白河・須賀川",
+    "name_en": "Nakadori"
+   },
+   {
+    "code": "jp:hukushima:hamadori",
+    "name_ja": "いわき・南相馬・相馬",
+    "name_en": "Hamadori"
+   }
+  ]
+ },
+ {
+  "code": "jp:ibaragi",
+  "name_ja": "茨城県",
+  "name_en": "Ibaragi",
+  "children": [
+   {
+    "code": "jp:ibaragi:mito",
+    "name_ja": "水戸・笠間",
+    "name_en": "Mito"
+   },
+   {
+    "code": "jp:ibaragi:oarai",
+    "name_ja": "大洗・ひたちなか",
+    "name_en": "Oarai"
+   },
+   {
+    "code": "jp:ibaragi:hitachi",
+    "name_ja": "日立・北茨城・奥久慈",
+    "name_en": "Hitachi"
+   },
+   {
+    "code": "jp:ibaragi:tsukuba",
+    "name_ja": "つくば・土浦・取手",
+    "name_en": "Tsukuba"
+   },
+   {
+    "code": "jp:ibaragi:yuki",
+    "name_ja": "古河・結城・筑西・常総",
+    "name_en": "Yuki"
+   },
+   {
+    "code": "jp:ibaragi:kashima",
+    "name_ja": "鹿嶋・神栖・潮来・北浦",
+    "name_en": "Kashima"
+   }
+  ]
+ },
+ {
+  "code": "jp:tochigi",
+  "name_ja": "栃木県",
+  "name_en": "Tochigi",
+  "children": [
+   {
+    "code": "jp:tochigi:utsunomiya",
+    "name_ja": "宇都宮・さくら",
+    "name_en": "Utsunomiya"
+   },
+   {
+    "code": "jp:tochigi:nikko",
+    "name_ja": "日光・中禅寺湖・奥日光・今市",
+    "name_en": "Nikko"
+   },
+   {
+    "code": "jp:tochigi:kinugawa",
+    "name_ja": "鬼怒川・川治・湯西川・川俣",
+    "name_en": "Kinugawa"
+   },
+   {
+    "code": "jp:tochigi:nasu",
+    "name_ja": "那須・板室・黒磯",
+    "name_en": "Nasu"
+   },
+   {
+    "code": "jp:tochigi:shiobara",
+    "name_ja": "塩原・矢板・大田原・西那須野",
+    "name_en": "Shiobara"
+   },
+   {
+    "code": "jp:tochigi:mashiko",
+    "name_ja": "真岡・益子・茂木",
+    "name_en": "Mashiko"
+   },
+   {
+    "code": "jp:tochigi:koyama",
+    "name_ja": "小山・足利・佐野・栃木",
+    "name_en": "Koyama"
+   }
+  ]
+ },
+ {
+  "code": "jp:gunma",
+  "name_ja": "群馬県",
+  "name_en": "Gunma",
+  "children": [
+   {
+    "code": "jp:gunma:maebashi",
+    "name_ja": "前橋・赤城",
+    "name_en": "Maebashi"
+   },
+   {
+    "code": "jp:gunma:ikaho",
+    "name_ja": "伊香保温泉・渋川",
+    "name_en": "Ikaho"
+   },
+   {
+    "code": "jp:gunma:manza",
+    "name_ja": "万座･嬬恋･北軽井沢",
+    "name_en": "Manza"
+   },
+   {
+    "code": "jp:gunma:kusatsu",
+    "name_ja": "草津温泉・白根",
+    "name_en": "Kusatsu"
+   },
+   {
+    "code": "jp:gunma:shimaonsen",
+    "name_ja": "四万温泉",
+    "name_en": "Shimaonsen"
+   },
+   {
+    "code": "jp:gunma:numata",
+    "name_ja": "水上・猿ヶ京・沼田",
+    "name_en": "Numata"
+   },
+   {
+    "code": "jp:gunma:oze",
+    "name_ja": "尾瀬・丸沼",
+    "name_en": "Oze"
+   },
+   {
+    "code": "jp:gunma:kiryu",
+    "name_ja": "伊勢崎・太田・館林・桐生",
+    "name_en": "Kiryu"
+   },
+   {
+    "code": "jp:gunma:takasaki",
+    "name_ja": "高崎",
+    "name_en": "Takasaki"
+   },
+   {
+    "code": "jp:gunma:fujioka",
+    "name_ja": "富岡・藤岡・安中・磯部温泉",
+    "name_en": "Fujioka"
+   }
+  ]
+ },
+ {
+  "code": "jp:saitama",
+  "name_ja": "埼玉県",
+  "name_en": "Saitama",
+  "children": [
+   {
+    "code": "jp:saitama:saitama",
+    "name_ja": "大宮・浦和・川口・上尾",
+    "name_en": "Saitama"
+   },
+   {
+    "code": "jp:saitama:kasukabe",
+    "name_ja": "草加・越谷・春日部・羽生",
+    "name_en": "Kasukabe"
+   },
+   {
+    "code": "jp:saitama:kumagaya",
+    "name_ja": "熊谷・深谷・本庄",
+    "name_en": "Kumagaya"
+   },
+   {
+    "code": "jp:saitama:kawagoe",
+    "name_ja": "川越・東松山・志木・和光",
+    "name_en": "Kawagoe"
+   },
+   {
+    "code": "jp:saitama:tokorozawa",
+    "name_ja": "所沢・狭山・飯能",
+    "name_en": "Tokorozawa"
+   },
+   {
+    "code": "jp:saitama:chichibu",
+    "name_ja": "秩父・長瀞",
+    "name_en": "Chichibu"
+   }
+  ]
+ },
+ {
+  "code": "jp:tiba",
+  "name_ja": "千葉県",
+  "name_en": "Tiba",
+  "children": [
+   {
+    "code": "jp:tiba:chiba",
+    "name_ja": "千葉",
+    "name_en": "Chiba"
+   },
+   {
+    "code": "jp:tiba:keiyo",
+    "name_ja": "舞浜・浦安・船橋・幕張",
+    "name_en": "Keiyo"
+   },
+   {
+    "code": "jp:tiba:kashiwa",
+    "name_ja": "松戸・柏",
+    "name_en": "Kashiwa"
+   },
+   {
+    "code": "jp:tiba:narita",
+    "name_ja": "成田空港・佐倉",
+    "name_en": "Narita"
+   },
+   {
+    "code": "jp:tiba:choshi",
+    "name_ja": "銚子・旭・九十九里・東金・茂原",
+    "name_en": "Choshi"
+   },
+   {
+    "code": "jp:tiba:sotobo",
+    "name_ja": "鴨川・勝浦・御宿・養老渓谷",
+    "name_en": "Sotobo"
+   },
+   {
+    "code": "jp:tiba:tateyama",
+    "name_ja": "南房総・館山・白浜・千倉",
+    "name_en": "Tateyama"
+   },
+   {
+    "code": "jp:tiba:uchibo",
+    "name_ja": "市原・木更津・君津・富津・鋸南",
+    "name_en": "Uchibo"
+   }
+  ]
+ },
+ {
+  "code": "jp:tokyo",
+  "name_ja": "東京都",
+  "name_en": "Tokyo",
+  "children": [
+   {
+    "code": "jp:tokyo:tokyo",
+    "name_ja": "東京２３区内",
+    "name_en": "Tokyo",
+    "children": [
+     {
+      "code": "jp:tokyo:tokyo:A",
+      "name_ja": "東京駅・銀座・秋葉原・東陽町・葛西",
+      "name_en": "Tokyo A"
+     },
+     {
+      "code": "jp:tokyo:tokyo:B",
+      "name_ja": "新橋・汐留・浜松町・お台場",
+      "name_en": "Tokyo B"
+     },
+     {
+      "code": "jp:tokyo:tokyo:C",
+      "name_ja": "赤坂・六本木・霞ヶ関・永田町",
+      "name_en": "Tokyo C"
+     },
+     {
+      "code": "jp:tokyo:tokyo:D",
+      "name_ja": "渋谷・恵比寿・目黒・二子玉川",
+      "name_en": "Tokyo D"
+     },
+     {
+      "code": "jp:tokyo:tokyo:E",
+      "name_ja": "品川・大井町・蒲田・羽田空港",
+      "name_en": "Tokyo E"
+     },
+     {
+      "code": "jp:tokyo:tokyo:F",
+      "name_ja": "新宿・中野・荻窪・四谷",
+      "name_en": "Tokyo F"
+     },
+     {
+      "code": "jp:tokyo:tokyo:G",
+      "name_ja": "池袋・赤羽・巣鴨・大塚",
+      "name_en": "Tokyo G"
+     },
+     {
+      "code": "jp:tokyo:tokyo:H",
+      "name_ja": "東京ドーム・飯田橋・御茶ノ水",
+      "name_en": "Tokyo H"
+     },
+     {
+      "code": "jp:tokyo:tokyo:I",
+      "name_ja": "上野・浅草・錦糸町・新小岩・北千住",
+      "name_en": "Tokyo I"
+     }
+    ]
+   },
+   {
+    "code": "jp:tokyo:nishi",
+    "name_ja": "立川・八王子・町田・府中・吉祥寺",
+    "name_en": "Nishi"
+   },
+   {
+    "code": "jp:tokyo:okutama",
+    "name_ja": "奥多摩・青梅・羽村",
+    "name_en": "Okutama"
+   },
+   {
+    "code": "jp:tokyo:ritou",
+    "name_ja": "八丈島",
+    "name_en": "Ritou"
+   },
+   {
+    "code": "jp:tokyo:oshima",
+    "name_ja": "大島",
+    "name_en": "Oshima"
+   },
+   {
+    "code": "jp:tokyo:kouzu",
+    "name_ja": "神津島・新島・式根島",
+    "name_en": "Kouzu"
+   },
+   {
+    "code": "jp:tokyo:miyake",
+    "name_ja": "三宅島",
+    "name_en": "Miyake"
+   },
+   {
+    "code": "jp:tokyo:Ogasawara",
+    "name_ja": "小笠原諸島",
+    "name_en": "Ogasawara"
+   }
+  ]
+ },
+ {
+  "code": "jp:kanagawa",
+  "name_ja": "神奈川県",
+  "name_en": "Kanagawa",
+  "children": [
+   {
+    "code": "jp:kanagawa:yokohama",
+    "name_ja": "横浜",
+    "name_en": "Yokohama"
+   },
+   {
+    "code": "jp:kanagawa:kawasaki",
+    "name_ja": "川崎",
+    "name_en": "Kawasaki"
+   },
+   {
+    "code": "jp:kanagawa:hakone",
+    "name_ja": "箱根",
+    "name_en": "Hakone"
+   },
+   {
+    "code": "jp:kanagawa:odawara",
+    "name_ja": "小田原",
+    "name_en": "Odawara"
+   },
+   {
+    "code": "jp:kanagawa:yugawara",
+    "name_ja": "湯河原・真鶴",
+    "name_en": "Yugawara"
+   },
+   {
+    "code": "jp:kanagawa:sagamiko",
+    "name_ja": "相模湖・丹沢",
+    "name_en": "Sagamiko"
+   },
+   {
+    "code": "jp:kanagawa:sagamihara",
+    "name_ja": "大和・相模原・町田西部",
+    "name_en": "Sagamihara"
+   },
+   {
+    "code": "jp:kanagawa:ebina",
+    "name_ja": "厚木・海老名・伊勢原",
+    "name_en": "Ebina"
+   },
+   {
+    "code": "jp:kanagawa:shonan",
+    "name_ja": "湘南・鎌倉・江ノ島・藤沢・平塚",
+    "name_en": "Shonan"
+   },
+   {
+    "code": "jp:kanagawa:miura",
+    "name_ja": "横須賀・三浦",
+    "name_en": "Miura"
+   }
+  ]
+ },
+ {
+  "code": "jp:niigata",
+  "name_ja": "新潟県",
+  "name_en": "Niigata",
+  "children": [
+   {
+    "code": "jp:niigata:niigata",
+    "name_ja": "新潟",
+    "name_en": "Niigata"
+   },
+   {
+    "code": "jp:niigata:kaetsu",
+    "name_ja": "月岡・瀬波・咲花",
+    "name_en": "Kaetsu"
+   },
+   {
+    "code": "jp:niigata:kita",
+    "name_ja": "長岡・燕三条・柏崎・弥彦・岩室・寺泊",
+    "name_en": "Kita"
+   },
+   {
+    "code": "jp:niigata:minami",
+    "name_ja": "魚沼・十日町・津南・六日町・大湯",
+    "name_en": "Minami"
+   },
+   {
+    "code": "jp:niigata:yuzawa",
+    "name_ja": "越後湯沢・苗場",
+    "name_en": "Yuzawa"
+   },
+   {
+    "code": "jp:niigata:joetsu",
+    "name_ja": "上越・糸魚川・妙高",
+    "name_en": "Joetsu"
+   },
+   {
+    "code": "jp:niigata:sado",
+    "name_ja": "佐渡",
+    "name_en": "Sado"
+   }
+  ]
+ },
+ {
+  "code": "jp:toyama",
+  "name_ja": "富山県",
+  "name_en": "Toyama",
+  "children": [
+   {
+    "code": "jp:toyama:toyama",
+    "name_ja": "富山・八尾・立山",
+    "name_en": "Toyama"
+   },
+   {
+    "code": "jp:toyama:goto",
+    "name_ja": "滑川・魚津・朝日・黒部・宇奈月",
+    "name_en": "Goto"
+   },
+   {
+    "code": "jp:toyama:gosei",
+    "name_ja": "高岡・氷見・砺波",
+    "name_en": "Gosei"
+   }
+  ]
+ },
+ {
+  "code": "jp:ishikawa",
+  "name_ja": "石川県",
+  "name_en": "Ishikawa",
+  "children": [
+   {
+    "code": "jp:ishikawa:kanazawa",
+    "name_ja": "金沢",
+    "name_en": "Kanazawa"
+   },
+   {
+    "code": "jp:ishikawa:kaga",
+    "name_ja": "加賀・小松・辰口",
+    "name_en": "Kaga"
+   },
+   {
+    "code": "jp:ishikawa:noto",
+    "name_ja": "能登・輪島・珠洲",
+    "name_en": "Noto"
+   },
+   {
+    "code": "jp:ishikawa:nanao",
+    "name_ja": "七尾・和倉・羽咋",
+    "name_en": "Nanao"
+   }
+  ]
+ },
+ {
+  "code": "jp:hukui",
+  "name_ja": "福井県",
+  "name_en": "Hukui",
+  "children": [
+   {
+    "code": "jp:hukui:hukui",
+    "name_ja": "福井",
+    "name_en": "Hukui"
+   },
+   {
+    "code": "jp:hukui:awara",
+    "name_ja": "あわら・三国",
+    "name_en": "Awara"
+   },
+   {
+    "code": "jp:hukui:katsuyama",
+    "name_ja": "永平寺・勝山・大野",
+    "name_en": "Katsuyama"
+   },
+   {
+    "code": "jp:hukui:echizen",
+    "name_ja": "越前・鯖江・武生",
+    "name_en": "Echizen"
+   },
+   {
+    "code": "jp:hukui:tsuruga",
+    "name_ja": "敦賀・美浜",
+    "name_en": "Tsuruga"
+   },
+   {
+    "code": "jp:hukui:obama",
+    "name_ja": "若狭・小浜・高浜",
+    "name_en": "Obama"
+   }
+  ]
+ },
+ {
+  "code": "jp:yamanasi",
+  "name_ja": "山梨県",
+  "name_en": "Yamanasi",
+  "children": [
+   {
+    "code": "jp:yamanasi:kofu",
+    "name_ja": "甲府・湯村・昇仙峡",
+    "name_en": "Kofu"
+   },
+   {
+    "code": "jp:yamanasi:yamanashi",
+    "name_ja": "山梨・石和・勝沼・塩山",
+    "name_en": "Yamanashi"
+   },
+   {
+    "code": "jp:yamanasi:otsuki",
+    "name_ja": "大月・都留・道志渓谷",
+    "name_en": "Otsuki"
+   },
+   {
+    "code": "jp:yamanasi:yamanakako",
+    "name_ja": "山中湖・忍野",
+    "name_en": "Yamanakako"
+   },
+   {
+    "code": "jp:yamanasi:kawaguchiko",
+    "name_ja": "河口湖・富士吉田・本栖湖・西湖・精進湖",
+    "name_en": "Kawaguchiko"
+   },
+   {
+    "code": "jp:yamanasi:minobu",
+    "name_ja": "下部・身延・早川",
+    "name_en": "Minobu"
+   },
+   {
+    "code": "jp:yamanasi:nirasaki",
+    "name_ja": "韮崎・南アルプス",
+    "name_en": "Nirasaki"
+   },
+   {
+    "code": "jp:yamanasi:kiyosato",
+    "name_ja": "八ヶ岳・小淵沢・清里・大泉",
+    "name_en": "Kiyosato"
+   }
+  ]
+ },
+ {
+  "code": "jp:nagano",
+  "name_ja": "長野県",
+  "name_en": "Nagano",
+  "children": [
+   {
+    "code": "jp:nagano:nagano",
+    "name_ja": "長野・小布施・信州高山・戸隠・飯綱",
+    "name_en": "Nagano"
+   },
+   {
+    "code": "jp:nagano:madara",
+    "name_ja": "斑尾・飯山・信濃町・野尻湖・黒姫",
+    "name_en": "Madara"
+   },
+   {
+    "code": "jp:nagano:nozawa",
+    "name_ja": "野沢温泉・木島平・秋山郷",
+    "name_en": "Nozawa"
+   },
+   {
+    "code": "jp:nagano:shiga",
+    "name_ja": "志賀高原･湯田中･渋",
+    "name_en": "Shiga"
+   },
+   {
+    "code": "jp:nagano:ueda",
+    "name_ja": "上田・別所・鹿教湯",
+    "name_en": "Ueda"
+   },
+   {
+    "code": "jp:nagano:chikuma",
+    "name_ja": "戸倉上山田・千曲",
+    "name_en": "Chikuma"
+   },
+   {
+    "code": "jp:nagano:sugadaira",
+    "name_ja": "菅平・峰の原",
+    "name_en": "Sugadaira"
+   },
+   {
+    "code": "jp:nagano:karui",
+    "name_ja": "軽井沢・佐久･小諸",
+    "name_en": "Karui"
+   },
+   {
+    "code": "jp:nagano:yatsu",
+    "name_ja": "八ヶ岳・野辺山・富士見・原村",
+    "name_en": "Yatsu"
+   },
+   {
+    "code": "jp:nagano:kirigamine",
+    "name_ja": "蓼科・白樺湖・霧ヶ峰・車山",
+    "name_en": "Kirigamine"
+   },
+   {
+    "code": "jp:nagano:suwa",
+    "name_ja": "諏訪湖",
+    "name_en": "Suwa"
+   },
+   {
+    "code": "jp:nagano:ina",
+    "name_ja": "伊那・駒ヶ根・飯田・昼神",
+    "name_en": "Ina"
+   },
+   {
+    "code": "jp:nagano:kiso",
+    "name_ja": "木曽",
+    "name_en": "Kiso"
+   },
+   {
+    "code": "jp:nagano:matsumo",
+    "name_ja": "松本・塩尻・浅間温泉・美ヶ原温泉",
+    "name_en": "Matsumo"
+   },
+   {
+    "code": "jp:nagano:kamiko",
+    "name_ja": "上高地・乗鞍・白骨",
+    "name_en": "Kamiko"
+   },
+   {
+    "code": "jp:nagano:hotaka",
+    "name_ja": "安曇野・穂高・大町・豊科",
+    "name_en": "Hotaka"
+   },
+   {
+    "code": "jp:nagano:hakuba",
+    "name_ja": "白馬・八方尾根・栂池高原・小谷",
+    "name_en": "Hakuba"
+   }
+  ]
+ },
+ {
+  "code": "jp:gihu",
+  "name_ja": "岐阜県",
+  "name_en": "Gihu",
+  "children": [
+   {
+    "code": "jp:gihu:gifu",
+    "name_ja": "岐阜・各務原",
+    "name_en": "Gifu"
+   },
+   {
+    "code": "jp:gihu:kamitakara",
+    "name_ja": "奥飛騨・新穂高",
+    "name_en": "Kamitakara"
+   },
+   {
+    "code": "jp:gihu:takayama",
+    "name_ja": "高山・飛騨",
+    "name_en": "Takayama"
+   },
+   {
+    "code": "jp:gihu:gero",
+    "name_ja": "下呂温泉・濁河温泉",
+    "name_en": "Gero"
+   },
+   {
+    "code": "jp:gihu:tajimi",
+    "name_ja": "中津川・多治見・恵那・美濃加茂",
+    "name_en": "Tajimi"
+   },
+   {
+    "code": "jp:gihu:gujo",
+    "name_ja": "郡上八幡・関・美濃",
+    "name_en": "Gujo"
+   },
+   {
+    "code": "jp:gihu:shirakawago",
+    "name_ja": "白川郷",
+    "name_en": "Shirakawago"
+   },
+   {
+    "code": "jp:gihu:ogaki",
+    "name_ja": "大垣・岐阜羽島",
+    "name_en": "Ogaki"
+   }
+  ]
+ },
+ {
+  "code": "jp:shizuoka",
+  "name_ja": "静岡県",
+  "name_en": "Shizuoka",
+  "children": [
+   {
+    "code": "jp:shizuoka:shizuoka",
+    "name_ja": "静岡・清水",
+    "name_en": "Shizuoka"
+   },
+   {
+    "code": "jp:shizuoka:atami",
+    "name_ja": "熱海",
+    "name_en": "Atami"
+   },
+   {
+    "code": "jp:shizuoka:ito",
+    "name_ja": "伊東",
+    "name_en": "Ito"
+   },
+   {
+    "code": "jp:shizuoka:izukogen",
+    "name_ja": "伊豆高原",
+    "name_en": "Izukogen"
+   },
+   {
+    "code": "jp:shizuoka:higashi",
+    "name_ja": "東伊豆・河津",
+    "name_en": "Higashi"
+   },
+   {
+    "code": "jp:shizuoka:shimoda",
+    "name_ja": "下田・南伊豆",
+    "name_en": "Shimoda"
+   },
+   {
+    "code": "jp:shizuoka:nishi",
+    "name_ja": "西伊豆・戸田・土肥・堂ヶ島",
+    "name_en": "Nishi"
+   },
+   {
+    "code": "jp:shizuoka:naka",
+    "name_ja": "伊豆長岡・修善寺・天城湯ヶ島",
+    "name_en": "Naka"
+   },
+   {
+    "code": "jp:shizuoka:fuji",
+    "name_ja": "富士・富士宮",
+    "name_en": "Fuji"
+   },
+   {
+    "code": "jp:shizuoka:numazu",
+    "name_ja": "御殿場・沼津・三島",
+    "name_en": "Numazu"
+   },
+   {
+    "code": "jp:shizuoka:yaizu",
+    "name_ja": "焼津・藤枝・御前崎・寸又峡",
+    "name_en": "Yaizu"
+   },
+   {
+    "code": "jp:shizuoka:hamamatsu",
+    "name_ja": "浜松・浜名湖・天竜",
+    "name_en": "Hamamatsu"
+   },
+   {
+    "code": "jp:shizuoka:kikugawa",
+    "name_ja": "掛川・袋井・磐田",
+    "name_en": "Kikugawa"
+   }
+  ]
+ },
+ {
+  "code": "jp:aichi",
+  "name_ja": "愛知県",
+  "name_en": "Aichi",
+  "children": [
+   {
+    "code": "jp:aichi:nagoyashi",
+    "name_ja": "名古屋",
+    "name_en": "Nagoyashi",
+    "children": [
+     {
+      "code": "jp:aichi:nagoyashi:A",
+      "name_ja": "名古屋駅・伏見・丸の内",
+      "name_en": "Nagoyashi A"
+     },
+     {
+      "code": "jp:aichi:nagoyashi:B",
+      "name_ja": "栄・錦・名古屋城",
+      "name_en": "Nagoyashi B"
+     },
+     {
+      "code": "jp:aichi:nagoyashi:C",
+      "name_ja": "金山・熱田・千種・ナゴヤドーム",
+      "name_en": "Nagoyashi C"
+     }
+    ]
+   },
+   {
+    "code": "jp:aichi:mikawawan",
+    "name_ja": "豊橋・豊川・蒲郡・伊良湖",
+    "name_en": "Mikawawan"
+   },
+   {
+    "code": "jp:aichi:okumikawa",
+    "name_ja": "奥三河・新城・湯谷温泉",
+    "name_en": "Okumikawa"
+   },
+   {
+    "code": "jp:aichi:mikawa",
+    "name_ja": "豊田・刈谷・知立・安城・岡崎",
+    "name_en": "Mikawa"
+   },
+   {
+    "code": "jp:aichi:owari",
+    "name_ja": "一宮・犬山・小牧・瀬戸・春日井",
+    "name_en": "Owari"
+   },
+   {
+    "code": "jp:aichi:chita",
+    "name_ja": "セントレア・東海・半田・知多",
+    "name_en": "Chita"
+   },
+   {
+    "code": "jp:aichi:minamichita",
+    "name_ja": "南知多・日間賀島・篠島",
+    "name_en": "Minamichita"
+   }
+  ]
+ },
+ {
+  "code": "jp:mie",
+  "name_ja": "三重県",
+  "name_en": "Mie",
+  "children": [
+   {
+    "code": "jp:mie:tsu",
+    "name_ja": "津･鈴鹿･亀山",
+    "name_en": "Tsu"
+   },
+   {
+    "code": "jp:mie:yunoyama",
+    "name_ja": "四日市・桑名・湯の山・長島温泉",
+    "name_en": "Yunoyama"
+   },
+   {
+    "code": "jp:mie:iga",
+    "name_ja": "伊賀・名張",
+    "name_en": "Iga"
+   },
+   {
+    "code": "jp:mie:matsusaka",
+    "name_ja": "松阪",
+    "name_en": "Matsusaka"
+   },
+   {
+    "code": "jp:mie:ise",
+    "name_ja": "伊勢・二見",
+    "name_en": "Ise"
+   },
+   {
+    "code": "jp:mie:toba",
+    "name_ja": "鳥羽",
+    "name_en": "Toba"
+   },
+   {
+    "code": "jp:mie:shima",
+    "name_ja": "志摩・賢島",
+    "name_en": "Shima"
+   },
+   {
+    "code": "jp:mie:kumano",
+    "name_ja": "熊野・尾鷲・紀北",
+    "name_en": "Kumano"
+   }
+  ]
+ },
+ {
+  "code": "jp:shiga",
+  "name_ja": "滋賀県",
+  "name_en": "Shiga",
+  "children": [
+   {
+    "code": "jp:shiga:ootsu",
+    "name_ja": "大津・雄琴・草津・栗東",
+    "name_en": "Ootsu"
+   },
+   {
+    "code": "jp:shiga:kosei",
+    "name_ja": "湖西・高島・マキノ",
+    "name_en": "Kosei"
+   },
+   {
+    "code": "jp:shiga:kohoku",
+    "name_ja": "長浜・米原",
+    "name_en": "Kohoku"
+   },
+   {
+    "code": "jp:shiga:kotou",
+    "name_ja": "彦根・近江八幡・守山・東近江",
+    "name_en": "Kotou"
+   },
+   {
+    "code": "jp:shiga:shigaraki",
+    "name_ja": "信楽・甲賀",
+    "name_en": "Shigaraki"
+   }
+  ]
+ },
+ {
+  "code": "jp:kyoto",
+  "name_ja": "京都府",
+  "name_en": "Kyoto",
+  "children": [
+   {
+    "code": "jp:kyoto:shi",
+    "name_ja": "京都",
+    "name_en": "Shi",
+    "children": [
+     {
+      "code": "jp:kyoto:shi:D",
+      "name_ja": "京都駅",
+      "name_en": "Shi D"
+     },
+     {
+      "code": "jp:kyoto:shi:A",
+      "name_ja": "嵐山・嵯峨野・太秦・高雄",
+      "name_en": "Shi A"
+     },
+     {
+      "code": "jp:kyoto:shi:B",
+      "name_ja": "河原町・四条烏丸・二条城・御所",
+      "name_en": "Shi B"
+     },
+     {
+      "code": "jp:kyoto:shi:C",
+      "name_ja": "祇園・東山・北白川",
+      "name_en": "Shi C"
+     },
+     {
+      "code": "jp:kyoto:shi:E",
+      "name_ja": "大原・鞍馬・貴船",
+      "name_en": "Shi E"
+     }
+    ]
+   },
+   {
+    "code": "jp:kyoto:nannbu",
+    "name_ja": "宇治・長岡京",
+    "name_en": "Nannbu"
+   },
+   {
+    "code": "jp:kyoto:yunohana",
+    "name_ja": "亀岡・湯の花・美山・京丹波",
+    "name_en": "Yunohana"
+   },
+   {
+    "code": "jp:kyoto:fukuchiyama",
+    "name_ja": "福知山・綾部",
+    "name_en": "Fukuchiyama"
+   },
+   {
+    "code": "jp:kyoto:hokubu",
+    "name_ja": "丹後・久美浜",
+    "name_en": "Hokubu"
+   },
+   {
+    "code": "jp:kyoto:miyazu",
+    "name_ja": "天橋立・宮津・舞鶴",
+    "name_en": "Miyazu"
+   }
+  ]
+ },
+ {
+  "code": "jp:osaka",
+  "name_ja": "大阪府",
+  "name_en": "Osaka",
+  "children": [
+   {
+    "code": "jp:osaka:shi",
+    "name_ja": "大阪",
+    "name_en": "Shi",
+    "children": [
+     {
+      "code": "jp:osaka:shi:B",
+      "name_ja": "大阪駅・梅田・ユニバーサルシティ・尼崎",
+      "name_en": "Shi B"
+     },
+     {
+      "code": "jp:osaka:shi:D",
+      "name_ja": "なんば・心斎橋・天王寺・阿倍野・長居",
+      "name_en": "Shi D"
+     },
+     {
+      "code": "jp:osaka:shi:C",
+      "name_ja": "京橋・淀屋橋・本町・ベイエリア・弁天町",
+      "name_en": "Shi C"
+     },
+     {
+      "code": "jp:osaka:shi:A",
+      "name_ja": "新大阪・江坂",
+      "name_en": "Shi A"
+     }
+    ]
+   },
+   {
+    "code": "jp:osaka:hokubu",
+    "name_ja": "高槻・茨木・箕面・伊丹空港",
+    "name_en": "Hokubu"
+   },
+   {
+    "code": "jp:osaka:toubu",
+    "name_ja": "枚方・守口・東大阪",
+    "name_en": "Toubu"
+   },
+   {
+    "code": "jp:osaka:nantou",
+    "name_ja": "八尾・藤井寺・河内長野",
+    "name_en": "Nantou"
+   },
+   {
+    "code": "jp:osaka:nanbu",
+    "name_ja": "堺・岸和田・関空・泉佐野",
+    "name_en": "Nanbu"
+   }
+  ]
+ },
+ {
+  "code": "jp:hyogo",
+  "name_ja": "兵庫県",
+  "name_en": "Hyogo",
+  "children": [
+   {
+    "code": "jp:hyogo:kobe",
+    "name_ja": "神戸・有馬温泉・六甲山",
+    "name_en": "Kobe"
+   },
+   {
+    "code": "jp:hyogo:nantou",
+    "name_ja": "宝塚・西宮・甲子園・三田・篠山",
+    "name_en": "Nantou"
+   },
+   {
+    "code": "jp:hyogo:minamichu",
+    "name_ja": "明石・加古川・三木",
+    "name_en": "Minamichu"
+   },
+   {
+    "code": "jp:hyogo:nannansei",
+    "name_ja": "姫路・相生・赤穂",
+    "name_en": "Nannansei"
+   },
+   {
+    "code": "jp:hyogo:chubu",
+    "name_ja": "和田山・竹田城・ハチ高原",
+    "name_en": "Chubu"
+   },
+   {
+    "code": "jp:hyogo:kita",
+    "name_ja": "城崎温泉・豊岡・出石・神鍋",
+    "name_en": "Kita"
+   },
+   {
+    "code": "jp:hyogo:kasumi",
+    "name_ja": "香住・浜坂・湯村",
+    "name_en": "Kasumi"
+   },
+   {
+    "code": "jp:hyogo:awaji",
+    "name_ja": "淡路島",
+    "name_en": "Awaji"
+   }
+  ]
+ },
+ {
+  "code": "jp:nara",
+  "name_ja": "奈良県",
+  "name_en": "Nara",
+  "children": [
+   {
+    "code": "jp:nara:nara",
+    "name_ja": "奈良・大和高原",
+    "name_en": "Nara"
+   },
+   {
+    "code": "jp:nara:hokubu",
+    "name_ja": "橿原・大和郡山・天理・生駒",
+    "name_en": "Hokubu"
+   },
+   {
+    "code": "jp:nara:nanbu",
+    "name_ja": "吉野・十津川・天川・五條",
+    "name_en": "Nanbu"
+   }
+  ]
+ },
+ {
+  "code": "jp:wakayama",
+  "name_ja": "和歌山県",
+  "name_en": "Wakayama",
+  "children": [
+   {
+    "code": "jp:wakayama:wakayama",
+    "name_ja": "和歌山・加太・和歌浦",
+    "name_en": "Wakayama"
+   },
+   {
+    "code": "jp:wakayama:Kihoku",
+    "name_ja": "高野山・橋本",
+    "name_en": "Kihoku"
+   },
+   {
+    "code": "jp:wakayama:gobo",
+    "name_ja": "御坊・有田・海南・日高",
+    "name_en": "Gobo"
+   },
+   {
+    "code": "jp:wakayama:shirahama",
+    "name_ja": "南紀白浜・紀伊田辺・龍神",
+    "name_en": "Shirahama"
+   },
+   {
+    "code": "jp:wakayama:Katsuura",
+    "name_ja": "勝浦・串本・すさみ",
+    "name_en": "Katsuura"
+   },
+   {
+    "code": "jp:wakayama:hongu",
+    "name_ja": "熊野古道・新宮・本宮・中辺路",
+    "name_en": "Hongu"
+   }
+  ]
+ },
+ {
+  "code": "jp:tottori",
+  "name_ja": "鳥取県",
+  "name_en": "Tottori",
+  "children": [
+   {
+    "code": "jp:tottori:tottori",
+    "name_ja": "鳥取・岩美・浜村",
+    "name_en": "Tottori"
+   },
+   {
+    "code": "jp:tottori:chubu",
+    "name_ja": "倉吉・三朝温泉",
+    "name_en": "Chubu"
+   },
+   {
+    "code": "jp:tottori:seibu",
+    "name_ja": "米子・皆生温泉・大山",
+    "name_en": "Seibu"
+   }
+  ]
+ },
+ {
+  "code": "jp:simane",
+  "name_ja": "島根県",
+  "name_en": "Simane",
+  "children": [
+   {
+    "code": "jp:simane:matsue",
+    "name_ja": "松江・玉造・安来・奥出雲",
+    "name_en": "Matsue"
+   },
+   {
+    "code": "jp:simane:toubu",
+    "name_ja": "出雲・大田・石見銀山",
+    "name_en": "Toubu"
+   },
+   {
+    "code": "jp:simane:masuda",
+    "name_ja": "津和野・益田・浜田・江津",
+    "name_en": "Masuda"
+   },
+   {
+    "code": "jp:simane:ritou",
+    "name_ja": "隠岐諸島",
+    "name_en": "Ritou"
+   }
+  ]
+ },
+ {
+  "code": "jp:okayama",
+  "name_ja": "岡山県",
+  "name_en": "Okayama",
+  "children": [
+   {
+    "code": "jp:okayama:okayama",
+    "name_ja": "岡山",
+    "name_en": "Okayama"
+   },
+   {
+    "code": "jp:okayama:bizen",
+    "name_ja": "牛窓・瀬戸内・備前",
+    "name_en": "Bizen"
+   },
+   {
+    "code": "jp:okayama:tsuyama",
+    "name_ja": "津山・湯郷・美作・奥津",
+    "name_en": "Tsuyama"
+   },
+   {
+    "code": "jp:okayama:niimi",
+    "name_ja": "湯原・蒜山・新見・高梁",
+    "name_en": "Niimi"
+   },
+   {
+    "code": "jp:okayama:kurashiki",
+    "name_ja": "倉敷・総社・玉野・笠岡",
+    "name_en": "Kurashiki"
+   }
+  ]
+ },
+ {
+  "code": "jp:hiroshima",
+  "name_ja": "広島県",
+  "name_en": "Hiroshima",
+  "children": [
+   {
+    "code": "jp:hiroshima:hiroshima",
+    "name_ja": "広島",
+    "name_en": "Hiroshima"
+   },
+   {
+    "code": "jp:hiroshima:higashihiroshima",
+    "name_ja": "東広島・竹原・三原・広島空港",
+    "name_en": "Higashihiroshima"
+   },
+   {
+    "code": "jp:hiroshima:fukuyama",
+    "name_ja": "福山・尾道・しまなみ海道",
+    "name_en": "Fukuyama"
+   },
+   {
+    "code": "jp:hiroshima:kure",
+    "name_ja": "呉・江田島",
+    "name_en": "Kure"
+   },
+   {
+    "code": "jp:hiroshima:shohara",
+    "name_ja": "三次・庄原・帝釈峡",
+    "name_en": "Shohara"
+   },
+   {
+    "code": "jp:hiroshima:sandankyo",
+    "name_ja": "三段峡・芸北・北広島",
+    "name_en": "Sandankyo"
+   },
+   {
+    "code": "jp:hiroshima:miyajima",
+    "name_ja": "宮島・宮浜温泉・廿日市",
+    "name_en": "Miyajima"
+   }
+  ]
+ },
+ {
+  "code": "jp:yamaguchi",
+  "name_ja": "山口県",
+  "name_en": "Yamaguchi",
+  "children": [
+   {
+    "code": "jp:yamaguchi:yamaguchi",
+    "name_ja": "山口・湯田温泉・防府",
+    "name_en": "Yamaguchi"
+   },
+   {
+    "code": "jp:yamaguchi:shimonoseki",
+    "name_ja": "下関・宇部",
+    "name_en": "Shimonoseki"
+   },
+   {
+    "code": "jp:yamaguchi:iwakuni",
+    "name_ja": "岩国・周南・柳井",
+    "name_en": "Iwakuni"
+   },
+   {
+    "code": "jp:yamaguchi:hagi",
+    "name_ja": "萩・長門・秋吉台",
+    "name_en": "Hagi"
+   }
+  ]
+ },
+ {
+  "code": "jp:tokushima",
+  "name_ja": "徳島県",
+  "name_en": "Tokushima",
+  "children": [
+   {
+    "code": "jp:tokushima:tokushima",
+    "name_ja": "徳島・鳴門",
+    "name_en": "Tokushima"
+   },
+   {
+    "code": "jp:tokushima:hokubu",
+    "name_ja": "大歩危・祖谷・剣山・吉野川",
+    "name_en": "Hokubu"
+   },
+   {
+    "code": "jp:tokushima:nanbu",
+    "name_ja": "阿南・日和佐・宍喰",
+    "name_en": "Nanbu"
+   }
+  ]
+ },
+ {
+  "code": "jp:kagawa",
+  "name_ja": "香川県",
+  "name_en": "Kagawa",
+  "children": [
+   {
+    "code": "jp:kagawa:takamatsu",
+    "name_ja": "高松・さぬき・東かがわ",
+    "name_en": "Takamatsu"
+   },
+   {
+    "code": "jp:kagawa:sakaide",
+    "name_ja": "坂出・宇多津・丸亀",
+    "name_en": "Sakaide"
+   },
+   {
+    "code": "jp:kagawa:kotohira",
+    "name_ja": "琴平・観音寺",
+    "name_en": "Kotohira"
+   },
+   {
+    "code": "jp:kagawa:ritou",
+    "name_ja": "小豆島・直島",
+    "name_en": "Ritou"
+   }
+  ]
+ },
+ {
+  "code": "jp:ehime",
+  "name_ja": "愛媛県",
+  "name_en": "Ehime",
+  "children": [
+   {
+    "code": "jp:ehime:chuuyo",
+    "name_ja": "松山・道後",
+    "name_en": "Chuuyo"
+   },
+   {
+    "code": "jp:ehime:touyo",
+    "name_ja": "今治・しまなみ海道",
+    "name_en": "Touyo"
+   },
+   {
+    "code": "jp:ehime:saijo",
+    "name_ja": "西条・新居浜・四国中央",
+    "name_en": "Saijo"
+   },
+   {
+    "code": "jp:ehime:nanyo",
+    "name_ja": "宇和島・八幡浜",
+    "name_en": "Nanyo"
+   }
+  ]
+ },
+ {
+  "code": "jp:kouchi",
+  "name_ja": "高知県",
+  "name_en": "Kouchi",
+  "children": [
+   {
+    "code": "jp:kouchi:kouchi",
+    "name_ja": "高知・南国・香南・伊野",
+    "name_en": "Kouchi"
+   },
+   {
+    "code": "jp:kouchi:toubu",
+    "name_ja": "安芸・室戸",
+    "name_en": "Toubu"
+   },
+   {
+    "code": "jp:kouchi:seibu",
+    "name_ja": "足摺・四万十・宿毛・須崎",
+    "name_en": "Seibu"
+   }
+  ]
+ },
+ {
+  "code": "jp:hukuoka",
+  "name_ja": "福岡県",
+  "name_en": "Hukuoka",
+  "children": [
+   {
+    "code": "jp:hukuoka:fukuoka",
+    "name_ja": "博多・キャナルシティ・海の中道・太宰府・二日市",
+    "name_en": "Fukuoka"
+   },
+   {
+    "code": "jp:hukuoka:seibu",
+    "name_ja": "天神・中洲・薬院・福岡ドーム・糸島",
+    "name_en": "Seibu"
+   },
+   {
+    "code": "jp:hukuoka:kitakyusyu",
+    "name_ja": "北九州",
+    "name_en": "Kitakyusyu"
+   },
+   {
+    "code": "jp:hukuoka:chikuzen",
+    "name_ja": "宗像・宮若・飯塚",
+    "name_en": "Chikuzen"
+   },
+   {
+    "code": "jp:hukuoka:kurume",
+    "name_ja": "久留米・甘木・原鶴温泉・筑後川温泉",
+    "name_en": "Kurume"
+   },
+   {
+    "code": "jp:hukuoka:buzen",
+    "name_ja": "北九州空港・苅田・行橋・豊前",
+    "name_en": "Buzen"
+   },
+   {
+    "code": "jp:hukuoka:chikugo",
+    "name_ja": "大牟田・柳川・八女・筑後",
+    "name_en": "Chikugo"
+   }
+  ]
+ },
+ {
+  "code": "jp:saga",
+  "name_ja": "佐賀県",
+  "name_en": "Saga",
+  "children": [
+   {
+    "code": "jp:saga:saga",
+    "name_ja": "佐賀・古湯温泉",
+    "name_en": "Saga"
+   },
+   {
+    "code": "jp:saga:tosu",
+    "name_ja": "鳥栖",
+    "name_en": "Tosu"
+   },
+   {
+    "code": "jp:saga:ureshino",
+    "name_ja": "嬉野・武雄・伊万里・有田・太良",
+    "name_en": "Ureshino"
+   },
+   {
+    "code": "jp:saga:karatsu",
+    "name_ja": "唐津・呼子",
+    "name_en": "Karatsu"
+   }
+  ]
+ },
+ {
+  "code": "jp:nagasaki",
+  "name_ja": "長崎県",
+  "name_en": "Nagasaki",
+  "children": [
+   {
+    "code": "jp:nagasaki:nagasaki",
+    "name_ja": "長崎",
+    "name_en": "Nagasaki"
+   },
+   {
+    "code": "jp:nagasaki:unzen",
+    "name_ja": "雲仙・島原・小浜",
+    "name_en": "Unzen"
+   },
+   {
+    "code": "jp:nagasaki:airport",
+    "name_ja": "諫早・大村・長崎空港",
+    "name_en": "Airport"
+   },
+   {
+    "code": "jp:nagasaki:sasebo",
+    "name_ja": "ハウステンボス・佐世保・平戸",
+    "name_en": "Sasebo"
+   },
+   {
+    "code": "jp:nagasaki:ritou",
+    "name_ja": "五島列島",
+    "name_en": "Ritou"
+   },
+   {
+    "code": "jp:nagasaki:tsushima",
+    "name_ja": "対馬",
+    "name_en": "Tsushima"
+   },
+   {
+    "code": "jp:nagasaki:iki",
+    "name_ja": "壱岐島",
+    "name_en": "Iki"
+   }
+  ]
+ },
+ {
+  "code": "jp:kumamoto",
+  "name_ja": "熊本県",
+  "name_en": "Kumamoto",
+  "children": [
+   {
+    "code": "jp:kumamoto:kumamoto",
+    "name_ja": "熊本",
+    "name_en": "Kumamoto"
+   },
+   {
+    "code": "jp:kumamoto:kikuchi",
+    "name_ja": "大津・玉名・山鹿・荒尾・菊池",
+    "name_en": "Kikuchi"
+   },
+   {
+    "code": "jp:kumamoto:aso",
+    "name_ja": "阿蘇",
+    "name_en": "Aso"
+   },
+   {
+    "code": "jp:kumamoto:yatsushiro",
+    "name_ja": "宇土・八代・水俣",
+    "name_en": "Yatsushiro"
+   },
+   {
+    "code": "jp:kumamoto:kuma",
+    "name_ja": "人吉・球磨",
+    "name_en": "Kuma"
+   },
+   {
+    "code": "jp:kumamoto:amakusa",
+    "name_ja": "天草･本渡",
+    "name_en": "Amakusa"
+   },
+   {
+    "code": "jp:kumamoto:kurokawa",
+    "name_ja": "黒川温泉・杖立",
+    "name_en": "Kurokawa"
+   }
+  ]
+ },
+ {
+  "code": "jp:ooita",
+  "name_ja": "大分県",
+  "name_en": "Ooita",
+  "children": [
+   {
+    "code": "jp:ooita:oita",
+    "name_ja": "大分",
+    "name_en": "Oita"
+   },
+   {
+    "code": "jp:ooita:beppu",
+    "name_ja": "別府・日出",
+    "name_en": "Beppu"
+   },
+   {
+    "code": "jp:ooita:usuki",
+    "name_ja": "佐伯・臼杵・豊後大野",
+    "name_en": "Usuki"
+   },
+   {
+    "code": "jp:ooita:yufuin",
+    "name_ja": "湯布院・湯平",
+    "name_en": "Yufuin"
+   },
+   {
+    "code": "jp:ooita:taketa",
+    "name_ja": "久住・竹田",
+    "name_en": "Taketa"
+   },
+   {
+    "code": "jp:ooita:hita",
+    "name_ja": "九重・日田・天瀬",
+    "name_en": "Hita"
+   },
+   {
+    "code": "jp:ooita:kunisaki",
+    "name_ja": "国東・中津・宇佐・耶馬渓",
+    "name_en": "Kunisaki"
+   }
+  ]
+ },
+ {
+  "code": "jp:miyazaki",
+  "name_ja": "宮崎県",
+  "name_en": "Miyazaki",
+  "children": [
+   {
+    "code": "jp:miyazaki:miyazaki",
+    "name_ja": "宮崎",
+    "name_en": "Miyazaki"
+   },
+   {
+    "code": "jp:miyazaki:hokubu",
+    "name_ja": "高千穂・延岡・日向・高鍋",
+    "name_en": "Hokubu"
+   },
+   {
+    "code": "jp:miyazaki:nanbu",
+    "name_ja": "都城・えびの・日南・綾",
+    "name_en": "Nanbu"
+   }
+  ]
+ },
+ {
+  "code": "jp:kagoshima",
+  "name_ja": "鹿児島県",
+  "name_en": "Kagoshima",
+  "children": [
+   {
+    "code": "jp:kagoshima:kagoshima",
+    "name_ja": "鹿児島・桜島",
+    "name_en": "Kagoshima"
+   },
+   {
+    "code": "jp:kagoshima:oosumi",
+    "name_ja": "霧島・国分・鹿児島空港",
+    "name_en": "Oosumi"
+   },
+   {
+    "code": "jp:kagoshima:kanoya",
+    "name_ja": "鹿屋・垂水・志布志",
+    "name_en": "Kanoya"
+   },
+   {
+    "code": "jp:kagoshima:hokusatsu",
+    "name_ja": "川内・出水",
+    "name_en": "Hokusatsu"
+   },
+   {
+    "code": "jp:kagoshima:nansatsu",
+    "name_ja": "指宿・枕崎・南さつま",
+    "name_en": "Nansatsu"
+   },
+   {
+    "code": "jp:kagoshima:yakushima",
+    "name_ja": "屋久島",
+    "name_en": "Yakushima"
+   },
+   {
+    "code": "jp:kagoshima:ritou",
+    "name_ja": "種子島",
+    "name_en": "Ritou"
+   },
+   {
+    "code": "jp:kagoshima:amami",
+    "name_ja": "奄美大島･喜界島・徳之島",
+    "name_en": "Amami"
+   },
+   {
+    "code": "jp:kagoshima:okinoerabu",
+    "name_ja": "沖永良部島・与論島",
+    "name_en": "Okinoerabu"
+   }
+  ]
+ },
+ {
+  "code": "jp:okinawa",
+  "name_ja": "沖縄県",
+  "name_en": "Okinawa",
+  "children": [
+   {
+    "code": "jp:okinawa:nahashi",
+    "name_ja": "那覇",
+    "name_en": "Nahashi"
+   },
+   {
+    "code": "jp:okinawa:hokubu",
+    "name_ja": "恩納・名護・本部・今帰仁",
+    "name_en": "Hokubu"
+   },
+   {
+    "code": "jp:okinawa:chubu",
+    "name_ja": "宜野湾・北谷・読谷・沖縄市・うるま",
+    "name_en": "Chubu"
+   },
+   {
+    "code": "jp:okinawa:nanbu",
+    "name_ja": "糸満・豊見城・南城",
+    "name_en": "Nanbu"
+   },
+   {
+    "code": "jp:okinawa:kerama",
+    "name_ja": "慶良間・渡嘉敷・座間味・阿嘉",
+    "name_en": "Kerama"
+   },
+   {
+    "code": "jp:okinawa:kumejima",
+    "name_ja": "久米島",
+    "name_en": "Kumejima"
+   },
+   {
+    "code": "jp:okinawa:Miyako",
+    "name_ja": "宮古島・伊良部島",
+    "name_en": "Miyako"
+   },
+   {
+    "code": "jp:okinawa:ritou",
+    "name_ja": "石垣・西表・小浜島",
+    "name_en": "Ritou"
+   },
+   {
+    "code": "jp:okinawa:yonaguni",
+    "name_ja": "与那国島",
+    "name_en": "Yonaguni"
+   },
+   {
+    "code": "jp:okinawa:daito",
+    "name_ja": "大東島",
+    "name_en": "Daito"
+   }
+  ]
+ }
+]

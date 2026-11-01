@@ -1,0 +1,1736 @@
+[
+ {
+  "code": "kr:11",
+  "name_ko": "서울특별시",
+  "name_ja": "ソウル特別市",
+  "name_en": "Seoul",
+  "children": [
+   {
+    "code": "kr:11:110",
+    "name_ko": "종로구",
+    "name_ja": "チョンノ(鐘路)区",
+    "name_en": "Jongno-gu"
+   },
+   {
+    "code": "kr:11:140",
+    "name_ko": "중구",
+    "name_ja": "チュン(中)区",
+    "name_en": "Jung-gu"
+   },
+   {
+    "code": "kr:11:170",
+    "name_ko": "용산구",
+    "name_ja": "ヨンサン(龍山)区",
+    "name_en": "Yongsan-gu"
+   },
+   {
+    "code": "kr:11:200",
+    "name_ko": "성동구",
+    "name_ja": "ソンドン(城東)区",
+    "name_en": "Seongdong-gu"
+   },
+   {
+    "code": "kr:11:215",
+    "name_ko": "광진구",
+    "name_ja": "クァンジン(広津)区",
+    "name_en": "Gwangjin-gu"
+   },
+   {
+    "code": "kr:11:230",
+    "name_ko": "동대문구",
+    "name_ja": "トンデムン(東大門)区",
+    "name_en": "Dongdaemun-gu"
+   },
+   {
+    "code": "kr:11:260",
+    "name_ko": "중랑구",
+    "name_ja": "チュンナン(中浪)区",
+    "name_en": "Jungnang-gu"
+   },
+   {
+    "code": "kr:11:290",
+    "name_ko": "성북구",
+    "name_ja": "ソンブク(城北)区",
+    "name_en": "Seongbuk-gu"
+   },
+   {
+    "code": "kr:11:305",
+    "name_ko": "강북구",
+    "name_ja": "カンブク(江北)区",
+    "name_en": "Gangbuk-gu"
+   },
+   {
+    "code": "kr:11:320",
+    "name_ko": "도봉구",
+    "name_ja": "トボン(道峰)区",
+    "name_en": "Dobong-gu"
+   },
+   {
+    "code": "kr:11:350",
+    "name_ko": "노원구",
+    "name_ja": "ノウォン(蘆原)区",
+    "name_en": "Nowon-gu"
+   },
+   {
+    "code": "kr:11:380",
+    "name_ko": "은평구",
+    "name_ja": "ウンピョン(恩平)区",
+    "name_en": "Eunpyeong-gu"
+   },
+   {
+    "code": "kr:11:410",
+    "name_ko": "서대문구",
+    "name_ja": "ソデムン(西大門)区",
+    "name_en": "Seodaemun-gu"
+   },
+   {
+    "code": "kr:11:440",
+    "name_ko": "마포구",
+    "name_ja": "マポ(麻浦)区",
+    "name_en": "Mapo-gu"
+   },
+   {
+    "code": "kr:11:470",
+    "name_ko": "양천구",
+    "name_ja": "ヤンチョン(陽川)区",
+    "name_en": "Yangcheon-gu"
+   },
+   {
+    "code": "kr:11:500",
+    "name_ko": "강서구",
+    "name_ja": "カンソ(江西)区",
+    "name_en": "Gangseo-gu"
+   },
+   {
+    "code": "kr:11:530",
+    "name_ko": "구로구",
+    "name_ja": "クロ(九老)区",
+    "name_en": "Guro-gu"
+   },
+   {
+    "code": "kr:11:545",
+    "name_ko": "금천구",
+    "name_ja": "クムチョン(衿川)区",
+    "name_en": "Geumcheon-gu"
+   },
+   {
+    "code": "kr:11:560",
+    "name_ko": "영등포구",
+    "name_ja": "ヨンドゥンポ(永登浦)区",
+    "name_en": "Yeongdeungpo-gu"
+   },
+   {
+    "code": "kr:11:590",
+    "name_ko": "동작구",
+    "name_ja": "トンジャク(銅雀)区",
+    "name_en": "Dongjak-gu"
+   },
+   {
+    "code": "kr:11:620",
+    "name_ko": "관악구",
+    "name_ja": "クァナク(冠岳)区",
+    "name_en": "Gwanak-gu"
+   },
+   {
+    "code": "kr:11:650",
+    "name_ko": "서초구",
+    "name_ja": "ソチョ(瑞草)区",
+    "name_en": "Seocho-gu"
+   },
+   {
+    "code": "kr:11:680",
+    "name_ko": "강남구",
+    "name_ja": "カンナム(江南)区",
+    "name_en": "Gangnam-gu"
+   },
+   {
+    "code": "kr:11:710",
+    "name_ko": "송파구",
+    "name_ja": "ソンパ(松坡)区",
+    "name_en": "Songpa-gu"
+   },
+   {
+    "code": "kr:11:740",
+    "name_ko": "강동구",
+    "name_ja": "カンドン(江東)区",
+    "name_en": "Gangdong-gu"
+   }
+  ]
+ },
+ {
+  "code": "kr:12",
+  "name_ko": "전남광주통합특별시",
+  "name_ja": "チョンナムグァンジュ(全南光州)統合特別市",
+  "name_en": "Jeonnam-Gwangju Special Metropolitan City",
+  "children": [
+   {
+    "code": "kr:12:110",
+    "name_ko": "목포시",
+    "name_ja": "モクポ(木浦)市",
+    "name_en": "Mokpo-si"
+   },
+   {
+    "code": "kr:12:130",
+    "name_ko": "여수시",
+    "name_ja": "ヨス(麗水)市",
+    "name_en": "Yeosu-si"
+   },
+   {
+    "code": "kr:12:150",
+    "name_ko": "순천시",
+    "name_ja": "スンチョン(順天)市",
+    "name_en": "Suncheon-si"
+   },
+   {
+    "code": "kr:12:170",
+    "name_ko": "나주시",
+    "name_ja": "ナジュ(羅州)市",
+    "name_en": "Naju-si"
+   },
+   {
+    "code": "kr:12:190",
+    "name_ko": "광양시",
+    "name_ja": "クァンヤン(光陽)市",
+    "name_en": "Gwangyang-si"
+   },
+   {
+    "code": "kr:12:210",
+    "name_ko": "동구",
+    "name_ja": "トン(東)区",
+    "name_en": "Dong-gu"
+   },
+   {
+    "code": "kr:12:240",
+    "name_ko": "서구",
+    "name_ja": "ソ(西)区",
+    "name_en": "Seo-gu"
+   },
+   {
+    "code": "kr:12:270",
+    "name_ko": "남구",
+    "name_ja": "ナム(南)区",
+    "name_en": "Nam-gu"
+   },
+   {
+    "code": "kr:12:300",
+    "name_ko": "북구",
+    "name_ja": "プク(北)区",
+    "name_en": "Buk-gu"
+   },
+   {
+    "code": "kr:12:330",
+    "name_ko": "광산구",
+    "name_ja": "クァンサン(光山)区",
+    "name_en": "Gwangsan-gu"
+   },
+   {
+    "code": "kr:12:710",
+    "name_ko": "담양군",
+    "name_ja": "タミャン(潭陽)郡",
+    "name_en": "Damyang-gun"
+   },
+   {
+    "code": "kr:12:720",
+    "name_ko": "곡성군",
+    "name_ja": "コクソン(谷城)郡",
+    "name_en": "Gokseong-gun"
+   },
+   {
+    "code": "kr:12:730",
+    "name_ko": "구례군",
+    "name_ja": "クリェ(求礼)郡",
+    "name_en": "Gurye-gun"
+   },
+   {
+    "code": "kr:12:740",
+    "name_ko": "고흥군",
+    "name_ja": "コフン(高興)郡",
+    "name_en": "Goheung-gun"
+   },
+   {
+    "code": "kr:12:750",
+    "name_ko": "보성군",
+    "name_ja": "ポソン(宝城)郡",
+    "name_en": "Boseong-gun"
+   },
+   {
+    "code": "kr:12:760",
+    "name_ko": "화순군",
+    "name_ja": "ファスン(和順)郡",
+    "name_en": "Hwasun-gun"
+   },
+   {
+    "code": "kr:12:770",
+    "name_ko": "장흥군",
+    "name_ja": "チャンフン(長興)郡",
+    "name_en": "Jangheung-gun"
+   },
+   {
+    "code": "kr:12:780",
+    "name_ko": "강진군",
+    "name_ja": "カンジン(康津)郡",
+    "name_en": "Gangjin-gun"
+   },
+   {
+    "code": "kr:12:790",
+    "name_ko": "해남군",
+    "name_ja": "ヘナム(海南)郡",
+    "name_en": "Haenam-gun"
+   },
+   {
+    "code": "kr:12:800",
+    "name_ko": "영암군",
+    "name_ja": "ヨンアム(霊岩)郡",
+    "name_en": "Yeongam-gun"
+   },
+   {
+    "code": "kr:12:810",
+    "name_ko": "무안군",
+    "name_ja": "ムアン(務安)郡",
+    "name_en": "Muan-gun"
+   },
+   {
+    "code": "kr:12:820",
+    "name_ko": "함평군",
+    "name_ja": "ハンピョン(咸平)郡",
+    "name_en": "Hampyeong-gun"
+   },
+   {
+    "code": "kr:12:830",
+    "name_ko": "영광군",
+    "name_ja": "ヨングァン(霊光)郡",
+    "name_en": "Yeonggwang-gun"
+   },
+   {
+    "code": "kr:12:840",
+    "name_ko": "장성군",
+    "name_ja": "チャンソン(長城)郡",
+    "name_en": "Jangseong-gun"
+   },
+   {
+    "code": "kr:12:850",
+    "name_ko": "완도군",
+    "name_ja": "ワンド(莞島)郡",
+    "name_en": "Wando-gun"
+   },
+   {
+    "code": "kr:12:860",
+    "name_ko": "진도군",
+    "name_ja": "チンド(珍島)郡",
+    "name_en": "Jindo-gun"
+   },
+   {
+    "code": "kr:12:870",
+    "name_ko": "신안군",
+    "name_ja": "シナン(新安)郡",
+    "name_en": "Sinan-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:26",
+  "name_ko": "부산광역시",
+  "name_ja": "プサン(釜山)広域市",
+  "name_en": "Busan",
+  "children": [
+   {
+    "code": "kr:26:110",
+    "name_ko": "중구",
+    "name_ja": "チュン(中)区",
+    "name_en": "Jung-gu"
+   },
+   {
+    "code": "kr:26:140",
+    "name_ko": "서구",
+    "name_ja": "ソ(西)区",
+    "name_en": "Seo-gu"
+   },
+   {
+    "code": "kr:26:170",
+    "name_ko": "동구",
+    "name_ja": "トン(東)区",
+    "name_en": "Dong-gu"
+   },
+   {
+    "code": "kr:26:200",
+    "name_ko": "영도구",
+    "name_ja": "ヨンド(影島)区",
+    "name_en": "Yeongdo-gu"
+   },
+   {
+    "code": "kr:26:230",
+    "name_ko": "부산진구",
+    "name_ja": "プサンジン(釜山鎮)区",
+    "name_en": "Busanjin-gu"
+   },
+   {
+    "code": "kr:26:260",
+    "name_ko": "동래구",
+    "name_ja": "トンネ(東莱)区",
+    "name_en": "Dongnae-gu"
+   },
+   {
+    "code": "kr:26:290",
+    "name_ko": "남구",
+    "name_ja": "ナム(南)区",
+    "name_en": "Nam-gu"
+   },
+   {
+    "code": "kr:26:320",
+    "name_ko": "북구",
+    "name_ja": "プク(北)区",
+    "name_en": "Buk-gu"
+   },
+   {
+    "code": "kr:26:350",
+    "name_ko": "해운대구",
+    "name_ja": "ヘウンデ(海雲台)区",
+    "name_en": "Haeundae-gu"
+   },
+   {
+    "code": "kr:26:380",
+    "name_ko": "사하구",
+    "name_ja": "サハ(沙下)区",
+    "name_en": "Saha-gu"
+   },
+   {
+    "code": "kr:26:410",
+    "name_ko": "금정구",
+    "name_ja": "クムジョン(金井)区",
+    "name_en": "Geumjeong-gu"
+   },
+   {
+    "code": "kr:26:440",
+    "name_ko": "강서구",
+    "name_ja": "カンソ(江西)区",
+    "name_en": "Gangseo-gu"
+   },
+   {
+    "code": "kr:26:470",
+    "name_ko": "연제구",
+    "name_ja": "ヨンジェ(蓮堤)区",
+    "name_en": "Yeonje-gu"
+   },
+   {
+    "code": "kr:26:500",
+    "name_ko": "수영구",
+    "name_ja": "スヨン(水営)区",
+    "name_en": "Suyeong-gu"
+   },
+   {
+    "code": "kr:26:530",
+    "name_ko": "사상구",
+    "name_ja": "ササン(沙上)区",
+    "name_en": "Sasang-gu"
+   },
+   {
+    "code": "kr:26:710",
+    "name_ko": "기장군",
+    "name_ja": "キジャン(機張)郡",
+    "name_en": "Gijang-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:27",
+  "name_ko": "대구광역시",
+  "name_ja": "テグ(大邱)広域市",
+  "name_en": "Daegu",
+  "children": [
+   {
+    "code": "kr:27:110",
+    "name_ko": "중구",
+    "name_ja": "チュン(中)区",
+    "name_en": "Jung-gu"
+   },
+   {
+    "code": "kr:27:140",
+    "name_ko": "동구",
+    "name_ja": "トン(東)区",
+    "name_en": "Dong-gu"
+   },
+   {
+    "code": "kr:27:170",
+    "name_ko": "서구",
+    "name_ja": "ソ(西)区",
+    "name_en": "Seo-gu"
+   },
+   {
+    "code": "kr:27:200",
+    "name_ko": "남구",
+    "name_ja": "ナム(南)区",
+    "name_en": "Nam-gu"
+   },
+   {
+    "code": "kr:27:230",
+    "name_ko": "북구",
+    "name_ja": "プク(北)区",
+    "name_en": "Buk-gu"
+   },
+   {
+    "code": "kr:27:260",
+    "name_ko": "수성구",
+    "name_ja": "スソン(寿城)区",
+    "name_en": "Suseong-gu"
+   },
+   {
+    "code": "kr:27:290",
+    "name_ko": "달서구",
+    "name_ja": "タルソ(達西)区",
+    "name_en": "Dalseo-gu"
+   },
+   {
+    "code": "kr:27:710",
+    "name_ko": "달성군",
+    "name_ja": "タルソン(達城)郡",
+    "name_en": "Dalseong-gun"
+   },
+   {
+    "code": "kr:27:720",
+    "name_ko": "군위군",
+    "name_ja": "クヌゥイ(軍威)郡",
+    "name_en": "Gunwi-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:28",
+  "name_ko": "인천광역시",
+  "name_ja": "インチョン(仁川)広域市",
+  "name_en": "Incheon",
+  "children": [
+   {
+    "code": "kr:28:125",
+    "name_ko": "제물포구",
+    "name_ja": "チェムルポ(済物浦)区",
+    "name_en": "Jemulpo-gu"
+   },
+   {
+    "code": "kr:28:155",
+    "name_ko": "영종구",
+    "name_ja": "ヨンジョン(永宗)区",
+    "name_en": "Yeongjong-gu"
+   },
+   {
+    "code": "kr:28:177",
+    "name_ko": "미추홀구",
+    "name_ja": "ミチュホル(弥鄒忽)区",
+    "name_en": "Michuhol-gu"
+   },
+   {
+    "code": "kr:28:185",
+    "name_ko": "연수구",
+    "name_ja": "ヨンス(延寿)区",
+    "name_en": "Yeonsu-gu"
+   },
+   {
+    "code": "kr:28:200",
+    "name_ko": "남동구",
+    "name_ja": "ナムドン(南洞)区",
+    "name_en": "Namdong-gu"
+   },
+   {
+    "code": "kr:28:237",
+    "name_ko": "부평구",
+    "name_ja": "プピョン(富平)区",
+    "name_en": "Bupyeong-gu"
+   },
+   {
+    "code": "kr:28:245",
+    "name_ko": "계양구",
+    "name_ja": "キェヤン(桂陽)区",
+    "name_en": "Gyeyang-gu"
+   },
+   {
+    "code": "kr:28:275",
+    "name_ko": "서해구",
+    "name_ja": "ソヘ(西海)区",
+    "name_en": "Seohae-gu"
+   },
+   {
+    "code": "kr:28:290",
+    "name_ko": "검단구",
+    "name_ja": "コムダン(黔丹)区",
+    "name_en": "Geomdan-gu"
+   },
+   {
+    "code": "kr:28:710",
+    "name_ko": "강화군",
+    "name_ja": "カンファ(江華)郡",
+    "name_en": "Ganghwa-gun"
+   },
+   {
+    "code": "kr:28:720",
+    "name_ko": "옹진군",
+    "name_ja": "オンジン(甕津)郡",
+    "name_en": "Ongjin-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:30",
+  "name_ko": "대전광역시",
+  "name_ja": "テジョン(大田)広域市",
+  "name_en": "Daejeon",
+  "children": [
+   {
+    "code": "kr:30:110",
+    "name_ko": "동구",
+    "name_ja": "トン(東)区",
+    "name_en": "Dong-gu"
+   },
+   {
+    "code": "kr:30:140",
+    "name_ko": "중구",
+    "name_ja": "チュン(中)区",
+    "name_en": "Jung-gu"
+   },
+   {
+    "code": "kr:30:170",
+    "name_ko": "서구",
+    "name_ja": "ソ(西)区",
+    "name_en": "Seo-gu"
+   },
+   {
+    "code": "kr:30:200",
+    "name_ko": "유성구",
+    "name_ja": "ユソン(儒城)区",
+    "name_en": "Yuseong-gu"
+   },
+   {
+    "code": "kr:30:230",
+    "name_ko": "대덕구",
+    "name_ja": "テドク(大徳)区",
+    "name_en": "Daedeok-gu"
+   }
+  ]
+ },
+ {
+  "code": "kr:31",
+  "name_ko": "울산광역시",
+  "name_ja": "ウルサン(蔚山)広域市",
+  "name_en": "Ulsan",
+  "children": [
+   {
+    "code": "kr:31:110",
+    "name_ko": "중구",
+    "name_ja": "チュン(中)区",
+    "name_en": "Jung-gu"
+   },
+   {
+    "code": "kr:31:140",
+    "name_ko": "남구",
+    "name_ja": "ナム(南)区",
+    "name_en": "Nam-gu"
+   },
+   {
+    "code": "kr:31:170",
+    "name_ko": "동구",
+    "name_ja": "トン(東)区",
+    "name_en": "Dong-gu"
+   },
+   {
+    "code": "kr:31:200",
+    "name_ko": "북구",
+    "name_ja": "プク(北)区",
+    "name_en": "Buk-gu"
+   },
+   {
+    "code": "kr:31:710",
+    "name_ko": "울주군",
+    "name_ja": "ウルチュ(蔚州)郡",
+    "name_en": "Ulju-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:41",
+  "name_ko": "경기도",
+  "name_ja": "キョンギ(京畿)道",
+  "name_en": "Gyeonggi-do",
+  "children": [
+   {
+    "code": "kr:41:110",
+    "name_ko": "수원시",
+    "name_ja": "スウォン(水原)市",
+    "name_en": "Suwon-si"
+   },
+   {
+    "code": "kr:41:111",
+    "name_ko": "수원시 장안구",
+    "name_ja": "スウォン(水原)市チャンアン(長安)区",
+    "name_en": "Jangan-gu, Suwon-si"
+   },
+   {
+    "code": "kr:41:113",
+    "name_ko": "수원시 권선구",
+    "name_ja": "スウォン(水原)市クォンソン(権善)区",
+    "name_en": "Gwonseon-gu, Suwon-si"
+   },
+   {
+    "code": "kr:41:115",
+    "name_ko": "수원시 팔달구",
+    "name_ja": "スウォン(水原)市パルダル(八達)区",
+    "name_en": "Paldal-gu, Suwon-si"
+   },
+   {
+    "code": "kr:41:117",
+    "name_ko": "수원시 영통구",
+    "name_ja": "スウォン(水原)市ヨントン(霊通)区",
+    "name_en": "Yeongtong-gu, Suwon-si"
+   },
+   {
+    "code": "kr:41:130",
+    "name_ko": "성남시",
+    "name_ja": "ソンナム(城南)市",
+    "name_en": "Seongnam-si"
+   },
+   {
+    "code": "kr:41:131",
+    "name_ko": "성남시 수정구",
+    "name_ja": "ソンナム(城南)市スジョン(寿井)区",
+    "name_en": "Sujeong-gu, Seongnam-si"
+   },
+   {
+    "code": "kr:41:133",
+    "name_ko": "성남시 중원구",
+    "name_ja": "ソンナム(城南)市チュンウォン(中院)区",
+    "name_en": "Jungwon-gu, Seongnam-si"
+   },
+   {
+    "code": "kr:41:135",
+    "name_ko": "성남시 분당구",
+    "name_ja": "ソンナム(城南)市プンダン(盆唐)区",
+    "name_en": "Bundang-gu, Seongnam-si"
+   },
+   {
+    "code": "kr:41:150",
+    "name_ko": "의정부시",
+    "name_ja": "ウィジョンブ(議政府)市",
+    "name_en": "Uijeongbu-si"
+   },
+   {
+    "code": "kr:41:170",
+    "name_ko": "안양시",
+    "name_ja": "アニャン(安養)市",
+    "name_en": "Anyang-si"
+   },
+   {
+    "code": "kr:41:171",
+    "name_ko": "안양시 만안구",
+    "name_ja": "アニャン(安養)市マナン(万安)区",
+    "name_en": "Manan-gu, Anyang-si"
+   },
+   {
+    "code": "kr:41:173",
+    "name_ko": "안양시 동안구",
+    "name_ja": "アニャン(安養)市トンアン(東安)区",
+    "name_en": "Dongan-gu, Anyang-si"
+   },
+   {
+    "code": "kr:41:190",
+    "name_ko": "부천시",
+    "name_ja": "プチョン(富川)市",
+    "name_en": "Bucheon-si"
+   },
+   {
+    "code": "kr:41:192",
+    "name_ko": "부천시 원미구",
+    "name_ja": "プチョン(富川)市ウォンミ(遠美)区",
+    "name_en": "Wonmi-gu, Bucheon-si"
+   },
+   {
+    "code": "kr:41:194",
+    "name_ko": "부천시 소사구",
+    "name_ja": "プチョン(富川)市ソサ(素沙)区",
+    "name_en": "Sosa-gu, Bucheon-si"
+   },
+   {
+    "code": "kr:41:196",
+    "name_ko": "부천시 오정구",
+    "name_ja": "プチョン(富川)市オジョン(梧亭)区",
+    "name_en": "Ojeong-gu, Bucheon-si"
+   },
+   {
+    "code": "kr:41:210",
+    "name_ko": "광명시",
+    "name_ja": "クァンミョン(光明)市",
+    "name_en": "Gwangmyeong-si"
+   },
+   {
+    "code": "kr:41:220",
+    "name_ko": "평택시",
+    "name_ja": "ピョンテク(平沢)市",
+    "name_en": "Pyeongtaek-si"
+   },
+   {
+    "code": "kr:41:250",
+    "name_ko": "동두천시",
+    "name_ja": "トンドゥチョン(東豆川)市",
+    "name_en": "Dongducheon-si"
+   },
+   {
+    "code": "kr:41:270",
+    "name_ko": "안산시",
+    "name_ja": "アンサン(安山)市",
+    "name_en": "Ansan-si"
+   },
+   {
+    "code": "kr:41:271",
+    "name_ko": "안산시 상록구",
+    "name_ja": "アンサン(安山)市サンノク(常緑)区",
+    "name_en": "Sangnok-gu, Ansan-si"
+   },
+   {
+    "code": "kr:41:273",
+    "name_ko": "안산시 단원구",
+    "name_ja": "アンサン(安山)市タヌォン(檀園)区",
+    "name_en": "Danwon-gu, Ansan-si"
+   },
+   {
+    "code": "kr:41:280",
+    "name_ko": "고양시",
+    "name_ja": "コヤン(高陽)市",
+    "name_en": "Goyang-si"
+   },
+   {
+    "code": "kr:41:281",
+    "name_ko": "고양시 덕양구",
+    "name_ja": "コヤン(高陽)市トギャン(徳陽)区",
+    "name_en": "Deogyang-gu, Goyang-si"
+   },
+   {
+    "code": "kr:41:285",
+    "name_ko": "고양시 일산동구",
+    "name_ja": "コヤン(高陽)市イルサンドン(一山東)区",
+    "name_en": "Ilsandong-gu, Goyang-si"
+   },
+   {
+    "code": "kr:41:287",
+    "name_ko": "고양시 일산서구",
+    "name_ja": "コヤン(高陽)市イルサンソ(一山西)区",
+    "name_en": "Ilsanseo-gu, Goyang-si"
+   },
+   {
+    "code": "kr:41:290",
+    "name_ko": "과천시",
+    "name_ja": "クァチョン(果川)市",
+    "name_en": "Gwacheon-si"
+   },
+   {
+    "code": "kr:41:310",
+    "name_ko": "구리시",
+    "name_ja": "クリ(九里)市",
+    "name_en": "Guri-si"
+   },
+   {
+    "code": "kr:41:360",
+    "name_ko": "남양주시",
+    "name_ja": "ナミャンジュ(南楊州)市",
+    "name_en": "Namyangju-si"
+   },
+   {
+    "code": "kr:41:370",
+    "name_ko": "오산시",
+    "name_ja": "オサン(烏山)市",
+    "name_en": "Osan-si"
+   },
+   {
+    "code": "kr:41:390",
+    "name_ko": "시흥시",
+    "name_ja": "シフン(始興)市",
+    "name_en": "Siheung-si"
+   },
+   {
+    "code": "kr:41:410",
+    "name_ko": "군포시",
+    "name_ja": "クンポ(軍浦)市",
+    "name_en": "Gunpo-si"
+   },
+   {
+    "code": "kr:41:430",
+    "name_ko": "의왕시",
+    "name_ja": "ウィワン(義王)市",
+    "name_en": "Uiwang-si"
+   },
+   {
+    "code": "kr:41:450",
+    "name_ko": "하남시",
+    "name_ja": "ハナム(河南)市",
+    "name_en": "Hanam-si"
+   },
+   {
+    "code": "kr:41:460",
+    "name_ko": "용인시",
+    "name_ja": "ヨンイン(龍仁)市",
+    "name_en": "Yongin-si"
+   },
+   {
+    "code": "kr:41:461",
+    "name_ko": "용인시 처인구",
+    "name_ja": "ヨンイン(龍仁)市チョイン(処仁)区",
+    "name_en": "Cheoin-gu, Yongin-si"
+   },
+   {
+    "code": "kr:41:463",
+    "name_ko": "용인시 기흥구",
+    "name_ja": "ヨンイン(龍仁)市キフン(器興)区",
+    "name_en": "Giheung-gu, Yongin-si"
+   },
+   {
+    "code": "kr:41:465",
+    "name_ko": "용인시 수지구",
+    "name_ja": "ヨンイン(龍仁)市スジ(水枝)区",
+    "name_en": "Suji-gu, Yongin-si"
+   },
+   {
+    "code": "kr:41:480",
+    "name_ko": "파주시",
+    "name_ja": "パジュ(坡州)市",
+    "name_en": "Paju-si"
+   },
+   {
+    "code": "kr:41:500",
+    "name_ko": "이천시",
+    "name_ja": "イチョン(利川)市",
+    "name_en": "Icheon-si"
+   },
+   {
+    "code": "kr:41:550",
+    "name_ko": "안성시",
+    "name_ja": "アンソン(安城)市",
+    "name_en": "Anseong-si"
+   },
+   {
+    "code": "kr:41:570",
+    "name_ko": "김포시",
+    "name_ja": "キンポ(金浦)市",
+    "name_en": "Gimpo-si"
+   },
+   {
+    "code": "kr:41:590",
+    "name_ko": "화성시",
+    "name_ja": "ファソン(華城)市",
+    "name_en": "Hwaseong-si"
+   },
+   {
+    "code": "kr:41:591",
+    "name_ko": "화성시 만세구",
+    "name_ja": "ファソン(華城)市マンセ(万歳)区",
+    "name_en": "Manse-gu, Hwaseong-si"
+   },
+   {
+    "code": "kr:41:593",
+    "name_ko": "화성시 효행구",
+    "name_ja": "ファソン(華城)市ヒョヘン(孝行)区",
+    "name_en": "Hyohaeng-gu, Hwaseong-si"
+   },
+   {
+    "code": "kr:41:595",
+    "name_ko": "화성시 병점구",
+    "name_ja": "ファソン(華城)市ピョンジョム(餅店)区",
+    "name_en": "Byeongjeom-gu, Hwaseong-si"
+   },
+   {
+    "code": "kr:41:597",
+    "name_ko": "화성시 동탄구",
+    "name_ja": "ファソン(華城)市トンタン(東灘)区",
+    "name_en": "Dongtan-gu, Hwaseong-si"
+   },
+   {
+    "code": "kr:41:610",
+    "name_ko": "광주시",
+    "name_ja": "クァンジュ(広州)市",
+    "name_en": "Gwangju-si"
+   },
+   {
+    "code": "kr:41:630",
+    "name_ko": "양주시",
+    "name_ja": "ヤンジュ(楊州)市",
+    "name_en": "Yangju-si"
+   },
+   {
+    "code": "kr:41:650",
+    "name_ko": "포천시",
+    "name_ja": "ポチョン(抱川)市",
+    "name_en": "Pocheon-si"
+   },
+   {
+    "code": "kr:41:670",
+    "name_ko": "여주시",
+    "name_ja": "ヨジュ(驪州)市",
+    "name_en": "Yeoju-si"
+   },
+   {
+    "code": "kr:41:800",
+    "name_ko": "연천군",
+    "name_ja": "ヨンチョン(漣川)郡",
+    "name_en": "Yeoncheon-gun"
+   },
+   {
+    "code": "kr:41:820",
+    "name_ko": "가평군",
+    "name_ja": "カピョン(加平)郡",
+    "name_en": "Gapyeong-gun"
+   },
+   {
+    "code": "kr:41:830",
+    "name_ko": "양평군",
+    "name_ja": "ヤンピョン(楊平)郡",
+    "name_en": "Yangpyeong-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:43",
+  "name_ko": "충청북도",
+  "name_ja": "チュンチョンブク(忠清北)道",
+  "name_en": "Chungcheongbuk-do",
+  "children": [
+   {
+    "code": "kr:43:110",
+    "name_ko": "청주시",
+    "name_ja": "チョンジュ(清州)市",
+    "name_en": "Cheongju-si"
+   },
+   {
+    "code": "kr:43:111",
+    "name_ko": "청주시 상당구",
+    "name_ja": "チョンジュ(清州)市サンダン(上堂)区",
+    "name_en": "Sangdang-gu, Cheongju-si"
+   },
+   {
+    "code": "kr:43:112",
+    "name_ko": "청주시 서원구",
+    "name_ja": "チョンジュ(清州)市ソウォン(西原)区",
+    "name_en": "Seowon-gu, Cheongju-si"
+   },
+   {
+    "code": "kr:43:113",
+    "name_ko": "청주시 흥덕구",
+    "name_ja": "チョンジュ(清州)市フンドク(興徳)区",
+    "name_en": "Heungdeok-gu, Cheongju-si"
+   },
+   {
+    "code": "kr:43:114",
+    "name_ko": "청주시 청원구",
+    "name_ja": "チョンジュ(清州)市チョンウォン(清原)区",
+    "name_en": "Cheongwon-gu, Cheongju-si"
+   },
+   {
+    "code": "kr:43:130",
+    "name_ko": "충주시",
+    "name_ja": "チュンジュ(忠州)市",
+    "name_en": "Chungju-si"
+   },
+   {
+    "code": "kr:43:150",
+    "name_ko": "제천시",
+    "name_ja": "チェチョン(堤川)市",
+    "name_en": "Jecheon-si"
+   },
+   {
+    "code": "kr:43:720",
+    "name_ko": "보은군",
+    "name_ja": "ポウン(報恩)郡",
+    "name_en": "Boeun-gun"
+   },
+   {
+    "code": "kr:43:730",
+    "name_ko": "옥천군",
+    "name_ja": "オクチョン(沃川)郡",
+    "name_en": "Okcheon-gun"
+   },
+   {
+    "code": "kr:43:740",
+    "name_ko": "영동군",
+    "name_ja": "ヨンドン(永同)郡",
+    "name_en": "Yeongdong-gun"
+   },
+   {
+    "code": "kr:43:745",
+    "name_ko": "증평군",
+    "name_ja": "チュンピョン(曽平)郡",
+    "name_en": "Jeungpyeong-gun"
+   },
+   {
+    "code": "kr:43:750",
+    "name_ko": "진천군",
+    "name_ja": "チンチョン(鎮川)郡",
+    "name_en": "Jincheon-gun"
+   },
+   {
+    "code": "kr:43:760",
+    "name_ko": "괴산군",
+    "name_ja": "クェサン(槐山)郡",
+    "name_en": "Goesan-gun"
+   },
+   {
+    "code": "kr:43:770",
+    "name_ko": "음성군",
+    "name_ja": "ウムソン(陰城)郡",
+    "name_en": "Eumseong-gun"
+   },
+   {
+    "code": "kr:43:800",
+    "name_ko": "단양군",
+    "name_ja": "タニャン(丹陽)郡",
+    "name_en": "Danyang-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:44",
+  "name_ko": "충청남도",
+  "name_ja": "チュンチョンナム(忠清南)道",
+  "name_en": "Chungcheongnam-do",
+  "children": [
+   {
+    "code": "kr:44:130",
+    "name_ko": "천안시",
+    "name_ja": "チョナン(天安)市",
+    "name_en": "Cheonan-si"
+   },
+   {
+    "code": "kr:44:131",
+    "name_ko": "천안시 동남구",
+    "name_ja": "チョナン(天安)市トンナム(東南)区",
+    "name_en": "Dongnam-gu, Cheonan-si"
+   },
+   {
+    "code": "kr:44:133",
+    "name_ko": "천안시 서북구",
+    "name_ja": "チョナン(天安)市ソブク(西北)区",
+    "name_en": "Seobuk-gu, Cheonan-si"
+   },
+   {
+    "code": "kr:44:150",
+    "name_ko": "공주시",
+    "name_ja": "コンジュ(公州)市",
+    "name_en": "Gongju-si"
+   },
+   {
+    "code": "kr:44:180",
+    "name_ko": "보령시",
+    "name_ja": "ポリョン(保寧)市",
+    "name_en": "Boryeong-si"
+   },
+   {
+    "code": "kr:44:200",
+    "name_ko": "아산시",
+    "name_ja": "アサン(牙山)市",
+    "name_en": "Asan-si"
+   },
+   {
+    "code": "kr:44:210",
+    "name_ko": "서산시",
+    "name_ja": "ソサン(瑞山)市",
+    "name_en": "Seosan-si"
+   },
+   {
+    "code": "kr:44:230",
+    "name_ko": "논산시",
+    "name_ja": "ノンサン(論山)市",
+    "name_en": "Nonsan-si"
+   },
+   {
+    "code": "kr:44:250",
+    "name_ko": "계룡시",
+    "name_ja": "キェリョン(鶏龍)市",
+    "name_en": "Gyeryong-si"
+   },
+   {
+    "code": "kr:44:270",
+    "name_ko": "당진시",
+    "name_ja": "タンジン(唐津)市",
+    "name_en": "Dangjin-si"
+   },
+   {
+    "code": "kr:44:710",
+    "name_ko": "금산군",
+    "name_ja": "クムサン(錦山)郡",
+    "name_en": "Geumsan-gun"
+   },
+   {
+    "code": "kr:44:760",
+    "name_ko": "부여군",
+    "name_ja": "プヨ(扶余)郡",
+    "name_en": "Buyeo-gun"
+   },
+   {
+    "code": "kr:44:770",
+    "name_ko": "서천군",
+    "name_ja": "ソチョン(舒川)郡",
+    "name_en": "Seocheon-gun"
+   },
+   {
+    "code": "kr:44:790",
+    "name_ko": "청양군",
+    "name_ja": "チョンヤン(青陽)郡",
+    "name_en": "Cheongyang-gun"
+   },
+   {
+    "code": "kr:44:800",
+    "name_ko": "홍성군",
+    "name_ja": "ホンソン(洪城)郡",
+    "name_en": "Hongseong-gun"
+   },
+   {
+    "code": "kr:44:810",
+    "name_ko": "예산군",
+    "name_ja": "イェサン(礼山)郡",
+    "name_en": "Yesan-gun"
+   },
+   {
+    "code": "kr:44:825",
+    "name_ko": "태안군",
+    "name_ja": "テアン(泰安)郡",
+    "name_en": "Taean-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:47",
+  "name_ko": "경상북도",
+  "name_ja": "キョンサンブク(慶尚北)道",
+  "name_en": "Gyeongsangbuk-do",
+  "children": [
+   {
+    "code": "kr:47:110",
+    "name_ko": "포항시",
+    "name_ja": "ポハン(浦項)市",
+    "name_en": "Pohang-si"
+   },
+   {
+    "code": "kr:47:111",
+    "name_ko": "포항시 남구",
+    "name_ja": "ポハン(浦項)市ナム(南)区",
+    "name_en": "Nam-gu, Pohang-si"
+   },
+   {
+    "code": "kr:47:113",
+    "name_ko": "포항시 북구",
+    "name_ja": "ポハン(浦項)市プク(北)区",
+    "name_en": "Buk-gu, Pohang-si"
+   },
+   {
+    "code": "kr:47:130",
+    "name_ko": "경주시",
+    "name_ja": "キョンジュ(慶州)市",
+    "name_en": "Gyeongju-si"
+   },
+   {
+    "code": "kr:47:150",
+    "name_ko": "김천시",
+    "name_ja": "キムチョン(金泉)市",
+    "name_en": "Gimcheon-si"
+   },
+   {
+    "code": "kr:47:170",
+    "name_ko": "안동시",
+    "name_ja": "アンドン(安東)市",
+    "name_en": "Andong-si"
+   },
+   {
+    "code": "kr:47:190",
+    "name_ko": "구미시",
+    "name_ja": "クミ(亀尾)市",
+    "name_en": "Gumi-si"
+   },
+   {
+    "code": "kr:47:210",
+    "name_ko": "영주시",
+    "name_ja": "ヨンジュ(栄州)市",
+    "name_en": "Yeongju-si"
+   },
+   {
+    "code": "kr:47:230",
+    "name_ko": "영천시",
+    "name_ja": "ヨンチョン(永川)市",
+    "name_en": "Yeongcheon-si"
+   },
+   {
+    "code": "kr:47:250",
+    "name_ko": "상주시",
+    "name_ja": "サンジュ(尚州)市",
+    "name_en": "Sangju-si"
+   },
+   {
+    "code": "kr:47:280",
+    "name_ko": "문경시",
+    "name_ja": "ムンギョン(聞慶)市",
+    "name_en": "Mungyeong-si"
+   },
+   {
+    "code": "kr:47:290",
+    "name_ko": "경산시",
+    "name_ja": "キョンサン(慶山)市",
+    "name_en": "Gyeongsan-si"
+   },
+   {
+    "code": "kr:47:730",
+    "name_ko": "의성군",
+    "name_ja": "ウィソン(義城)郡",
+    "name_en": "Uiseong-gun"
+   },
+   {
+    "code": "kr:47:750",
+    "name_ko": "청송군",
+    "name_ja": "チョンソン(青松)郡",
+    "name_en": "Cheongsong-gun"
+   },
+   {
+    "code": "kr:47:760",
+    "name_ko": "영양군",
+    "name_ja": "ヨンヤン(英陽)郡",
+    "name_en": "Yeongyang-gun"
+   },
+   {
+    "code": "kr:47:770",
+    "name_ko": "영덕군",
+    "name_ja": "ヨンドク(盈徳)郡",
+    "name_en": "Yeongdeok-gun"
+   },
+   {
+    "code": "kr:47:820",
+    "name_ko": "청도군",
+    "name_ja": "チョンド(清道)郡",
+    "name_en": "Cheongdo-gun"
+   },
+   {
+    "code": "kr:47:830",
+    "name_ko": "고령군",
+    "name_ja": "コリョン(高霊)郡",
+    "name_en": "Goryeong-gun"
+   },
+   {
+    "code": "kr:47:840",
+    "name_ko": "성주군",
+    "name_ja": "ソンジュ(星州)郡",
+    "name_en": "Seongju-gun"
+   },
+   {
+    "code": "kr:47:850",
+    "name_ko": "칠곡군",
+    "name_ja": "チルゴク(漆谷)郡",
+    "name_en": "Chilgok-gun"
+   },
+   {
+    "code": "kr:47:900",
+    "name_ko": "예천군",
+    "name_ja": "イェチョン(醴泉)郡",
+    "name_en": "Yecheon-gun"
+   },
+   {
+    "code": "kr:47:920",
+    "name_ko": "봉화군",
+    "name_ja": "ポンファ(奉化)郡",
+    "name_en": "Bonghwa-gun"
+   },
+   {
+    "code": "kr:47:930",
+    "name_ko": "울진군",
+    "name_ja": "ウルチン(蔚珍)郡",
+    "name_en": "Uljin-gun"
+   },
+   {
+    "code": "kr:47:940",
+    "name_ko": "울릉군",
+    "name_ja": "ウルルン(鬱陵)郡",
+    "name_en": "Ulleung-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:48",
+  "name_ko": "경상남도",
+  "name_ja": "キョンサンナム(慶尚南)道",
+  "name_en": "Gyeongsangnam-do",
+  "children": [
+   {
+    "code": "kr:48:120",
+    "name_ko": "창원시",
+    "name_ja": "チャンウォン(昌原)市",
+    "name_en": "Changwon-si"
+   },
+   {
+    "code": "kr:48:121",
+    "name_ko": "창원시 의창구",
+    "name_ja": "チャンウォン(昌原)市ウィチャン(義昌)区",
+    "name_en": "Uichang-gu, Changwon-si"
+   },
+   {
+    "code": "kr:48:123",
+    "name_ko": "창원시 성산구",
+    "name_ja": "チャンウォン(昌原)市ソンサン(城山)区",
+    "name_en": "Seongsan-gu, Changwon-si"
+   },
+   {
+    "code": "kr:48:125",
+    "name_ko": "창원시 마산합포구",
+    "name_ja": "チャンウォン(昌原)市マサンハッポ(馬山合浦)区",
+    "name_en": "Masanhappo-gu, Changwon-si"
+   },
+   {
+    "code": "kr:48:127",
+    "name_ko": "창원시 마산회원구",
+    "name_ja": "チャンウォン(昌原)市マサンフェウォン(馬山会原)区",
+    "name_en": "Masanhoewon-gu, Changwon-si"
+   },
+   {
+    "code": "kr:48:129",
+    "name_ko": "창원시 진해구",
+    "name_ja": "チャンウォン(昌原)市チンヘ(鎮海)区",
+    "name_en": "Jinhae-gu, Changwon-si"
+   },
+   {
+    "code": "kr:48:170",
+    "name_ko": "진주시",
+    "name_ja": "チンジュ(晋州)市",
+    "name_en": "Jinju-si"
+   },
+   {
+    "code": "kr:48:220",
+    "name_ko": "통영시",
+    "name_ja": "トンヨン(統営)市",
+    "name_en": "Tongyeong-si"
+   },
+   {
+    "code": "kr:48:240",
+    "name_ko": "사천시",
+    "name_ja": "サチョン(泗川)市",
+    "name_en": "Sacheon-si"
+   },
+   {
+    "code": "kr:48:250",
+    "name_ko": "김해시",
+    "name_ja": "キムヘ(金海)市",
+    "name_en": "Gimhae-si"
+   },
+   {
+    "code": "kr:48:270",
+    "name_ko": "밀양시",
+    "name_ja": "ミリャン(密陽)市",
+    "name_en": "Miryang-si"
+   },
+   {
+    "code": "kr:48:310",
+    "name_ko": "거제시",
+    "name_ja": "コジェ(巨済)市",
+    "name_en": "Geoje-si"
+   },
+   {
+    "code": "kr:48:330",
+    "name_ko": "양산시",
+    "name_ja": "ヤンサン(梁山)市",
+    "name_en": "Yangsan-si"
+   },
+   {
+    "code": "kr:48:720",
+    "name_ko": "의령군",
+    "name_ja": "ウィリョン(宜寧)郡",
+    "name_en": "Uiryeong-gun"
+   },
+   {
+    "code": "kr:48:730",
+    "name_ko": "함안군",
+    "name_ja": "ハマン(咸安)郡",
+    "name_en": "Haman-gun"
+   },
+   {
+    "code": "kr:48:740",
+    "name_ko": "창녕군",
+    "name_ja": "チャンニョン(昌寧)郡",
+    "name_en": "Changnyeong-gun"
+   },
+   {
+    "code": "kr:48:820",
+    "name_ko": "고성군",
+    "name_ja": "コソン(固城)郡",
+    "name_en": "Goseong-gun"
+   },
+   {
+    "code": "kr:48:840",
+    "name_ko": "남해군",
+    "name_ja": "ナムヘ(南海)郡",
+    "name_en": "Namhae-gun"
+   },
+   {
+    "code": "kr:48:850",
+    "name_ko": "하동군",
+    "name_ja": "ハドン(河東)郡",
+    "name_en": "Hadong-gun"
+   },
+   {
+    "code": "kr:48:860",
+    "name_ko": "산청군",
+    "name_ja": "サンチョン(山清)郡",
+    "name_en": "Sancheong-gun"
+   },
+   {
+    "code": "kr:48:870",
+    "name_ko": "함양군",
+    "name_ja": "ハミャン(咸陽)郡",
+    "name_en": "Hamyang-gun"
+   },
+   {
+    "code": "kr:48:880",
+    "name_ko": "거창군",
+    "name_ja": "コチャン(居昌)郡",
+    "name_en": "Geochang-gun"
+   },
+   {
+    "code": "kr:48:890",
+    "name_ko": "합천군",
+    "name_ja": "ハプチョン(陜川)郡",
+    "name_en": "Hapcheon-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:50",
+  "name_ko": "제주특별자치도",
+  "name_ja": "チェジュ(済州)特別自治道",
+  "name_en": "Jeju-do",
+  "children": [
+   {
+    "code": "kr:50:110",
+    "name_ko": "제주시",
+    "name_ja": "チェジュ(済州)市",
+    "name_en": "Jeju-si"
+   },
+   {
+    "code": "kr:50:130",
+    "name_ko": "서귀포시",
+    "name_ja": "ソグィポ(西帰浦)市",
+    "name_en": "Seogwipo-si"
+   }
+  ]
+ },
+ {
+  "code": "kr:51",
+  "name_ko": "강원특별자치도",
+  "name_ja": "カンウォン(江原)特別自治道",
+  "name_en": "Gangwon-do",
+  "children": [
+   {
+    "code": "kr:51:110",
+    "name_ko": "춘천시",
+    "name_ja": "チュンチョン(春川)市",
+    "name_en": "Chuncheon-si"
+   },
+   {
+    "code": "kr:51:130",
+    "name_ko": "원주시",
+    "name_ja": "ウォンジュ(原州)市",
+    "name_en": "Wonju-si"
+   },
+   {
+    "code": "kr:51:150",
+    "name_ko": "강릉시",
+    "name_ja": "カンヌン(江陵)市",
+    "name_en": "Gangneung-si"
+   },
+   {
+    "code": "kr:51:170",
+    "name_ko": "동해시",
+    "name_ja": "トンヘ(東海)市",
+    "name_en": "Donghae-si"
+   },
+   {
+    "code": "kr:51:190",
+    "name_ko": "태백시",
+    "name_ja": "テベク(太白)市",
+    "name_en": "Taebaek-si"
+   },
+   {
+    "code": "kr:51:210",
+    "name_ko": "속초시",
+    "name_ja": "ソクチョ(束草)市",
+    "name_en": "Sokcho-si"
+   },
+   {
+    "code": "kr:51:230",
+    "name_ko": "삼척시",
+    "name_ja": "サムチョク(三陟)市",
+    "name_en": "Samcheok-si"
+   },
+   {
+    "code": "kr:51:720",
+    "name_ko": "홍천군",
+    "name_ja": "ホンチョン(洪川)郡",
+    "name_en": "Hongcheon-gun"
+   },
+   {
+    "code": "kr:51:730",
+    "name_ko": "횡성군",
+    "name_ja": "フェンソン(横城)郡",
+    "name_en": "Hoengseong-gun"
+   },
+   {
+    "code": "kr:51:750",
+    "name_ko": "영월군",
+    "name_ja": "ヨンウォル(寧越)郡",
+    "name_en": "Yeongwol-gun"
+   },
+   {
+    "code": "kr:51:760",
+    "name_ko": "평창군",
+    "name_ja": "ピョンチャン(平昌)郡",
+    "name_en": "Pyeongchang-gun"
+   },
+   {
+    "code": "kr:51:770",
+    "name_ko": "정선군",
+    "name_ja": "チョンソン(旌善)郡",
+    "name_en": "Jeongseon-gun"
+   },
+   {
+    "code": "kr:51:780",
+    "name_ko": "철원군",
+    "name_ja": "チョルォン(鉄原)郡",
+    "name_en": "Cheorwon-gun"
+   },
+   {
+    "code": "kr:51:790",
+    "name_ko": "화천군",
+    "name_ja": "ファチョン(華川)郡",
+    "name_en": "Hwacheon-gun"
+   },
+   {
+    "code": "kr:51:800",
+    "name_ko": "양구군",
+    "name_ja": "ヤング(楊口)郡",
+    "name_en": "Yanggu-gun"
+   },
+   {
+    "code": "kr:51:810",
+    "name_ko": "인제군",
+    "name_ja": "インジェ(麟蹄)郡",
+    "name_en": "Inje-gun"
+   },
+   {
+    "code": "kr:51:820",
+    "name_ko": "고성군",
+    "name_ja": "コソン(高城)郡",
+    "name_en": "Goseong-gun"
+   },
+   {
+    "code": "kr:51:830",
+    "name_ko": "양양군",
+    "name_ja": "ヤンヤン(襄陽)郡",
+    "name_en": "Yangyang-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:52",
+  "name_ko": "전북특별자치도",
+  "name_ja": "チョンブク(全北)特別自治道",
+  "name_en": "Jeonbuk-do",
+  "children": [
+   {
+    "code": "kr:52:110",
+    "name_ko": "전주시",
+    "name_ja": "チョンジュ(全州)市",
+    "name_en": "Jeonju-si"
+   },
+   {
+    "code": "kr:52:111",
+    "name_ko": "전주시 완산구",
+    "name_ja": "チョンジュ(全州)市ワンサン(完山)区",
+    "name_en": "Wansan-gu, Jeonju-si"
+   },
+   {
+    "code": "kr:52:113",
+    "name_ko": "전주시 덕진구",
+    "name_ja": "チョンジュ(全州)市トクチン(徳津)区",
+    "name_en": "Deokjin-gu, Jeonju-si"
+   },
+   {
+    "code": "kr:52:130",
+    "name_ko": "군산시",
+    "name_ja": "クンサン(群山)市",
+    "name_en": "Gunsan-si"
+   },
+   {
+    "code": "kr:52:140",
+    "name_ko": "익산시",
+    "name_ja": "イクサン(益山)市",
+    "name_en": "Iksan-si"
+   },
+   {
+    "code": "kr:52:180",
+    "name_ko": "정읍시",
+    "name_ja": "チョンウプ(井邑)市",
+    "name_en": "Jeongeup-si"
+   },
+   {
+    "code": "kr:52:190",
+    "name_ko": "남원시",
+    "name_ja": "ナムォン(南原)市",
+    "name_en": "Namwon-si"
+   },
+   {
+    "code": "kr:52:210",
+    "name_ko": "김제시",
+    "name_ja": "キムジェ(金堤)市",
+    "name_en": "Gimje-si"
+   },
+   {
+    "code": "kr:52:710",
+    "name_ko": "완주군",
+    "name_ja": "ワンジュ(完州)郡",
+    "name_en": "Wanju-gun"
+   },
+   {
+    "code": "kr:52:720",
+    "name_ko": "진안군",
+    "name_ja": "チナン(鎮安)郡",
+    "name_en": "Jinan-gun"
+   },
+   {
+    "code": "kr:52:730",
+    "name_ko": "무주군",
+    "name_ja": "ムジュ(茂朱)郡",
+    "name_en": "Muju-gun"
+   },
+   {
+    "code": "kr:52:740",
+    "name_ko": "장수군",
+    "name_ja": "チャンス(長水)郡",
+    "name_en": "Jangsu-gun"
+   },
+   {
+    "code": "kr:52:750",
+    "name_ko": "임실군",
+    "name_ja": "イムシル(任実)郡",
+    "name_en": "Imsil-gun"
+   },
+   {
+    "code": "kr:52:770",
+    "name_ko": "순창군",
+    "name_ja": "スンチャン(淳昌)郡",
+    "name_en": "Sunchang-gun"
+   },
+   {
+    "code": "kr:52:790",
+    "name_ko": "고창군",
+    "name_ja": "コチャン(高敞)郡",
+    "name_en": "Gochang-gun"
+   },
+   {
+    "code": "kr:52:800",
+    "name_ko": "부안군",
+    "name_ja": "プアン(扶安)郡",
+    "name_en": "Buan-gun"
+   }
+  ]
+ },
+ {
+  "code": "kr:36110",
+  "name_ko": "세종특별자치시",
+  "name_ja": "セジョン(世宗)特別自治市",
+  "name_en": "Sejong-si"
+ }
+]
