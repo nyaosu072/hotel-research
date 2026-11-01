@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": ["run", "--allow-net", "--allow-read", "jsr:@std/http@1.0.9/file-server", "--port", "8123", "."],
+      "port": 8123
+    }
+  ]
+}

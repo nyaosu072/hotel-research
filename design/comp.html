@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>取材リサーチ — デザイン案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root {
+  --bg: #f3f4f2; --surface: #ffffff; --text: #1a1d21; --text-muted: #6b7078; --line: #e1e3e0;
+  --accent: #2b3f8c; --accent-soft: #e8ebf5;
+  --st-candidate: #8f959c; --st-contacted: #b26b12; --st-confirmed: #2b3f8c; --st-done: #2f7d5b; --st-excluded: #b9bdc2;
+  --region: #5e7d78;
+  --space-1: 4px; --space-2: 8px; --space-3: 16px; --space-4: 24px; --space-5: 32px; --space-6: 48px;
+  --radius: 6px;
+  --fs-1: 12px; --fs-2: 14px; --fs-3: 16px; --fs-4: 20px; --fs-5: 44px;
+  --sans: "Noto Sans JP", system-ui, sans-serif; --num: "Inter", "Noto Sans JP", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161a24; --surface: #1d2230; --text: #e8eaf0; --text-muted: #9aa1b0; --line: #2c3243;
+    --accent: #8fa3ec; --accent-soft: #252d48;
+    --st-candidate: #8a91a0; --st-contacted: #e0a050; --st-confirmed: #8fa3ec; --st-done: #6cc49a; --st-excluded: #4a5163;
+    --region: #4f6b67;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161a24; --surface: #1d2230; --text: #e8eaf0; --text-muted: #9aa1b0; --line: #2c3243;
+  --accent: #8fa3ec; --accent-soft: #252d48;
+  --st-candidate: #8a91a0; --st-contacted: #e0a050; --st-confirmed: #8fa3ec; --st-done: #6cc49a; --st-excluded: #4a5163;
+  --region: #4f6b67;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--text); font: 400 var(--fs-2)/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+button, select, input { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.num { font-family: var(--num); font-variant-numeric: tabular-nums; }
+
+/* top bar */
+.bar { height: 56px; display: flex; align-items: center; gap: var(--space-4); padding: 0 var(--space-4); border-bottom: 1px solid var(--line); background: var(--surface); }
+.seg { display: inline-flex; background: var(--bg); border-radius: var(--radius); padding: 2px; }
+.seg button { border: 0; background: none; padding: 6px 14px; border-radius: 4px; cursor: pointer; color: var(--text-muted); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--line); }
+.path { display: flex; align-items: center; gap: var(--space-2); }
+.path select { border: 1px solid var(--line); background: var(--surface); border-radius: var(--radius); padding: 6px 10px; }
+.bar .spacer { flex: 1; }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: var(--radius); padding: 6px 14px; cursor: pointer; }
+.updated { color: var(--text-muted); font-size: var(--fs-1); }
+
+/* layout */
+.main { display: grid; grid-template-columns: 460px 1fr; height: calc(100% - 56px); }
+.listpane { overflow-y: auto; background: var(--surface); border-right: 1px solid var(--line); }
+.head { padding: var(--space-5) var(--space-4) var(--space-3); }
+.head h1 { margin: 0; font-weight: 300; font-size: var(--fs-5); line-height: 1.1; letter-spacing: 0.04em; }
+.head .sub { margin-top: var(--space-2); color: var(--text-muted); display: flex; gap: var(--space-3); }
+.head .sub strong { color: var(--text); font-weight: 500; }
+.filters { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0 var(--space-4) var(--space-3); border-bottom: 1px solid var(--line); }
+.chip { border: 1px solid var(--line); background: none; border-radius: 999px; padding: 4px 12px; font-size: var(--fs-1); cursor: pointer; color: var(--text-muted); }
+.chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.sort { margin-left: auto; font-size: var(--fs-1); color: var(--text-muted); border: 0; background: none; }
+
+.rows { list-style: none; margin: 0; padding: var(--space-2) 0; }
+.row { display: grid; grid-template-columns: 64px 1fr auto; gap: var(--space-3); padding: var(--space-3) var(--space-4); cursor: pointer; }
+.row:hover, .row[aria-selected="true"] { background: var(--bg); }
+.thumb { width: 64px; height: 64px; border-radius: 4px; background: var(--region); }
+.name { font-size: var(--fs-3); font-weight: 500; line-height: 1.35; }
+.en { color: var(--text-muted); font-size: var(--fs-1); margin-top: 2px; }
+.contact { margin-top: var(--space-2); display: flex; flex-direction: column; gap: 2px; font-size: var(--fs-1); }
+.contact a { color: var(--accent); text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact .missing { color: var(--text-muted); }
+.right { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-2); }
+.price { font-size: var(--fs-2); }
+.price small { color: var(--text-muted); font-size: var(--fs-1); }
+.marks { display: flex; gap: 6px; align-items: center; color: var(--accent); }
+.mark { display: inline-flex; align-items: center; gap: 2px; font-size: var(--fs-1); }
+.mark svg { width: 13px; height: 13px; }
+.mark.find { color: var(--text-muted); border: 1px dashed var(--line); border-radius: 4px; padding: 0 6px; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-1); color: var(--text-muted); }
+.status i { width: 8px; height: 8px; border-radius: 2px; background: var(--c); }
+
+/* map + drawer */
+.mapwrap { position: relative; }
+#map { position: absolute; inset: 0; }
+.drawer { position: absolute; top: 0; right: 0; bottom: 0; width: 440px; background: var(--surface); border-left: 1px solid var(--line); overflow-y: auto; transform: translateX(0); transition: transform 200ms ease; z-index: 500; }
+.drawer[hidden] { display: block; transform: translateX(100%); }
+@media (prefers-reduced-motion: reduce) { .drawer { transition: none; } }
+.d-hero { height: 200px; background: var(--region); }
+.d-body { padding: var(--space-4); display: grid; gap: var(--space-4); }
+.d-title h2 { margin: 0; font-size: 28px; font-weight: 500; line-height: 1.25; }
+.d-title .en { font-size: var(--fs-2); }
+.d-title .marks { margin-top: var(--space-2); }
+.close { position: absolute; top: var(--space-3); right: var(--space-3); width: 32px; height: 32px; border-radius: 50%; border: 0; background: var(--surface); cursor: pointer; }
+.field { display: grid; grid-template-columns: 88px 1fr; gap: var(--space-3); align-items: baseline; margin: 0; }
+.field dt { color: var(--text-muted); font-size: var(--fs-1); }
+.field dd { margin: 0; }
+.field a { color: var(--accent); }
+.links { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.links a { font-size: var(--fs-1); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 10px; text-decoration: none; }
+.steps { display: flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.steps button { flex: 1; border: 0; border-right: 1px solid var(--line); background: none; padding: 8px 0; font-size: var(--fs-1); cursor: pointer; display: inline-flex; justify-content: center; align-items: center; gap: 6px; }
+.steps button:last-child { border-right: 0; }
+.steps button i { width: 8px; height: 8px; border-radius: 2px; background: var(--c); }
+.steps button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+h3 { margin: 0 0 var(--space-2); font-size: var(--fs-2); font-weight: 500; }
+.people { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.people li { display: grid; grid-template-columns: 1fr auto; padding: var(--space-2) 0; border-bottom: 1px solid var(--line); }
+.people .who { font-weight: 500; }
+.people .meta { color: var(--text-muted); font-size: var(--fs-1); }
+.note { background: var(--bg); border-radius: var(--radius); padding: var(--space-3); }
+.note p { margin: 0; }
+.note .by { color: var(--text-muted); font-size: var(--fs-1); margin-top: var(--space-1); }
+footer.credit { padding: var(--space-4); font-size: var(--fs-1); color: var(--text-muted); }
+footer.credit a { color: inherit; }
+.leaflet-container { background: var(--bg); font: inherit; }
+/* 지도는 무채색으로 눌러서 핀(취재 상태 색)만 보이게 */
+.leaflet-tile-pane { filter: grayscale(1) contrast(0.85) brightness(1.06); }
+:root[data-theme="dark"] .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(0.8) brightness(0.9); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .leaflet-tile-pane { filter: grayscale(1) invert(1) contrast(0.8) brightness(0.9); } }
+@media (max-width: 1200px) { .main { grid-template-columns: 400px 1fr; } .drawer { width: min(400px, 100%); } }
+.mark svg { width: 15px; height: 15px; }
+.btn, .seg button, .chip, .updated { white-space: nowrap; }
+@media (max-width: 1000px) { .updated { display: none; } .bar { gap: var(--space-3); padding: 0 var(--space-3); } }
+@media (max-width: 760px) {
+  .bar { overflow-x: auto; }
+  .main { grid-template-columns: 1fr; grid-template-rows: auto 50vh; height: auto; }
+  .listpane { border-right: 0; }
+  .mapwrap { min-height: 50vh; }
+  .drawer { position: fixed; width: 100%; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="key" viewBox="0 0 16 16"><circle cx="5" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h7M12 8v3M14.5 8v2" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="flower" viewBox="0 0 16 16"><circle cx="8" cy="8" r="2" fill="currentColor"/><circle cx="8" cy="3.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="12.5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="3.5" cy="8" r="2.2" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12.5" cy="8" r="2.2" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+</svg>
+
+<header class="bar">
+  <div class="seg" role="group" aria-label="国"><button aria-pressed="true">日本</button><button aria-pressed="false">韓国</button></div>
+  <div class="path">
+    <select aria-label="都道府県"><option>神奈川県</option></select>
+    <select aria-label="地域"><option>箱根</option></select>
+  </div>
+  <span class="updated num">更新 11/01 14:20</span>
+  <div class="spacer"></div>
+  <button class="btn">取材状況</button>
+  <button class="btn">施設を追加</button>
+  <div class="seg" role="group" aria-label="言語"><button aria-pressed="true">日本語</button><button aria-pressed="false">EN</button></div>
+  <button class="btn" id="theme" aria-label="表示テーマを切り替え">◐</button>
+</header>
+
+<main class="main">
+  <section class="listpane" aria-label="候補リスト">
+    <div class="head">
+      <h1>箱根</h1>
+      <div class="sub"><span><strong class="num">17</strong> 件の候補</span><span>評価リスト <span class="num">6</span></span><span>発掘候補 <span class="num">11</span></span></div>
+    </div>
+    <div class="filters">
+      <button class="chip" aria-pressed="false">ホテル</button>
+      <button class="chip" aria-pressed="true">旅館</button>
+      <button class="chip" aria-pressed="false">リゾート</button>
+      <button class="chip" aria-pressed="false">5つ星級のみ</button>
+      <button class="chip" aria-pressed="false">¥50,000〜</button>
+      <select class="sort" aria-label="並び替え"><option>評価順</option><option>価格順</option></select>
+    </div>
+    <ul class="rows" id="rows"></ul>
+    <footer class="credit">施設データの一部は <a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a></footer>
+  </section>
+
+  <section class="mapwrap" aria-label="地図">
+    <div id="map"></div>
+    <aside class="drawer" id="drawer" aria-label="施設の詳細">
+      <button class="close" id="close" aria-label="閉じる">✕</button>
+      <div class="d-hero"></div>
+      <div class="d-body">
+        <div class="d-title">
+          <h2>強羅花壇</h2>
+          <div class="en">Gora Kadan</div>
+          <div class="marks">
+            <span class="mark"><svg><use href="#key"/></svg><svg><use href="#key"/></svg><svg><use href="#key"/></svg> ミシュランキー</span>
+            <span class="mark"><svg><use href="#flower"/></svg> Relais &amp; Châteaux</span>
+          </div>
+        </div>
+        <dl class="field">
+          <dt>公式サイト</dt><dd><a href="https://www.gorakadan.com/" target="_blank" rel="noopener">gorakadan.com</a></dd>
+          <dt>代表メール</dt><dd><button class="btn" style="padding:2px 10px">メールを探す</button></dd>
+          <dt>代表電話</dt><dd class="num">0460-00-0000</dd>
+          <dt>住所</dt><dd>神奈川県足柄下郡箱根町強羅</dd>
+          <dt>参考価格</dt><dd class="num">¥120,000〜 <span class="en" style="display:inline">1泊1名</span></dd>
+        </dl>
+        <div class="links">
+          <a href="#">Booking.com</a><a href="#">Agoda</a><a href="#">Trip.com</a><a href="#">Google マップ</a>
+        </div>
+        <div>
+          <h3>取材ステータス</h3>
+          <div class="steps" role="group" aria-label="取材ステータス">
+            <button style="--c:var(--st-candidate)" aria-pressed="false"><i></i>候補</button>
+            <button style="--c:var(--st-contacted)" aria-pressed="true"><i></i>連絡済</button>
+            <button style="--c:var(--st-confirmed)" aria-pressed="false"><i></i>取材確定</button>
+            <button style="--c:var(--st-done)" aria-pressed="false"><i></i>取材完了</button>
+            <button style="--c:var(--st-excluded)" aria-pressed="false"><i></i>除外</button>
+          </div>
+          <div class="en" style="margin-top:6px">最終連絡 <span class="num">2026/10/30</span>　担当 山田</div>
+        </div>
+        <div>
+          <h3>担当者</h3>
+          <ul class="people">
+            <li><div><div class="who">広報 ご担当者</div><div class="meta">pr@example.jp</div></div><div class="meta num">10/30</div></li>
+          </ul>
+          <button class="btn" style="margin-top:var(--space-2)">担当者を追加</button>
+        </div>
+        <div>
+          <h3>メモ</h3>
+          <div class="note"><p>3月の撮影可。離れの客室を希望と伝えた。</p><div class="by">山田 <span class="num">10/30 15:12</span></div></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+// サンプルデータ (価格・連絡先・座標はダミー)
+const hotels = [
+  { ja: "強羅花壇", en: "Gora Kadan", marks: [["key", 3], ["flower", 1]], price: 120000, st: "contacted", hp: "gorakadan.com", mail: null, lat: 35.2497, lng: 139.0472 },
+  { ja: "エスパシオ 箱根迎賓館 麟鳳亀龍", en: "ESPACIO The Hakone Geihinkan", marks: [["key", 1]], price: 98000, st: "candidate", hp: null, mail: null, lat: 35.2330, lng: 139.1040 },
+  { ja: "ふふ 箱根", en: "FUFU Hakone", marks: [["key", 1]], price: 85000, st: "confirmed", hp: "fufuhakone.jp", mail: "info@example.jp", lat: 35.2460, lng: 139.0450 },
+  { ja: "箱根強羅 花扇", en: "Hakone Gora Karaku", marks: [["key", 1]], price: 76000, st: "candidate", hp: null, mail: null, lat: 35.2480, lng: 139.0500 },
+  { ja: "界 箱根", en: "Kai Hakone", marks: [["brand", "界"]], price: 62000, st: "done", hp: "hoshinoresorts.com", mail: "kai@example.jp", lat: 35.2290, lng: 139.1010 },
+  { ja: "芦ノ湖畔の宿 (サンプル)", en: "", marks: [["find"]], price: 54000, st: "excluded", hp: null, mail: null, lat: 35.2050, lng: 139.0260 },
+];
+const label = { candidate: "候補", contacted: "連絡済", confirmed: "取材確定", done: "取材完了", excluded: "除外" };
+const color = (s) => getComputedStyle(document.documentElement).getPropertyValue(`--st-${s}`).trim();
+const markHtml = (m) => {
+  if (m[0] === "key") return `<span class="mark" title="ミシュランキー ${m[1]}">${'<svg><use href="#key"/></svg>'.repeat(m[1])}</span>`;
+  if (m[0] === "flower") return `<span class="mark" title="Relais & Châteaux"><svg><use href="#flower"/></svg></span>`;
+  if (m[0] === "brand") return `<span class="mark">${m[1]}</span>`;
+  return `<span class="mark find">発掘</span>`;
+};
+const rows = document.getElementById("rows");
+rows.innerHTML = hotels.map((h, i) => `
+  <li class="row" tabindex="0" data-i="${i}" ${i === 0 ? 'aria-selected="true"' : ""}>
+    <div class="thumb"></div>
+    <div>
+      <div class="name">${h.ja}</div>
+      ${h.en ? `<div class="en">${h.en}</div>` : ""}
+      <div class="contact">
+        ${h.hp ? `<a href="#">${h.hp}</a>` : `<span class="missing">公式サイト未登録　<a href="#">Google マップで探す</a></span>`}
+        ${h.mail ? `<span>${h.mail}</span>` : `<span class="missing">メール未登録</span>`}
+      </div>
+    </div>
+    <div class="right">
+      <div class="marks">${h.marks.map(markHtml).join("")}</div>
+      <div class="price num">¥${h.price.toLocaleString()}<small>〜</small></div>
+      <span class="status" style="--c:var(--st-${h.st})"><i></i>${label[h.st]}</span>
+    </div>
+  </li>`).join("");
+
+const map = L.map("map", { zoomControl: false }).setView([35.235, 139.06], 13);
+L.control.zoom({ position: "bottomleft" }).addTo(map);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OpenStreetMap", maxZoom: 19 }).addTo(map);
+const pins = hotels.map((h) => L.circleMarker([h.lat, h.lng], { radius: 7, weight: 2, color: "#fff", fillColor: color(h.st), fillOpacity: 1 }).addTo(map).bindTooltip(h.ja));
+rows.addEventListener("mouseover", (e) => { const r = e.target.closest(".row"); pins.forEach((p, i) => p.setRadius(r && +r.dataset.i === i ? 11 : 7)); });
+
+const drawer = document.getElementById("drawer");
+rows.addEventListener("click", () => { drawer.hidden = false; });
+document.getElementById("close").addEventListener("click", () => { drawer.hidden = true; });
+document.getElementById("theme").addEventListener("click", () => {
+  const r = document.documentElement;
+  const dark = r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+  pins.forEach((p, i) => p.setStyle({ fillColor: color(hotels[i].st) }));
+});
+</script>
+</body>
+</html>
