@@ -35,12 +35,19 @@ const themeBtn = () => h("button", { class: "btn", "aria-label": t("bar.theme"),
 function bar(left) {
   const nav = (hash, key) =>
     h("a", { class: "btn", href: hash, "aria-current": location.hash.startsWith(hash) ? "page" : null, style: "text-decoration:none;color:inherit" }, t(key));
-  return h("header", { class: "bar" },
-    h("div", { class: "left" }, left),
-    h("div", { class: "spacer" }),
+  // 좁은 화면에서는 오른쪽 도구들을 "メニュー" 버튼 하나로 접는다 (CSS가 데스크톱에선 버튼을 숨김)
+  const tools = h("div", { class: "tools", id: "bar-tools" },
     h("nav", { class: "nav" }, nav("#/research", "nav.research"), nav("#/add", "nav.add"), nav("#/settings", "nav.settings")),
     langSeg(), themeBtn(),
     h("button", { class: "btn", onclick: signOut }, t("bar.logout")));
+  const menuBtn = h("button", { class: "btn menubtn", "aria-expanded": "false", "aria-controls": "bar-tools" }, t("bar.menu"));
+  const header = h("header", { class: "bar" }, h("div", { class: "left" }, left), h("div", { class: "spacer" }), menuBtn, tools);
+  menuBtn.onclick = () => {
+    const open = header.classList.toggle("menu-open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+  };
+  tools.addEventListener("click", (e) => { if (e.target.closest("a")) header.classList.remove("menu-open"); });
+  return header;
 }
 
 const VIEWS = {

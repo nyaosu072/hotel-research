@@ -213,3 +213,44 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: var(--fs-2); }
 @media (max-width: 1200px) { .bar { overflow-x: auto; } .bar > * { flex: none; } }
 .mapwrap { overflow: hidden; }
 .field .missing { color: var(--text-muted); }
+
+/* ---- 모바일 정리 ---- */
+.menubtn { display: none; }
+.bar .tools { display: flex; align-items: center; gap: var(--space-3); flex: none; }
+@media (max-width: 760px) {
+  /* 상단 바: 국가·지역만 남기고 나머지는 메뉴로 */
+  .bar { overflow: visible; height: auto; min-height: 56px; flex-wrap: wrap; gap: var(--space-2); padding: var(--space-2) var(--space-3); }
+  .bar .left { flex: 1 1 auto; flex-wrap: wrap; gap: var(--space-2); }
+  .bar .left select { max-width: 42vw; }
+  .bar .spacer { display: none; }
+  .bar { position: relative; }
+  .menubtn { display: inline-block; position: absolute; top: var(--space-2); right: var(--space-3); }
+  .bar .tools { display: none; }
+  .bar.menu-open .tools {
+    display: flex; flex-direction: column; align-items: stretch; gap: var(--space-2);
+    position: absolute; top: 100%; right: var(--space-3); min-width: 200px; padding: var(--space-3);
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); z-index: 1500;
+  }
+  .bar.menu-open .tools .nav { flex-direction: column; }
+  .bar.menu-open .tools .btn, .bar.menu-open .tools .seg { width: 100%; text-align: center; }
+  .view { height: auto; min-height: calc(100% - 56px); }
+
+  /* 목록 위쪽 압축 */
+  .mobtabs { position: sticky; top: 0; z-index: 600; background: var(--bg); padding: var(--space-1); }
+  .head { padding: var(--space-3) var(--space-3) var(--space-2); }
+  .head h1 { font-size: 26px; }
+  .head .sub { font-size: var(--fs-1); flex-wrap: wrap; gap: var(--space-2); }
+  .filters { flex-wrap: nowrap; overflow-x: auto; padding: 0 var(--space-3) var(--space-2); scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters .chip, .filters .sort { flex: none; }
+  .row { grid-template-columns: 56px 1fr auto; gap: var(--space-2); padding: var(--space-3); }
+  .thumb, .row .thumb { width: 56px; height: 56px; }
+
+  /* 상세 패널: 목록 탭에서도 전체 화면으로 열림 */
+  .main[data-view="list"] .mapwrap { display: block; height: 0; min-height: 0; }
+  .drawer { position: fixed; inset: 0; width: 100%; z-index: 2000; border-left: 0; }
+  .d-hero { height: 180px; }
+  .close { position: fixed; z-index: 2001; }
+  .steps { flex-wrap: wrap; }
+  .steps button { flex: 1 1 30%; border-bottom: 1px solid var(--line); }
+}
