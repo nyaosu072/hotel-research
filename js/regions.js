@@ -35,6 +35,7 @@ const CODE = /^(jp|kr):[a-z0-9-]+(:[a-z0-9-]+){0,2}$/i;
 
 // R15: rows at `sel`, below it, or at a parent level (award hotels stored at prefecture level)
 export function regionFilter(sel) {
+  if (sel === "jp" || sel === "kr") return `region_code.like.${sel}:*`; // 나라 전체
   if (!CODE.test(sel)) throw new Error("bad region code");
   const parts = sel.split(":");
   const parents = [];

@@ -184,6 +184,8 @@ export async function mount(view, slot, session) {
         "aria-label": t(i === 0 ? `bar.l1.${S.country}` : `bar.l${i + 1}`),
         onchange: (e) => selectRegion(e.target.value || (i > 0 ? path[i - 1].code : null)),
       }, h("option", { value: "" }, i === 0 ? t("bar.choose") : t("bar.all")),
+      // 첫 단계에만 "전국" (국가 코드 jp/kr = 그 나라 전체, DB에 있는 호텔만 보여줌)
+      i === 0 ? h("option", { value: S.country.toLowerCase(), selected: S.region === S.country.toLowerCase() }, t(`bar.whole.${S.country}`)) : null,
       ...level.map((r) => h("option", { value: r.code, selected: cur?.code === r.code }, rname(r)))));
       if (!cur) break;
       level = cur.children;
@@ -223,7 +225,7 @@ export async function mount(view, slot, session) {
     const list = visible();
     const award = list.filter((x) => x.awards?.length).length;
     fill(headEl, 
-      h("h1", null, path.length ? rname(path.at(-1)) : t("main.pick")),
+      h("h1", null, path.length ? rname(path.at(-1)) : S.region === S.country.toLowerCase() ? t(`bar.whole.${S.country}`) : t("main.pick")),
       S.region ? h("div", { class: "sub" },
         h("span", null, h("strong", { class: "num" }, list.length), " ", t("head.count")),
         h("span", null, t("head.award"), " ", h("span", { class: "num" }, award)),

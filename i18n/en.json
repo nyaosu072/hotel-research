@@ -17,6 +17,8 @@
   "bar.l3": "Sub-area",
   "bar.choose": "Select",
   "bar.all": "All",
+  "bar.whole.JP": "All of Japan",
+  "bar.whole.KR": "All of Korea",
   "bar.refresh": "Refresh",
   "bar.updated": "Updated {at}",
   "nav.research": "Research",

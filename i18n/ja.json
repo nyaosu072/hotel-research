@@ -17,6 +17,8 @@
   "bar.l3": "エリア",
   "bar.choose": "選択してください",
   "bar.all": "すべて",
+  "bar.whole.JP": "日本全国",
+  "bar.whole.KR": "韓国全体",
   "bar.refresh": "更新",
   "bar.updated": "更新 {at}",
   "nav.research": "取材状況",

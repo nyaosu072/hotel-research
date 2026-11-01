@@ -7,17 +7,22 @@ import { normalizeName } from "../supabase/functions/_shared/match.ts";
 
 export type Cand = { name: string; img: string };
 
-/** 정규화 이름이 정확히 같은 후보 1건, 없으면 서로 포함 관계인 후보가 정확히 1건일 때만 그 사진. */
-export function pickByName(names: (string | null | undefined)[], cands: Cand[]): string | null {
+/** 정규화 이름이 정확히 같은 후보 1건(같은 key면 1건 취급), 없으면 서로 포함 관계인 후보가 정확히 1건일 때만 그 후보. */
+export function pickCandidate<T extends { name: string }>(
+  names: (string | null | undefined)[], cands: T[], keyOf: (c: T) => string,
+): T | null {
   const keys = names.filter(Boolean).map((n) => normalizeName(n!)).filter((k) => k.length >= 2);
-  const ok = cands.filter((c) => /^https?:\/\//.test(c.img));
-  const exact = ok.filter((c) => keys.includes(normalizeName(c.name)));
-  if (exact.length) return new Set(exact.map((c) => c.img)).size === 1 ? exact[0].img : null;
-  const part = ok.filter((c) => {
+  const exact = cands.filter((c) => keys.includes(normalizeName(c.name)));
+  if (exact.length) return new Set(exact.map(keyOf)).size === 1 ? exact[0] : null;
+  const part = cands.filter((c) => {
     const n = normalizeName(c.name);
     return n.length >= 2 && keys.some((k) => n.includes(k) || k.includes(n));
   });
-  return part.length === 1 ? part[0].img : null;
+  return part.length === 1 ? part[0] : null;
+}
+
+export function pickByName(names: (string | null | undefined)[], cands: Cand[]): string | null {
+  return pickCandidate(names, cands.filter((c) => /^https?:\/\//.test(c.img)), (c) => c.img)?.img ?? null;
 }
 
 if (import.meta.main) {
